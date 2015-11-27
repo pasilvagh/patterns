@@ -85,40 +85,37 @@
 %\LaTeX$2_\epsilon$\ and BibTeX} at
 
 
-%\numberofauthors{8} %  in this sample file, there are a *total*
+\numberofauthors{3} %  in this sample file, there are a *total*
 % of EIGHT authors. SIX appear on the 'first-page' (for formatting
 % reasons) and the remaining two appear in the \additionalauthors section.
 %
+
 \author{
-%
-% 1st. author
 \alignauthor
-Paulina Silva\titlenote{Main Author}\\
-       \affaddr{Departamento de Informática}\\
-       \affaddr{Universidad Técnica Federico Santa María}\\
-       \affaddr{Valparaíso, Chile}\\
-       \email{pasilva@alumnos.inf.utfsm.cl}
+Paulina Silva\\
+  \affaddr{Departamento de Informática}\\
+  \affaddr{Universidad Técnica Federico Santa María}\\
+  \affaddr{Valparaíso, Chile}\\
+  \email{pasilva@alumnos.inf.utfsm.cl}
 % 2nd. author
 \alignauthor
 Raúl Monge\\
-       \affaddr{Departamento de Informática}\\
-       \affaddr{Universidad Técnica Federico Santa María}\\
-       \affaddr{Valparaíso, Chile}\\
-       \email{rmonge@inf.utfsm.cl}
+  \affaddr{Departamento de Informática}\\
+  \affaddr{Universidad Técnica Federico Santa María}\\
+  \affaddr{Valparaíso, Chile}\\
+  \email{rmonge@inf.utfsm.cl}
 % 3rd. author
-%\alignauthor 
-%Eduardo Fernandez\\
-%       \affaddr{The Th{\o}rv{\"a}ld Group}\\
-%       \affaddr{1 Th{\o}rv{\"a}ld Circle}\\
-%       \affaddr{Hekla, Iceland}\\
-%       \email{larst@affiliation.org}
-%\and  % use '\and' if you need 'another row' of author names
-% 4th. author
+\alignauthor 
+Eduardo Fernandez\\
+  \affaddr{Department of Computer \(\&\) Electrical Engineering and Computer Science}\\
+  \affaddr{Florida Atlantic University}\\
+  \affaddr{Florida, USA}\\
+  \email{ed@cse.fau.edu}
 }
 
 \maketitle
 \begin{abstract}
-
+Currently a lot of software developments create systems that are connected to the Internet, which allows to add functionality within a system and facilities to their \textit{Stakeholders}. This leads to depend in a \textit{web client}, as the \textit{Web Browser}, which allows access to services, data or operations that the system delivers. Nevertheless, the Internet influences the attack surface of the new system, and unfortunately many stakeholders and developers are not aware of the risks they are exposed. The lack of Security Education in Software developers of a project, the low and scattered documentation of each browser (and standardization), could become a great flaw in big architectural developments which depends on the browser to do their services. A Reference Architecture of the \textit{Web Browser}, using Architectural Patterns, could be a base for understanding the security mechanisms and its architecture, which interacts with a bigger web system. This would give an unification of ideas and terminology, giving a holistic view regardless the implementation details for both the browser and the system it communicates to. We developed a Browser Infrastrcture Pattern which describes the infrastructure to allow the communication between a Web Client and Server in the Internet. With this work we propose an Architectural Pattern as the first piece of our Reference Architecture for the Web Browser.
 \end{abstract}
 
 
@@ -160,13 +157,43 @@ Raúl Monge\\
 
 
 
-\keywords{}
+\keywords{Web Browser, Web Client, Modular Architecture, Browser Architecture, Reference Architecture, Browser Infrastructure pattern}
 
-\section{Introduction}
+\section*{Introduction}
 
-\section{}
+\section*{Background}
 
-\section{Conclusions}
+
+\section*{Related Work}
+
+\section*{Browser Infrastructure Pattern}
+
+  \subsection*{Intent}
+  The Browser Infrastructure pattern allows the reques of a web resource in the Internet to a Browser User
+  El patron Browser Infrastructure pattern permite la realización de la solicitud o \textit{request} de un recurso web en la Internet por parte de un BU, que es un usuario del Host que utiliza un navegador. El patrón permite visualizar la comunicación entre los componentes que conforman el browser así como la comunicación con el proveedor, al que se le realiza el \textit{request}.
+  \subsection*{Example}
+
+  \subsection*{Context}
+
+  \subsection*{Problem}
+
+  \subsection*{Solution}
+
+    \subsubsection*{Structure}
+
+    \subsubsection*{Dynamics}
+
+  \subsection*{Implementation}
+
+  \subsection*{Consequences}
+
+  \subsection*{Example Resolved}
+
+  \subsection*{Known Uses}
+
+  \subsection*{Related Patterns}
+
+\section*{Conclusions}
 
 %ACKNOWLEDGMENTS are optional
 %\section{Acknowledgments}
@@ -175,6 +202,6 @@ Raúl Monge\\
 \bibliographystyle{abbrv}
 \bibliography{refTodas}  
 
-\subsection{References}
+\subsection*{References}
 
 \end{document}
