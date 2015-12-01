@@ -1,0 +1,88 @@
+\begin{thebibliography}{10}
+
+\bibitem{IE8-LCIE}
+{IE8 and Loosely-Coupled IE (LCIE) - IEBlog - Site Home}.
+
+\bibitem{GCIPC}
+{Inter-process Communication (IPC) - The Chromium Projects}.
+
+\bibitem{multiProcGC}
+{Multi-process Architecture - The Chromium Projects}.
+
+\bibitem{firefoxIPC}
+{Multiprocess Firefox | Bill McCloskey's Blog on WordPress.com}.
+
+\bibitem{sandboxGC}
+{Sandbox - The Chromium Projects}.
+
+\bibitem{Crowley2010}
+M.~Crowley.
+\newblock {\em {Pro Internet Explorer 8 \& 9 Development: Developing Powerful
+  Applications for The Next Generation of IE}}.
+\newblock Apress, Berkely, CA, USA, 1st edition, 2010.
+
+\bibitem{fernandez2006methodology}
+E.~Fernandez, M.~Larrondo-Petrie, T.~Sorgente, and M.~VanHilst.
+\newblock A methodology to develop secure systems using patterns.
+\newblock {\em Chapter}, 5:107--126, 2006.
+
+\bibitem{fernandez2014security}
+E.~B. Fernandez, R.~Monge, and K.~Hashizume.
+\newblock {Building a security reference architecture for cloud systems}.
+\newblock In {\em Proceedings of the WICSA 2014 Companion Volume}, page~3. ACM,
+  2014.
+
+\bibitem{Fernandez2011}
+E.~B. Fernandez, N.~Yoshioka, H.~Washizaki, J.~Jurjens, M.~VanHilst, and
+  G.~Pernu.
+\newblock {\em {Using Security Patterns to Develop Secure Systems}}.
+\newblock IGI Global, 2011.
+
+\bibitem{fernandez2013security}
+E.~Fernandez-Buglioni.
+\newblock {\em Security patterns in practice: designing secure architectures
+  using software patterns}.
+\newblock John Wiley \& Sons, 2013.
+
+\bibitem{gamma1994design}
+E.~Gamma, R.~Helm, R.~Johnson, and J.~Vlissides.
+\newblock {\em Design patterns: elements of reusable object-oriented software}.
+\newblock Pearson Education, 1994.
+
+\bibitem{Godfrey2000}
+M.~W. Godfrey and E.~H.~S. Lee.
+\newblock {Secrets from the Monster: Extracting Mozilla's Software
+  Architecture}.
+\newblock {\em In Proc. of 2000 Intl. Symposium on Constructing software
+  engineering tools (CoSET 2000}, pages 15--23, 2000.
+
+\bibitem{preprint-grosskurth-browser-archevol}
+A.~Grosskurth and M.~W. Godfrey.
+\newblock {Architecture and evolution of the modern web browser}.
+\newblock URL: {\tt http://grosskurth.ca/papers.html\#browser-archevol}. Note:
+  submitted for publication.
+
+\bibitem{2005-grosskurth-browser-refarch}
+A.~Grosskurth and M.~W. Godfrey.
+\newblock A reference architecture for web browsers.
+\newblock pages 661--664, 2005.
+\newblock URL: {\tt http://grosskurth.ca/papers.html\#browser-refarch}.
+
+\bibitem{535061}
+M.~Larrondo-Petrie, K.~Nair, and G.~Raghavan.
+\newblock A domain analysis of web browser architectures, languages and
+  features.
+\newblock In {\em Southcon/96. Conference Record}, pages 168--174, Jun 1996.
+
+\bibitem{Lwin2009}
+A.~Systems and N.~Lwin.
+\newblock {Agent Based Web Browser}.
+\newblock {\em 2009 Fifth International Conference on Autonomic and Autonomous
+  Systems}, 2009.
+
+\bibitem{Vrbanec2013}
+T.~Vrbanec.
+\newblock {The evolution of web browser architecture}.
+\newblock pages 472--480, 2013.
+
+\end{thebibliography}

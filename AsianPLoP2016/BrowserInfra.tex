@@ -1,0 +1,337 @@
+% This is "sig-alternate.tex" V2.1 April 2013
+% This file should be compiled with V2.5 of "sig-alternate.cls" May 2012
+%
+% This example file demonstrates the use of the 'sig-alternate.cls'
+% V2.5 LaTeX2e document class file. It is for those submitting
+% articles to ACM Conference Proceedings WHO DO NOT WISH TO
+% STRICTLY ADHERE TO THE SIGS (PUBS-BOARD-ENDORSED) STYLE.
+% The 'sig-alternate.cls' file will produce a similar-looking,
+% albeit, 'tighter' paper resulting in, invariably, fewer pages.
+%
+% ----------------------------------------------------------------------------------------------------------------
+% This .tex file (and associated .cls V2.5) produces:
+%       1) The Permission Statement
+%       2) The Conference (location) Info information
+%       3) The Copyright Line with ACM data
+%       4) NO page numbers
+%
+% as against the acm_proc_article-sp.cls file which
+% DOES NOT produce 1) thru' 3) above.
+%
+% Using 'sig-alternate.cls' you have control, however, from within
+% the source .tex file, over both the CopyrightYear
+% (defaulted to 200X) and the ACM Copyright Data
+% (defaulted to X-XXXXX-XX-X/XX/XX).
+% e.g.
+% \CopyrightYear{2007} will cause 2007 to appear in the copyright line.
+% \crdata{0-12345-67-8/90/12} will cause 0-12345-67-8/90/12 to appear in the copyright line.
+%
+% ---------------------------------------------------------------------------------------------------------------
+% This .tex source is an example which *does* use
+% the .bib file (from which the .bbl file % is produced).
+% REMEMBER HOWEVER: After having produced the .bbl file,
+% and prior to final submission, you *NEED* to 'insert'
+% your .bbl file into your source .tex file so as to provide
+% ONE 'self-contained' source file.
+%
+% ================= IF YOU HAVE QUESTIONS =======================
+% Questions regarding the SIGS styles, SIGS policies and
+% procedures, Conferences etc. should be sent to
+% Adrienne Griscti (griscti@acm.org)
+%
+% Technical questions _only_ to
+% Gerald Murray (murray@hq.acm.org)
+% ===============================================================
+%
+% For tracking purposes - this is V2.0 - May 2012
+
+\documentclass{sig-alternate-05-2015}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+% Copyright
+\setcopyright{acmcopyright}
+%\setcopyright{acmlicensed}
+%\setcopyright{rightsretained}
+%\setcopyright{usgov}
+%\setcopyright{usgovmixed}
+%\setcopyright{cagov}
+%\setcopyright{cagovmixed}
+
+
+% DOI
+\doi{10.475/123_4}
+
+% ISBN
+\isbn{123-4567-24-567/08/06}
+
+%Conference
+\conferenceinfo{AsianPLoP 2016}{February 24-26, Taiwan.}
+
+%\acmPrice{\$15.00}
+
+%
+% --- Author Metadata here ---
+\conferenceinfo{WOODSTOCK}{'97 El Paso, Texas USA}
+%\CopyrightYear{2007} % Allows default copyright year (20XX) to be over-ridden - IF NEED BE.
+%\crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
+% --- End of Author Metadata ---
+
+\title{Browser Infrastructure Pattern}
+%\subtitle{[Extended Abstract]
+%\titlenote{A full version of this paper is available as
+%\textit{Author's Guide to Preparing ACM SIG Proceedings Using
+%\LaTeX$2_\epsilon$\ and BibTeX} at
+
+
+\numberofauthors{3} %  in this sample file, there are a *total*
+% of EIGHT authors. SIX appear on the 'first-page' (for formatting
+% reasons) and the remaining two appear in the \additionalauthors section.
+%
+
+\author{
+\alignauthor
+Paulina Silva\\
+  \affaddr{Departamento de Informática}\\
+  \affaddr{Universidad Técnica Federico Santa María}\\
+  \affaddr{Valparaíso, Chile}\\
+  \email{pasilva@alumnos.inf.utfsm.cl}
+% 2nd. author
+\alignauthor
+Raúl Monge\\
+  \affaddr{Departamento de Informática}\\
+  \affaddr{Universidad Técnica Federico Santa María}\\
+  \affaddr{Valparaíso, Chile}\\
+  \email{rmonge@inf.utfsm.cl}
+% 3rd. author
+\alignauthor 
+Eduardo Fernandez\\
+  \affaddr{Department of Computer \(\&\) Electrical Engineering and Computer Science}\\
+  \affaddr{Florida Atlantic University}\\
+  \affaddr{Florida, USA}\\
+  \email{ed@cse.fau.edu}
+}
+
+\maketitle
+\begin{abstract}
+Currently a lot of software developments create systems that are connected to the Internet, which allows to add functionality within a system and facilities to their \textit{Stakeholders}. This leads to depend in a \textit{web client}, as the \textit{Web Browser}, which allows access to services, data or operations that the system delivers. Nevertheless, the Internet influences the attack surface of the new system, and unfortunately many stakeholders and developers are not aware of the risks they are exposed. The lack of Security Education in Software developers of a project, the low and scattered documentation of each browser (and standardization), could become a great flaw in big architectural developments which depends on the browser to do their services. A Reference Architecture of the \textit{Web Browser}, using Architectural Patterns, could be a base for understanding the security mechanisms and its architecture, which interacts with a bigger web system. This would give an unification of ideas and terminology, giving a holistic view regardless the implementation details for both the browser and the system it communicates to. We developed a Browser Infrastrcture Pattern which describes the infrastructure to allow the communication between a Web Client and Server in the Internet. With this work we propose an Architectural Pattern as the first piece of our Reference Architecture for the Web Browser.
+\end{abstract}
+
+
+%
+% The code below should be generated by the tool at
+% http://dl.acm.org/ccs.cfm
+% Please copy and paste the code instead of the example below. 
+%
+\begin{CCSXML}
+<ccs2012>
+ <concept>
+  <concept_id>10010520.10010553.10010562</concept_id>
+  <concept_desc>Computer systems organization~Embedded systems</concept_desc>
+  <concept_significance>500</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10010520.10010575.10010755</concept_id>
+  <concept_desc>Computer systems organization~Redundancy</concept_desc>
+  <concept_significance>300</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10010520.10010553.10010554</concept_id>
+  <concept_desc>Computer systems organization~Robotics</concept_desc>
+  <concept_significance>100</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10003033.10003083.10003095</concept_id>
+  <concept_desc>Networks~Network reliability</concept_desc>
+  <concept_significance>100</concept_significance>
+ </concept>
+</ccs2012>  
+\end{CCSXML}
+
+\ccsdesc[500]{Computer systems organization~Embedded systems}
+\ccsdesc[300]{Computer systems organization~Redundancy}
+\ccsdesc{Computer systems organization~Robotics}
+\ccsdesc[100]{Networks~Network reliability}
+
+
+
+
+\keywords{Web Browser, Web Client, Modular Architecture, Browser Architecture, Reference Architecture, Browser Infrastructure pattern}
+
+\section*{Introduction}
+
+\section*{Background}
+We present in this section patterns as well as their benefits. We also describe how to build more secure reference architectures by using security patterns
+
+Patterns are encapsulated solutions to recurrent problems and define a way to express requirements and solutions concisely, as well as providing a communication vocabulary for designers \cite{gamma1994design}. The description of architectures using patterns makes them easier to understand, provides guidelines for design and analysis, and can define a way of making their structure more secure.
+
+Security patterns describe solutions to the problems of controlling (stopping or mitigating) a set of specific threats through some security mechanism, defined in a given context. The most common use of security patterns is to help application developers -who are not security experts- to add security in their designs. Patterns of this kind also are used to reinforce a legacy system.
+
+The aim of a Reference Architecture is to provide a guide for developer, who are non security experts, in the development of Architectures for concrete versions of the system or to extend it. With the use of Architectural Patterns we describe the Browser Architecture as a Reference Architecture (RA). A RA is created by capturing the essentials of existing architectures and by taking into account future needs and opportunities, ranging from specific technologies, patterns and business models. It can also be derived from domain models.
+
+A Secure Reference Architecture is a Reference Architecture where security services have been added in appropriate places to provide some degree of security for a system environment. The basic approach that we will use to build a Secure Reference Architecture is by applying a systematic methodology from [\cite{fernandez2006methodology,Fernandez2011}, which can be used as a guideline to build secure web browsers systems and/or to evaluate their security levels. We started to build a Reference Architecture as a first step, in a student work, and now we are trying to improve it using security patterns and misuse patterns. By checking if a threat, expressed as a misuse pattern, can be stopped or mitigated in the secure reference architecture, we can evaluate its level of securityx
+
+In this work, a Browser Infrastructure Pattern is presented as a first step in to the process of developing a Secure Reference Architecture for the Web Browsr. Threat analysis and security patterns was done in our previous student work (graduation report), and we will improve it in the constrution of the SRA.
+
+\section*{Related Work}
+  \subsection*{Reference Architecture of the Browser}
+  We tried to find studies by searching relevant keywords in Scopus or doing a forward snowballing from a work \cite{2005-grosskurth-browser-refarch} we knew. Unfortunately to the date there are a few works related to the construction of a Reference Architecture for the Web Browser.
+
+  In the study made by Larrondo-Petrie et. at \cite{535061} a web browser analysis is done with the goal of obtaining a Domain Model, and Object Model and a Feature Tree which described the structure and functionality a browser had. The domain, explained in th paper, is a distintive set of objects which act according to rules and policies that characterize the Domain. The used methodology obtains the domain is called Object Oriented Analyis. To identify
+
+  FALTA TRADUCIR ESTO!!!\\
+  El dominio, según explica el trabajo, es un set distintivo de objetos que se comportan de acuerdo a reglas y política que caracterizan el Dominio. El Análisis de Dominio es realizado para identificar dominios y cómo éstos interactuan con otros. La metodología usada para obtener los Dominios es el \textit{Object Oriented Analyis}. Además de identificar, se clasifican estos dominios de acuerdo a su rol en el sistema terminado como: Dominio de Aplicación, Dominio de Servicio, Dominio de Arquitectura y Dominio de Implementación. El Modelo de Objetos sirve para entregar más detalles, un resumen general de las Entidades del \textit{Web Browser} y sus relaciones. El \textit{Feature Tree} pretende entregar detalles sobre los aspectos funcionales de la aplicación. El Modelo planteado, śegún el artículo, debería ser útil para los Desarrolladores de Software que construyen \textbf{Aplicaciones Web basadas en el uso del \textit{Browser}}.  Este estudio se encuentra bastante lejos de lo que se quiere hacer en este trabajo, pero sirve para obtener un transfondo de lo que sucede en el \textit{\textit{Web Browser}}, aún cuando la información esté muy desactualizada.
+
+  En el trabajo de Grosskurth et al. \cite{2005-grosskurth-browser-refarch, preprint-grosskurth-browser-archevol} se utiliza una herramienta de ingeniería inversa, para obtener una arquitectura de referencia de muy alto nivel en base a dos navegadores open-source: Mozilla y Konqueror. Lo obtenido captura los subsistemas fundamentales comunes a los sistemas del mismo dominio, así como las relaciones entre estos subsistemas. En esta arquitectura se identifican los siguientes subcomponentes: Interfaz Usuaria, Persistencia de Datos, Browser Engine, Rendering Engine, Networking, Interprete de Javascript, XML Parser y Display Backend. Se menciona que estos componentes están estrechamente integrados (high coupling) con el Rendering Engine, lo cual tiene sentido en la arquitectura monoproceso que poseen Mozilla y Konqueror; es una decisión de diseño muy común en los \textit{Browser} de la época. Al identificar estos componentes, se comenta que esto podría servir tanto en el diseño y durante la mantención de un sistema, pues mejora el entendimiento de ésta al ayudar a analizar los trade-off entre diferentes opciones de diseño; o también puede servir como un \textit{template} para obtener nuevos diseños. Una vez obtenida la arquitectura conceptual, se inició una evaluación de ésta al comparar las arquitecturas concretas de cada browser open-source, extraídas desde el código fuente, para ver qué tanto el modelo conceptual era cercano a la realidad; la constante comparación permitió ademas refinar la Arquitectura de Referencia. Los browsers usados para validar fueron: Epiphany, Safari, Lynx, Mosaic y Firefox. Si bien la arquitectura presentada entrega bastante información a alto nivel, no desarrolla más que esa capa de abstracción, además parece ser que depende también de la implementación usada en la herramienta de ingeniería inversa. 
+
+  En el documento \cite{Godfrey2000} realizado en el año 2000, se describe la experiencia realizada al extender el trabajo del proyecto TAXFORM. Usando PBS, una herramienta de Ingeniería Inversa, se extrajo la arquitectura de software del navegador Mozilla, con el objetivo de entender la estructuración de sus componentes; además de crear vistas arquitecturales de alto nivel del sistema. El modelo arquitectónico obtenido contiene 11 subsistemas de alto nivel, de éstos los que más se destacaron fue el \textit{HTML Layout}, la implementación de herramientas y el código de la interfaz de usuario. En el año en que se lleva a cabo este estudio (2000), se menciona que la arquitectura ha decaído significativamente en muy poco tiempo, o su arquitectura no fue planificada cuidadosamente desde el comienzo; parte de lo anterior, el autor cree que es secuela de la \textit{Guerra de Navegadores}. Si bien el trabajo ayuda a entender un poco la estructura detrás del navegador, este trabajo es muy antiguo y la versión más actual del navegador ha cambiado bastante. Además, lamentablemente el enfoque de este estudio no es intentar entender lo que hace cada subsistema, si no que es la implementación de la herramienta misma para obtener la arquitectura de software del browser seleccionado.
+
+  %Lwin2009 - Agent Based Web Browser
+  En \cite{Lwin2009} se propone un \textit{Browser} llamado Anfel SOFT, donde gracias al uso de Inteligencia Artificial, crea agentes que permiten mejorar la experiencia del usuario. El trabajo asegura que el browser será capaz de aprender el comportamiento de navegación del usuario, y guiará al usuario en su navegación para que ésta sea lo más efectiva posible. El paper obtiene los subsistemas que se pueden encontrar en un browser de la misma manera que lo realiza \cite{2005-grosskurth-browser-refarch}. Si bien la arquitectura que muestra refleja parte de lo visto en los 3 browsers escogidos en este estudio, no da detalles acerca de cada subsistema identificado. Además la Arquitectura de Referencia que entrega es la misma vista en \cite{2005-grosskurth-browser-refarch, preprint-grosskurth-browser-archevol}, y a pesar que identifica otros posibles componentes, no agrega nada nuevo.
+
+  Podemos ver en los trabajos que algunos construyen una Arquitectura de Referencia basada en técnicas de Ingeniería Inversa. En cada uno de ellos el trabajo ha sido a muy alto nivel y la descripción de los subcomponetes del sistema es mínima. Si bien explican las relaciones entre éstos, no dan un mayor entendimiento en cómo se comportan en ciertas situaciones. En este trabajo se espera profundizar un poco más en la abstracción obtenida, incluyendo información de tanto los casos de uso del \textit{Browser} como las actividades que se realizan con otros usuarios. Desafortunadamente para esta memoria, no existe mucha literatura sobre el desarrollo de una Arquitectura de Referencia del \textit{Browser}, y de lo que hay, el trabajo más actual es el realizado por \cite{Lwin2009} en el año 2009.
+
+  \subsection*{Secure Software Development}
+  La literatura que habla de la construcción de \textit{Secure Software} o Software Seguro, indica que los practicantes de Desarrollo de Software deben entender, en gran medida, los problemas de seguridad que podrían llegar a ocurrir en sus sistemas. No basta con saber cómo unir las piezas, no basta con que cada pieza de por si sea segura, si los componentes del sistema no actuan de forma coordinada, probablemente éste no será seguro \cite{fernandez2013security}, dado que la seguridad es una Propiedad Sistémica que necesita ser vista de manera holística y al inicio del proceso.
+
+
+
+\section*{Browser Infrastructure Pattern}
+
+  \subsection*{Intent}
+  The Browser Infrastructure Pattern allows the request of a web resource in the Internet to a \textbf{Browser User} (BU), which is a user who uses a Browser within a \textbf{Host}. The Pattern lets visualize the communication between the components that make the Web Browser and the Provider (i.e, a Server), to whom the request is made.
+
+  \subsection*{Example}
+  Within the Host it is possible a lack of resources that a Host user may need. The request of external services or resources is the main reason of the Internet existence. This kind of task it is possible to do in a lot of ways, it all depends on what the Provider wish to deliver to others.
+  
+  \subsection*{Context}
+  Browser User is a Host user which uses a Browser, and the Provider is an entity which can be accessed in the Internet. The contact between each other is normally done by Web Applications or Servers which communicats using the HTTP protocol. A Browser let the Browser User access and visualize the external resources a Provider has and a Browser User may need.
+  
+  \subsection*{Problem}
+  Some Browser Users could need resources from a Providr, but the user maybe will need them in a special format o they should be presented in the screen of the computer to be visualized. In this case, if an appropiate tools is not used, the resource could not be helpful if it can not be used correctly. How can the Host and Provider be prepared to this situation? The solution to this problem must resolve the following problems:
+  \begin{itemize}
+    \item Transparency: the user behind the Host should not be worried of what it is done, while a request to a Provider has been issued. 
+    \item Stability: The \textit{Browser} must be capable of working, evn if a web page had a problem to be seen or there is an internal problem.
+    \item Isolation: Each \textit{request} must not interrupt others.
+    \item Heterogeneity: It does not matter the type of Provider to which the Browser communicats, it should be possible to interact with whatever type is it, and also it should be capable to show adequately the content of the obtained resource.
+    \item Availability: The user of the Host, should be capable to requst at any time.
+  \end{itemize}
+
+  \subsection*{Solution}
+  A \textit{Web Browser} can satisfy the request a user of the Host by the Browser User, either by one or more instances of the Browser User, which allows for a variety of options to browse in the internet. A Browser must be able to deliver a fast and stable navigation, without affecting each accesed sites.
+
+    \subsubsection*{Structure}
+    The Browser Client (BC) is an entity that represents the main process of a Web Browser and comprises the minimum number of componenets which constitute a Browser. A Host (H) houses and interacts with the BC. H is composed mainly by Hardware (HW) and a Oprative System (OS). At the same time, a Provider (P) has also HW and SO, but additionally has a Web Server (WS) which is responsabile for receiving external requests. Browser Client (BC), Sandbox (S), GPU Instance (GPUI) y Plugin are instances of Process (Pr), which resides within a H. Most Browsers use a central component to do operations that need to affect the Host of the Browser. Figure \ref{fig:BIPatt} shows the Class diagram for the Browser Infrastructure Patter. For each resource a BC rquests, a Sandbox hosting each Web Content Renderer (WBR) instance created will allow the browsing and visualization of the resource obtained. The BC componenet acts as a broker for the requests comming from the Sandbox (which host a WBR), this allows a fine control over the sent messages (using PC/IPDL/COM) between communicating process. If there is a need for the H resources, a GPU Instance and Plugins are elements which need to communicate directly with the Sandbox, which in its instead will ask to the BC for resources. A user who makes a request to a Internet resources using a Web Browser, will be called Browser User (BU). BU uses BC to make requests to one o more Providers, where the latter uses a Web Server (WS) to receive requests and reply back (Figura \ref{fig:BIPatt}).
+
+    \begin{figure*}[h!t]
+      \centering
+      \includegraphics[scale=0.55]{figures/browserInfraPattern_v3.jpg}
+      \caption{High-level Componenets of the \textit{Browser}.}
+      \label{fig:BIPatt}
+    \end{figure*}
+
+    \subsubsection*{Dynamics}
+    Some use cases are the following:
+    \begin{itemize}
+      \item Make Request (actor: Browser User)
+      \item Cancel Request (actor: Browser User)
+      \item Save Resoruce (actor: Browser User)
+      \item Receive Request (actor: Provider)
+      \item Ask for Resources (actor: Host)
+    \end{itemize}
+    We show in detail Make Request below. (Figura \ref{fig:SecReq}):
+    \subsubsection*{Summary} A Browser User needs a URL resource which can be obtained by using the HTTP protocol, as required by the Provider. The Browser Client will be used by a User Browser to perform the display of the URL resource.
+    \subsubsection*{Actor} Browser User
+    \subsubsection*{Preconditions} The Host must have one or more Browser Client for the Host user. In addition to being connected to a network or the Internet. The Provider you want to contact must also be available.
+    \subsubsection*{Description}
+    Note: Messages between the Browser Client and Sandbox can be both synchronous and asynchronous \cite{firefoxIPC,GCIPC} . We not specify in great detail, because what matters in this work will be the origin and destination of the message (is not within the scope to see synchronization).
+      \begin{enumerate}
+        \item A Browser User requires a browser to access a URL for some resource in a Provider, this is done by using an already instanced Browser Client in the Host. Inside the Sandbox there is an instance of Web Content Renderer pattern.
+        \item The Sandbox requires the Host resources to obtain what is behind the URL. A request is made from the Sandbox to the Browser Client through a communication channel such as IPC, IPDL or COM (depending on the \textit{Browser} used), using a limited API to communicate to a process of greater privilege.
+        \item The Browser Client receives the request, and verifies through its policy engine if the Sandbox action is allowed.
+
+        \item If the Sandbox action is permitted, the Network API within the Browser Client, to obtain a host resources (via system calls), it is used. The Browser Client communicates internally with the Host, and the latter must review its policies to ensure that the Browser Client has the privilege of making a request to the Host resources.
+        \item If access to the resource is allowed, the Browser Client may \textit{request} through the Network API. If the \textit{request} is not a \textit{pre-flight}, the Provider will receive the \textit{request} and work on it.
+        \item The Provider will send a \textit{response} to the \textit{request} received. Depending on how it is implemented the Browser Client, it may or not have to wait for the response (synchronous or asynchronous) of the Provider.
+        \item Once the response obtained it is stored in the cache, unless directed to do other way so.
+        \item The response to the \textit{request} is sent by a communication channel to the Sandbox which originated and then the Web Content Renderer. If a response was received by the \textit{request}, the Web Content Renderer is ready to prepare the parsing of the website or use a plugin or GPU to support the display of the resources obtained by the URL. Otherwise, the Web Content Renderer within the Sandbox will create an error page.
+        \item The \textit {Renderer} obtains a bitmap to be sent to the Client Browser, so that the Host can present it. Before doing this, the BC should check that the Sandbox which host the Web Content Renderer possess the permissions to do so.
+        \item If the permissions are sufficient, the Browser Client sends the bitmap, as a parameter, in the system call made to the Host. Finally, H must check that the system call made by the Browser Client has the required permissions.
+      \end{enumerate}
+    \subsubsection*{Alternative flow} 
+    \begin{itemize}
+    \item The Provider is not available.
+    \item The resource pointed by the URL does not exists.
+    \item The request is cancelled.
+      \end{itemize}
+    \subsubsection*{Postconditions} The \textit{Browser} receives the resource indicated by the URL and is displayed by the peripheral device output to the Host user.
+      \begin{figure*}[h!t]
+          \centering
+          \includegraphics[scale=0.61]{figures/requestResource_v2.jpg}
+          \caption{Diagrama de Secuencia: Realizar Request.}
+          \label{fig:SecReq}
+      \end{figure*}
+
+  \subsection*{Implementation}
+  \begin{itemize}
+    \item The sandbox may be implemented in various ways. Google Chrome \cite{sandboxGC} is based on not reinventing the wheel and use the protection mechanisms which offers the OS (e.g, Windows or Linux) Host to protect the user. This prevents to any process the access to the file system, and having an restrictive API in the web Content Renderer. Google Chrome, Firefox and Internet Explorer assume that Sandboxs are processes that should be governed by the principle of least privilege (least privilege). The minimum configuration Sandbox include 2 processes: The privileged process or Broker who is represented by the Browser Client, and the processes hosted by Sandboxes or targets.
+    \item To enforce the Same Origin Policy, Google Chrome, Firefox and Internet Explorer use different schemes; for example: Google Chrome leaves his work to the Renderer (Web Content Renderer in this case) to leave isolated pages/resources from various sites.
+  \end{itemize}
+
+  \subsection*{Consequences}
+  The Browser Infrastructure pattern provides the following benefits:
+  \begin{itemize}
+    \item Transparency: The user navigation is done almost automatically, only in rare cases the user will have to make a decision on the resource asked.
+    \item Stability: Because the Browser Client, Sandbox, and GPU Instance Plugin are independent Host processes, the failure of one will not generate problems in other (crash, memory corruption, etc.).
+    \item Isolation: Depending on the type of isolation you can separate the different requests, so they do not interfere with each other, unless it is desired.
+    \item Heterogeneity: Because each Browser Client tries to follow the standards of the W3C \cite{w3c}, every page that follows these guidelines can be viewed, as well as other resources.
+    \item Availability: Each process is independent and has its own thread of execution, these were specifically created to help to maintain the User Interface smooth.
+  \end{itemize}
+  At the sam time, this pattern has the following liabilities:
+  \begin{itemize}
+    \item Since independent processes are used to browse a resource (depending on the scheme using the browser), it is possible that a lot of resources of the Host are to be used to keep everything open.
+    \item Provider who have not met the specifications of the W3C, their resource ar displayed incorrectly by the Web Browser.
+  \end{itemize}
+
+  \subsection*{Example Resolved}
+With the given pattern it is now possible to navigate smoothly to all resources on the Internet we want. It is possible to provide through the isolation of the components: speed, security and stability. The Browser User will only concern about the navigation, unless it is required for its explicit permission to enter certain Host resources that are privileged (e.g, the file system). Each Host user can use the Browser Client they want, because each one is isolated by using separate processes.
+  \subsection*{Known Uses}
+  \begin{itemize}
+    \item Currently, the separation of the components of the \textit{Browser} in various processes, with different levels of access, is called as Modular Architecture \cite{Vrbanec2013}. This enables the separation of concerns in the browser, which gives greater stability, isolation, safety and speed.
+    \item Google Chrome is based on the modular architecture, where each Renderer Process communicates with the Browser Kernel \cite{multiProcGC}. Internet Explorer, a proprietary browser, does not give much information about its structure or details of its implementation; \cite{Crowley2010} talks about Loosely-Coupled architecture \cite{IE8-LCIE} and its components, but without going into much detail. Firefox, meanwhile has two implementations: monoprocess and multiprocess/modular. Electrolysis is the name of the modular architecture being implemented, but has not yet been fully completed.
+  \end{itemize}
+
+  \subsection*{Related Patterns}
+  \begin{itemize}
+    \item El patrón Web Content Renderer, el cuál está en proceso de desarrollo, representa el subsistema dentro del Sandbox que permite realizar el parsing del \textit{resource} o recurso obtenido por medio de una petición.
+    \item El patrón Browser Kernel, también en desarrollo, representa el subsistema que representa el navegador Web. Este componente actua como un Reference Monitor \cite{fernandez2013security} para todas las solicitudes que el Renderer llegara a necesitar.
+    \item El Sandbox se comunica con el Browser Client siguiendo un patrón como el que indica el Policy Authorization \cite{fernandez2013security}. Por cada petición del Renderer, el Sandbox tendrá el acceso si las políticas que el Browser Client permiten tal acción.
+  \end{itemize}
+
+\section*{Conclusions}
+Un navegador Web pareciera ser un Software de mediana complejidad para tanto usuarios como desarrolladores sin experiencia en seguridad, pero lamentablemente esta pieza de Software permite realizar una variadad de vectores de ataque, tanto en un usuario usándolo como en el sistema con el que interactúa. Por lo tanto es importante comprender su estructura y como éste interactúa con Stakeholders internos como externos.
+
+Es de esperarse que en el futuro la mayoría de los \textit{Web Browser} tomen forma de una Arquitectura Modular. Por lo tanto, es importante que los desarrolladores conozcan los procesos internos del \textit{Web Browser} al momento de desarrollar un sistema que se comunicará con éste. Tanto la Arquitectura de Referencia como el patrón de Mal Uso presentados, apuntan a entregar el conocimiento básico de los componentes e interacciones entre el \textit{Web Browser} y un proveedor de recursos externo; así como también de las amenazas que existen.
+
+Construcción del primer Patrón Arquitectural sobre la infraestructura del \textit{Web Browser}, para poder entender de manera holística los componentes, interacciones y relaciones. Una parte de la Arquitectura de Referencia ha sido construída, a través de la abstracción del Patrón Browser Infrastructure. Además se ha conseguido caracterizar los Stakeholders y uno de los caso de uso más importantes. De lo que tenemos por conocido, esta es la segunda Arquitectura de Referencia construída del \textit{Browser}. 
+
+El trabajo propuesto permite comprender mejor, por medio de la Arquitectura de Referencia parcialmente construída, tanto componentes como amenazas existentes. Además como no está sujeto a implementaciones específicas, es posible generalizar ciertos resultados en otros Browsers.
+
+
+\section*{Future Work}
+El trabajo futuro que se realizará para obtener el grado de Magister, irá relacionado a la creación de una Arquitectura de Referencia de seguridad del \textit{Web Browser}, utilizando la misma metodología presentada acá. Otros patrones relacionados al Patrón Browser Infrastructure serán obtenidos para así completar la AR ya iniciada, como por ejemplo el patrón Web Content Renderer y Browser Kernel. Un ejemplo del tipo de trabajo que se pretende realizar puede ser vista en \cite{fernandez2014security}, donde este estudio realiza actividades para poder construir software seguro y evaluar los niveles de seguridad de un sistema ya construído.
+
+Se planea construir más Patrones de Mal Uso, para el Patrón Browser Infrastructure para continuar con el estudio de amenazas posibles dentro del \textit{Browser}, como una manera de educar a los Desarrolladores y Stakeholders de los peligros existentes. Al mismo tiempo estos patrones permitirán la construcción de esta AR de seguridad. En esta misma dirección, además de encontrar las amenazas posibles de existir en el sistema, se necesita encontrar las contramedidas o defensas de seguridad que permitan evitar o preveer esas amenazas a través de Patrones de Seguridad sobre la Arquitectura de Referencia construída. Lo anterior es posible de realizar bajo el mismo ejercicio ya realizado en este trabajo, buscando amenazas sobre cada acción realizada en cada Caso de Uso del navegador.
+
+En cuanto a los \textit{Web Browser}, los ataques basados en Ingeniería Social parece que no disminuirán en un buen tiempo, pues no existen tecnologías actuales que puedan detectar en un \(100\%\) y sin falsos positivos los posibles peligros que pueden traer. Tecnologías como CAMP (Content-Agnostic Malware Protection) parecen ser parte de la solución, pero aún están lejos de ser perfectos.
+
+%ACKNOWLEDGMENTS are optional
+%\section{Acknowledgments}
+
+
+\bibliographystyle{abbrv}
+\bibliography{refTodas}  
+
+
+\end{document}
