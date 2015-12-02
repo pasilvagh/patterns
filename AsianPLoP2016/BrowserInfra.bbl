@@ -56,7 +56,7 @@ M.~W. Godfrey and E.~H.~S. Lee.
 \newblock {\em In Proc. of 2000 Intl. Symposium on Constructing software
   engineering tools (CoSET 2000}, pages 15--23, 2000.
 
-\bibitem{preprint-grosskurth-browser-archevol}
+\bibitem{preprint-Grosskurth-browser-archevol}
 A.~Grosskurth and M.~W. Godfrey.
 \newblock {Architecture and evolution of the modern web browser}.
 \newblock URL: {\tt http://grosskurth.ca/papers.html\#browser-archevol}. Note:
@@ -84,5 +84,9 @@ A.~Systems and N.~Lwin.
 T.~Vrbanec.
 \newblock {The evolution of web browser architecture}.
 \newblock pages 472--480, 2013.
+
+\bibitem{w3c}
+W.~W. W.~C. W3C.
+\newblock About.
 
 \end{thebibliography}
