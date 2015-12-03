@@ -8,53 +8,66 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: refTodas.bib
+You're missing a field name---line 90 of file refTodas.bib
+ : 
+ : ,note={URL: {\tt http://grosskurth.ca/papers.html\#browser-refarch}}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 971 of file refTodas.bib
+ : 
+ : mendeley-groups = {Tesis},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "socEngineering"
 -- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--empty booktitle in 2005-grosskurth-browser-refarch
+Warning--empty journal in Labs2013
+Warning--empty journal in browSecPhish
+Warning--empty journal in rowSecSEMBlock
 Warning--empty journal in Yason
 Warning--empty year in Yason
 
 Done.
-You've used 23 entries,
+You've used 20 entries,
             4039 wiz_defined-function locations,
-            958 strings with 11747 characters,
-and the built_in function-call counts, 14179 in all, are:
-= -- 1154
-> -- 319
-< -- 89
-+ -- 164
-- -- 58
-* -- 682
-:= -- 2312
-add.period$ -- 47
-call.type$ -- 23
-change.case$ -- 24
-chr.to.int$ -- 207
-cite$ -- 26
-duplicate$ -- 1056
-empty$ -- 1185
-format.name$ -- 76
-if$ -- 3190
+            937 strings with 10807 characters,
+and the built_in function-call counts, 11311 in all, are:
+= -- 927
+> -- 257
+< -- 62
++ -- 129
+- -- 49
+* -- 557
+:= -- 1916
+add.period$ -- 41
+call.type$ -- 20
+change.case$ -- 20
+chr.to.int$ -- 135
+cite$ -- 25
+duplicate$ -- 876
+empty$ -- 915
+format.name$ -- 64
+if$ -- 2497
 int.to.chr$ -- 0
-int.to.str$ -- 23
-missing$ -- 184
-newline$ -- 112
-num.names$ -- 25
-pop$ -- 460
+int.to.str$ -- 20
+missing$ -- 154
+newline$ -- 103
+num.names$ -- 19
+pop$ -- 387
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1099
+skip$ -- 861
 stack$ -- 0
-substring$ -- 499
-swap$ -- 773
-text.length$ -- 20
+substring$ -- 326
+swap$ -- 612
+text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 23
-warning$ -- 3
-while$ -- 62
-width$ -- 25
-write$ -- 251
-(There were 3 warnings)
+type$ -- 20
+warning$ -- 5
+while$ -- 46
+width$ -- 22
+write$ -- 221
+(There were 2 error messages)
