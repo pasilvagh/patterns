@@ -53,8 +53,7 @@ B.~McCloskey, ``{Multiprocess Firefox}.'' [Online]. Available:
 
 \bibitem{GCIPC}
 \BIBentryALTinterwordspacing
-``{Inter-process Communication (IPC) - The Chromium Projects}.'' [Online].
-  Available:
+G.~Chromium, ``{Inter-process Communication (IPC)}.'' [Online]. Available:
   \url{https://www.chromium.org/developers/design-documents/inter-process-communication}
 \BIBentrySTDinterwordspacing
 
@@ -119,6 +118,8 @@ E.~Fernandez-Buglioni, \emph{Security patterns in practice: designing secure
   0.4em\relax John Wiley \& Sons, 2013.
 
 \bibitem{2005-grosskurth-browser-refarch}
-
+A.~Grosskurth and M.~W. Godfrey, ``A reference architecture for web browsers,''
+  2005, pp. 661--664, uRL: {\tt
+  http://grosskurth.ca/papers.html\#browser-refarch}.
 
 \end{thebibliography}

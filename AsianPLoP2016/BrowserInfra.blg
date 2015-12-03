@@ -8,62 +8,54 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: refTodas.bib
-You're missing a field name---line 90 of file refTodas.bib
- : 
- : ,note={URL: {\tt http://grosskurth.ca/papers.html\#browser-refarch}}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 -- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty journal in Yason
 Warning--empty year in Yason
 Warning--empty journal in Vrbanec2013
-Warning--empty author in 2005-grosskurth-browser-refarch
-Warning--empty title in 2005-grosskurth-browser-refarch
 Warning--empty booktitle in 2005-grosskurth-browser-refarch
-Warning--empty year in 2005-grosskurth-browser-refarch
 
 Done.
 You've used 18 entries,
             4039 wiz_defined-function locations,
-            896 strings with 9749 characters,
-and the built_in function-call counts, 7194 in all, are:
-= -- 471
-> -- 127
-< -- 23
-+ -- 67
-- -- 24
-* -- 307
-:= -- 1155
-add.period$ -- 35
+            902 strings with 9891 characters,
+and the built_in function-call counts, 7916 in all, are:
+= -- 544
+> -- 146
+< -- 32
++ -- 77
+- -- 27
+* -- 338
+:= -- 1267
+add.period$ -- 37
 call.type$ -- 18
-change.case$ -- 16
-chr.to.int$ -- 57
-cite$ -- 25
-duplicate$ -- 603
-empty$ -- 759
-format.name$ -- 28
-if$ -- 1583
+change.case$ -- 18
+chr.to.int$ -- 81
+cite$ -- 22
+duplicate$ -- 639
+empty$ -- 800
+format.name$ -- 32
+if$ -- 1754
 int.to.chr$ -- 0
 int.to.str$ -- 18
-missing$ -- 119
+missing$ -- 126
 newline$ -- 97
-num.names$ -- 12
-pop$ -- 409
+num.names$ -- 14
+pop$ -- 414
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 536
+skip$ -- 593
 stack$ -- 0
-substring$ -- 134
-swap$ -- 328
-text.length$ -- 4
+substring$ -- 193
+swap$ -- 376
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 5
 type$ -- 18
-warning$ -- 7
-while$ -- 21
+warning$ -- 4
+while$ -- 27
 width$ -- 20
-write$ -- 165
-(There was 1 error message)
+write$ -- 171
+(There were 4 warnings)
