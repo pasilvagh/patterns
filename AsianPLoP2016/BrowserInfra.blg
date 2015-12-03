@@ -8,54 +8,62 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: refTodas.bib
+You're missing a field name---line 90 of file refTodas.bib
+ : 
+ : ,note={URL: {\tt http://grosskurth.ca/papers.html\#browser-refarch}}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 -- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--empty booktitle in 2005-grosskurth-browser-refarch
 Warning--empty journal in Yason
 Warning--empty year in Yason
 Warning--empty journal in Vrbanec2013
+Warning--empty author in 2005-grosskurth-browser-refarch
+Warning--empty title in 2005-grosskurth-browser-refarch
+Warning--empty booktitle in 2005-grosskurth-browser-refarch
+Warning--empty year in 2005-grosskurth-browser-refarch
 
 Done.
-You've used 20 entries,
+You've used 18 entries,
             4039 wiz_defined-function locations,
-            917 strings with 10481 characters,
-and the built_in function-call counts, 9677 in all, are:
-= -- 691
-> -- 191
-< -- 47
-+ -- 101
-- -- 34
-* -- 424
-:= -- 1518
-add.period$ -- 41
-call.type$ -- 20
-change.case$ -- 21
-chr.to.int$ -- 120
-cite$ -- 24
-duplicate$ -- 767
-empty$ -- 941
-format.name$ -- 43
-if$ -- 2170
+            896 strings with 9749 characters,
+and the built_in function-call counts, 7194 in all, are:
+= -- 471
+> -- 127
+< -- 23
++ -- 67
+- -- 24
+* -- 307
+:= -- 1155
+add.period$ -- 35
+call.type$ -- 18
+change.case$ -- 16
+chr.to.int$ -- 57
+cite$ -- 25
+duplicate$ -- 603
+empty$ -- 759
+format.name$ -- 28
+if$ -- 1583
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 145
-newline$ -- 101
-num.names$ -- 16
-pop$ -- 456
+int.to.str$ -- 18
+missing$ -- 119
+newline$ -- 97
+num.names$ -- 12
+pop$ -- 409
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 732
+skip$ -- 536
 stack$ -- 0
-substring$ -- 288
-swap$ -- 480
-text.length$ -- 7
+substring$ -- 134
+swap$ -- 328
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 20
-warning$ -- 4
-while$ -- 36
-width$ -- 22
-write$ -- 189
-(There were 4 warnings)
+type$ -- 18
+warning$ -- 7
+while$ -- 21
+width$ -- 20
+write$ -- 165
+(There was 1 error message)

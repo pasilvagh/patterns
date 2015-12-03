@@ -40,44 +40,14 @@ E.~B. Fernandez, N.~Yoshioka, H.~Washizaki, J.~Jurjens, M.~VanHilst, and
   \url{http://www.igi-global.com/chapter/using-security-patterns-develop-secure/48405}
 \BIBentrySTDinterwordspacing
 
-\bibitem{2005-grosskurth-browser-refarch}
-A.~Grosskurth and M.~W. Godfrey, ``A reference architecture for web browsers,''
-  2005, pp. 661--664, uRL: {\tt
-  http://grosskurth.ca/papers.html\#browser-refarch}.
-
-\bibitem{535061}
-M.~Larrondo-Petrie, K.~Nair, and G.~Raghavan, ``A domain analysis of web
-  browser architectures, languages and features,'' in \emph{Southcon/96.
-  Conference Record}, Jun 1996, pp. 168--174.
-
-\bibitem{preprint-Grosskurth-browser-archevol}
-A.~Grosskurth and M.~W. Godfrey, ``{Architecture and evolution of the modern
-  web browser},'' uRL: {\tt
-  http://grosskurth.ca/papers.html\#browser-archevol}. Note: submitted for
-  publication.
-
-\bibitem{Godfrey2000}
-\BIBentryALTinterwordspacing
-M.~W. Godfrey and E.~H.~S. Lee, ``{Secrets from the Monster: Extracting
-  Mozilla's Software Architecture},'' \emph{In Proc. of 2000 Intl. Symposium on
-  Constructing software engineering tools (CoSET 2000}, pp. 15--23, 2000.
-  [Online]. Available:
-  \url{http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.42.9211}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Lwin2009}
-A.~Systems and N.~Lwin, ``{Agent Based Web Browser},'' \emph{2009 Fifth
-  International Conference on Autonomic and Autonomous Systems}, 2009.
-
-\bibitem{fernandez2013security}
-E.~Fernandez-Buglioni, \emph{Security patterns in practice: designing secure
-  architectures using software patterns}.\hskip 1em plus 0.5em minus
-  0.4em\relax John Wiley \& Sons, 2013.
+\bibitem{fernandez2014security}
+E.~B. Fernandez, R.~Monge, and K.~Hashizume, ``{Building a security reference
+  architecture for cloud systems},'' in \emph{Proceedings of the WICSA 2014
+  Companion Volume}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2014, p.~3.
 
 \bibitem{firefoxIPC}
 \BIBentryALTinterwordspacing
-``{Multiprocess Firefox | Bill McCloskey's Blog on WordPress.com}.'' [Online].
-  Available:
+B.~McCloskey, ``{Multiprocess Firefox}.'' [Online]. Available:
   \url{https://billmccloskey.wordpress.com/2013/12/05/multiprocess-firefox/\#ipc}
 \BIBentrySTDinterwordspacing
 
@@ -119,6 +89,18 @@ T.~Vrbanec, ``{The evolution of web browser architecture},'' pp. 472--480,
   \url{https://www.chromium.org/developers/design-documents/multi-process-architecture}
 \BIBentrySTDinterwordspacing
 
+\bibitem{FirefoxThreatModel}
+\BIBentryALTinterwordspacing
+``{Security/ProcessIsolation/ThreatModel}.'' [Online]. Available:
+  \url{https://wiki.mozilla.org/Security/ProcessIsolation/ThreatModel}
+\BIBentrySTDinterwordspacing
+
+\bibitem{featuresE10S}
+\BIBentryALTinterwordspacing
+``{Features/Security/Low rights Firefox - MozillaWiki}.'' [Online]. Available:
+  \url{https://wiki.mozilla.org/Features/Security/Low{\_}rights{\_}Firefox}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Crowley2010}
 M.~Crowley, \emph{{Pro Internet Explorer 8 \& 9 Development: Developing
   Powerful Applications for The Next Generation of IE}}, 1st~ed.\hskip 1em plus
@@ -131,9 +113,12 @@ M.~Crowley, \emph{{Pro Internet Explorer 8 \& 9 Development: Developing
   \url{http://blogs.msdn.com/b/ie/archive/2008/03/11/ie8-and-loosely-coupled-ie-lcie.aspx}
 \BIBentrySTDinterwordspacing
 
-\bibitem{fernandez2014security}
-E.~B. Fernandez, R.~Monge, and K.~Hashizume, ``{Building a security reference
-  architecture for cloud systems},'' in \emph{Proceedings of the WICSA 2014
-  Companion Volume}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2014, p.~3.
+\bibitem{fernandez2013security}
+E.~Fernandez-Buglioni, \emph{Security patterns in practice: designing secure
+  architectures using software patterns}.\hskip 1em plus 0.5em minus
+  0.4em\relax John Wiley \& Sons, 2013.
+
+\bibitem{2005-grosskurth-browser-refarch}
+
 
 \end{thebibliography}
