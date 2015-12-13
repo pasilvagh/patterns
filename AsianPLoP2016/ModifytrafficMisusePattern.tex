@@ -1,0 +1,306 @@
+% This is "sig-alternate.tex" V2.1 April 2013
+% This file should be compiled with V2.5 of "sig-alternate.cls" May 2012
+%
+% This example file demonstrates the use of the 'sig-alternate.cls'
+% V2.5 LaTeX2e document class file. It is for those submitting
+% articles to ACM Conference Proceedings WHO DO NOT WISH TO
+% STRICTLY ADHERE TO THE SIGS (PUBS-BOARD-ENDORSED) STYLE.
+% The 'sig-alternate.cls' file will produce a similar-looking,
+% albeit, 'tighter' paper resulting in, invariably, fewer pages.
+%
+% ----------------------------------------------------------------------------------------------------------------
+% This .tex file (and associated .cls V2.5) produces:
+%       1) The Permission Statement
+%       2) The Conference (location) Info information
+%       3) The Copyright Line with ACM data
+%       4) NO page numbers
+%
+% as against the acm_proc_article-sp.cls file which
+% DOES NOT produce 1) thru' 3) above.
+%
+% Using 'sig-alternate.cls' you have control, however, from within
+% the source .tex file, over both the CopyrightYear
+% (defaulted to 200X) and the ACM Copyright Data
+% (defaulted to X-XXXXX-XX-X/XX/XX).
+% e.g.
+% \CopyrightYear{2007} will cause 2007 to appear in the copyright line.
+% \crdata{0-12345-67-8/90/12} will cause 0-12345-67-8/90/12 to appear in the copyright line.
+%
+% ---------------------------------------------------------------------------------------------------------------
+% This .tex source is an example which *does* use
+% the .bib file (from which the .bbl file % is produced).
+% REMEMBER HOWEVER: After having produced the .bbl file,
+% and prior to final submission, you *NEED* to 'insert'
+% your .bbl file into your source .tex file so as to provide
+% ONE 'self-contained' source file.
+%
+% ================= IF YOU HAVE QUESTIONS =======================
+% Questions regarding the SIGS styles, SIGS policies and
+% procedures, Conferences etc. should be sent to
+% Adrienne Griscti (griscti@acm.org)
+%
+% Technical questions _only_ to
+% Gerald Murray (murray@hq.acm.org)
+% ===============================================================
+%
+% For tracking purposes - this is V2.0 - May 2012
+
+\documentclass{sig-alternate-05-2015}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+% Copyright
+\setcopyright{acmcopyright}
+%\setcopyright{acmlicensed}
+%\setcopyright{rightsretained}
+%\setcopyright{usgov}
+%\setcopyright{usgovmixed}
+%\setcopyright{cagov}
+%\setcopyright{cagovmixed}
+
+
+% DOI
+\doi{10.475/123_4}
+
+% ISBN
+\isbn{123-4567-24-567/08/06}
+
+%Conference
+\conferenceinfo{AsianPLoP 2016}{February 24-26, Taiwan.}
+
+%\acmPrice{\$15.00}
+
+%
+% --- Author Metadata here ---
+\conferenceinfo{WOODSTOCK}{'97 El Paso, Texas USA}
+%\CopyrightYear{2007} % Allows default copyright year (20XX) to be over-ridden - IF NEED BE.
+%\crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
+% --- End of Author Metadata ---
+
+\title{A Misuse Pattern for the Web Browser: Modification of traffic}
+%\subtitle{[Extended Abstract]
+%\titlenote{A full version of this paper is available as
+%\textit{Author's Guide to Preparing ACM SIG Proceedings Using
+%\LaTeX$2_\epsilon$\ and BibTeX} at
+
+
+\numberofauthors{3} %  in this sample file, there are a *total*
+% of EIGHT authors. SIX appear on the 'first-page' (for formatting
+% reasons) and the remaining two appear in the \additionalauthors section.
+%
+
+\author{
+\alignauthor
+Paulina Silva\\
+  \affaddr{Departamento de Informática}\\
+  \affaddr{Universidad Técnica Federico Santa María}\\
+  \affaddr{Valparaíso, Chile}\\
+  \email{pasilva@alumnos.inf.utfsm.cl}
+% 2nd. author
+\alignauthor
+Raúl Monge\\
+  \affaddr{Departamento de Informática}\\
+  \affaddr{Universidad Técnica Federico Santa María}\\
+  \affaddr{Valparaíso, Chile}\\
+  \email{rmonge@inf.utfsm.cl}
+% 3rd. author
+\alignauthor 
+Eduardo B. Fernandez\\
+  \affaddr{Department of Computer \(\&\) Electrical Engineering and Computer Science}\\
+  \affaddr{Florida Atlantic University}\\
+  \affaddr{Florida, USA}\\
+  \email{fernande@fau.edu}
+}
+
+\maketitle
+\begin{abstract}
+Currently most of software development creates systems that are connected to the Internet, which allows to add functionality within a system and facilities to their \textit{Stakeholders}. This leads to depend on a \textit{web client}, such as the \textit{Web Browser}, which allows access to services, data or operations that the system delivers. However, the Internet influences the attack surface of the system, and unfortunately many stakeholders and developers are not aware of the risks to which they are exposed. The lack of security education of software developers, the scarce and scattered documentation for browsers (and standardization), could become a big problem in large architectural developments which depend on browser to perform their services. We are studying some security attacks in the web browser by describing them in the form of misuse patterns. A misuse pattern describes how an information misuse is performed from the point of view of the attacker. It defines the environment where the attack is performed, how the attack is performed, countermeasures to stop it, and how to find forensic information to trace the attack once it happens. We are building a catalog of misuse patterns and we present here one we called: Modification of traffic in the Web Browser. A catalog of misuse patterns will help designers to evaluate their designs with respect to possible threats.
+\end{abstract}
+
+
+%
+% The code below should be generated by the tool at
+% http://dl.acm.org/ccs.cfm
+% Please copy and paste the code instead of the example below. 
+%
+\begin{CCSXML}
+<ccs2012>
+ <concept>
+  <concept_id>10010520.10010553.10010562</concept_id>
+  <concept_desc>Computer systems organization~Embedded systems</concept_desc>
+  <concept_significance>500</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10010520.10010575.10010755</concept_id>
+  <concept_desc>Computer systems organization~Redundancy</concept_desc>
+  <concept_significance>300</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10010520.10010553.10010554</concept_id>
+  <concept_desc>Computer systems organization~Robotics</concept_desc>
+  <concept_significance>100</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10003033.10003083.10003095</concept_id>
+  <concept_desc>Networks~Network reliability</concept_desc>
+  <concept_significance>100</concept_significance>
+ </concept>
+</ccs2012>  
+\end{CCSXML}
+
+\ccsdesc[500]{Computer systems organization~Embedded systems}
+\ccsdesc[300]{Computer systems organization~Redundancy}
+\ccsdesc{Computer systems organization~Robotics}
+\ccsdesc[100]{Networks~Network reliability}
+
+
+
+
+\keywords{Browser, Web Client, Misuse Pattern, Security, Man-in-the-Browser}
+
+\section{Introduction}
+%hablar sobre ataques de ingeniería social
+The current scenario of attacks in the browser has changed considerably, if compared to those browser in the 90s. Every day Browsers are more robust and difficult to exploit, and therefore the same attack types such as drive-by downloads or code-based execution that could subvert a system, are each time less. A new form of attack has emerged and is fairly easy to achieve, because it is based on the deception of the user to perform what the attacker wants. Once the user is tricked, the attacker can achieve a total control over browser or the host, without having to crack the system \cite{Rajab2013,Labs2013} which host the browser. Development of critical systems that interact daily with different users on the network, should be more concerned about these attacks because they threaten the confidentiality, integrity and availability of data of the user (personal) as well as the involved Stakeholders.
+
+The new type of attacks described above are called ``social engineering attacks", in \cite{socEngineeering} they are defined as: The act of manipulating a person to perform actions that are not part of the best interests of the victim (person, organization, stakeholder, etc). An attack of this kind can take many forms, there is the possibility of a physical or digital encounter with victim to whom deception is done. Based on social engineering attack is one that takes advantage of human behavior and trust of the victim. In the context of web browser, the deceived user is the first and last line of defense against such attacks, the abuse of trust of the user may open the doors to host which host the browser, achieving damage to both the user and the external systems with which interacts.
+
+According to studies \cite{browSecPhish,Labs2013,rowSecSEMBlock}, they affirm the browser is the first line of defense against multiple Web threats. However, this is affected by the lack of education of users who use browsers and the constant evolution of threats \cite{browSecPhish}. This is why many browser manufacturers have created defense mechanisms such as \cite{Drake2011} that act when the user request for a page, using black or white list, reputation systems \cite{Rajab2013} with warning alerts, or others, so the user can at least avoid the page or make him to choose to enter the malicious site (but no making him enter the page without knowing).
+
+In the Top Ten from OWASP \cite{owaspTopTen} (Open Web Application Security Project) - the ten most important security risks in Web applications - it can be distinguished in 2013 the risks directly related to security threats in the browser, such as: Injection (A1), Session management and Broken authentication (A2), XSS (A3), CSRF (A8) and Using components with known vulnerabilities (A9), are the risks that organizations may suffer in their systems when some attacks are made on the browser.
+
+
+\section{Misuse Pattern: Modification of traffic in the Web Browser}
+We present a misuse pattern that describes a threat found in the Browser Infrastructure we have obtained in a previous work. This threat happens when an attacker is able to compromise the response received from the contacted Provider. An attacker could try to replace some parameters from the response recived, delivering to the Browser User (BU) a different content from the original.
+
+\subsection*{Intent}
+An attacker could modify or give something different than the expected when the web browser user (Browser User) receives the response from the Server or Provider. Performing this action, the browser could interpret the information in a different way than if he had received the original traffic.
+
+\subsection*{Context}
+A web browser fetches resources from a Provider to satisfy a Browser User who needs it. A Provider has resources in the form of web pages or other web services. The Provider is generally a Web App or Web server, which can allow input and output of data to other applications, and usually they are built using HTML, Javascript and CCS. Whether a server wants to deliver a service, as well as others want to connect to it, all communication will be over the HTTP protocol. A Provider, depending on the type, can receive many requests from various host for resources. Depending on the type of request, they may or not be allowed. Those that are allowed, the Provider generates a response to the Host, which may come back (or not) to the Browser Client that generated the request.
+
+\subsection*{Problem}
+How could an attacker to fool the Browser User and Host, by modifying traffic between the entities involved in communication? It is possible that an attacker is hidden in the middle of the communication between the Host and the Provider, resulting in the modified content that may affect the Web Content Renderer or the Browser Client. This in turn could bring different results, from stealing private information of the Browser User that the Browser Client uses to customize the navigation, such as the authentication token of a Providers. Depending on the type of attacker, it is possible that it may even affect the host where the browser is, leaving the attacker the possibility of performing malicious acts with the host resources.
+
+The attack may take advantage of the following vulnerabilities:
+\begin{itemize}
+  \item The \textbf{origin} that defines the Same Origin Policy (SOP) which the browser complies, differs in every type of web browser \cite{W3C-SOP,Reis2009, Jackson2008, Crowley2010, Paola2006}.
+  \item The \textbf{origin} is not enough as an isolation mechanisms between the different resources (web pages, scripts, css and others) \cite{Silic2010, Barth2009, Yason, Liu2012}.
+  \item Anyone can create a software component like an extension or plugin for some type of web browser and pass it off as something harmless, consequently a user will not notice of the threat and will install it. This could lead a very known attack named as Man-in-the-Browser \cite{Dougan2012,Utakrit2009,Liu2012,Barth2010}. Also, a installed malware (as the user with the required privileges was fooled to make the installation) could affect not only to the traffic but also to the logs of the systems, so it can erase its trace from the system.
+  \item It is possible to affect the Browser Client, and in consequence the Host, without having to find a vulnerability in the system or browser. With social engineering methods it is possible trick the user, because the Browser User is the weakest link in the system.
+  \item The architecture to extend the browser functionality through extensions, plugins and other, depends on manufacturer. And probably it has a large attack surface.
+\end{itemize}
+
+The attack can be facilitated by:
+\begin{itemize}
+  \item There are many tools for social engineering attacks, allowing the attack to make the Browser User accepts the installation of extensions or malicious plugins more easily.
+  \item Any script can be used to exploit the interpreter of the web browser. Often it is also possible to use the same scripting language elements to pass through certain safety barriers provided by the SOP because the language is based on prototypes (ECMAscript).
+  \item Manufacturers of browsers still do not have many defense mechanisms that allow effectively identify when a resource may be malicious.
+  \item Encryption methods can do nothing against an attack that modifies the traffic before sending or after receiving the message.
+\end{itemize}
+\subsection*{Solution}
+Modifying the traffic in the Web Browser gives attackers the ability to listen, modify and record private information between the Browser User which uses the Host and the Provider which gives the service.
+
+The attacker can safely modify the content of the packets intercepted while acting as a ``Man-in-the-Midddle", but at a different level of abstraction. As the study says \cite{Dougan2012}, this approach would usually be commenced with a phishing attack to trick the user into bridging the gap.
+
+This attack can assure to compromise integrity and confidentiallity even if the browser is communication with a Provider by a secure channel. This is a consequence of the Browser User letting a social engineering attack do its job, by surfing every website without distrust them. A single e-mail wishing for the user to click in a URL address could lead into installing a binary, extension or script in the Host.
+
+After a social engineering attack is successful the attacker can take its time, because whatever its installed in the Host, the attacker has installed with the user's permission with the social engineering attack done. So every action done in the Host or Browser Client, the Host will identify it as an action done by the Browser User a user of the Host.
+
+
+\subsection*{Structure}
+The structure of the solution used is the same as in our previous work (Browser Infrastructure Pattern). The Attacker class is any entity that could undertake a risky action against the integrity of the browser, the user, Host and Provider (Figure \ref{fig:BIMisuse}). The attacker is able to intercept both the response sent to the Browser Client from the Provider using the Host as a receiver, or by having the browser make changes to the input before the messages goes to the Provider, using scripts or other resources.  
+
+\begin{figure*}[h!t]
+  \centering
+  \includegraphics[scale=0.85]{figures/patronMisuse_v6.jpg}
+  \caption{Class Diagram for the Misuse Pattern.}
+  \label{fig:BIMisuse}
+\end{figure*}
+
+\subsection*{Dynamics}
+In Figure \ref{fig:SeqMisuse} a series of required steps is shown, for one of the many misuses that can be made for the use case \textbf{Make Request}. The attacker is between the Browser Client and Host, intercepting the original request or response and modifying the traffic to its taste; usually an attack basd on this misuse is called Man-in-the-Browser (MITB) \cite{Liu2012, Barth2010, Utakrit2009, Dougan2012}. This as well could happen when the Browser User has allowed the installation of plugins, extensions or external programs in the Host and Browser Client.
+
+\begin{figure*}[h!t]
+  \centering
+  \includegraphics[scale=0.52]{figures/patronMisuseSeq_v3.jpg}
+  \caption{Sequence Diagram for the misuse: Modification of traffic in the Web Browser.}
+  \label{fig:SeqMisuse}
+\end{figure*}
+
+  
+  \subsubsection*{Summary} The attacker instercepts the traffic between the Host and Browser Client.
+  \subsubsection*{Actor} Attacker
+  \subsubsection*{Precondition} For the attack to go unnoticed, it is necessary that the Browser User had been tricked by a social engineering attack or the attacker may have directly installed a malicious component or process before in the Host.
+
+  \subsubsection*{Description}
+      \begin{enumerate}
+        \item An attacker uses a social engineering technique or vulnerability in the system, to create an entity between the Browser Client and Provider and their communication channel.
+        \item A Browser User wants to request a resource from a URL, so the first steps are similar to \textbf{Make Request}.
+        \item At the time the Browser Client makes a system call to send the message to the Provider, a plugin, an extension or a program in the Host will intercept the message before the system call is done, as the Browser Client has been tapped to perform that action.
+        \item The attacker then receives all traffic from the Browser Client, which could be modified or listened.
+        \item Finally the victim is compromised.
+      \end{enumerate}
+  \subsubsection*{Postconditions} The victim will be fully compromised and it probably will not be possible to detect the modification of a message, it is also possible that the log of the Host will be compromised.
+  \subsubsection*{Known Uses} The browser is a software that has different implementations, so the number of attack vectors are significant. Some of these are:
+      \begin{itemize}
+        \item An extension based on the Google Chrome architecture or the Firefox WebExtension API could intercept the data before it reaches the Browser Client or Host \cite{Paola2006}. It also could be possible that a vulnerability in the extension or plugin is used by an attacker and takes advantage of its functionality to attack \cite{Liu2012,Barth2010}. Since the plugin, extension or process are elements the Host trust, it is possible that the attack is undetectable and encryption methods do not serve as a mitigation measure.
+        \item This type of attack can be used as a basis for more advanced attacks. For example, if the browser has \textit{cross-origin javascript capability leaks} vulnerabilities, when different security models such as the one used by Javascript and the DOM may interfere with each other. As a consequence, a \textit{cross-origin} request can perform even when the SOP should be able to stop such attack \cite{Barth2009}.
+        \item If neither an extension or plugin is used, a troyan (a downloaded and executed binary) can be another way to get the Host and all the system compromised.
+      \end{itemize}
+
+
+\subsection*{Consequences}
+  The misuse has the following consequences for the attacker:
+  \begin{itemize}
+    \item Objectives: they may be different, we highlight vandalism, impersonate another person or monetary gain. While the attacker may be in between the host and the traffic that is sent to the Provider, confidentiality and integrity of the data is completely lost. User privacy can no longer be assured either.
+    \item Silent: Since the attacker has managed to come between the system calls, that are made to the host, to send data to the Provider, the Host will not recognize or log the anomaly. Calls made to Host are perfectly legal and nothing out of the ordinary, so it will not be seen as something suspicious.
+    \item The attacker could perform actions that affect the integrity of the Host.
+  \end{itemize}
+  Possible sources of error:
+  \begin{itemize}
+    \item If the Browser User is able to avoid or ignore the social engineering attack carried out at the beginning, this misuse can be subverted. Also, this should consider that the user does not encounter pages with malicious content, which may affect other parts of a browser, but that would cause the same effect as the misuse presented here.
+  \end{itemize}
+
+\subsection*{Countermeasures} 
+  To prevent this kind of misuse we recommend taking the following preventive measures:
+  \begin{itemize}
+    \item Reputation services such as SmartScreen \cite{Colvin2010} from Internet Explorer and Download Application \cite{Rajab2013} from Google Chrome, can help to identify pages, web content or resources that could contain malware when is installed as plugins, entensiones or process in the Host of the User Browser.
+    \item Providing education about the dangers while surfing in the Internet and clarifying to the user that him is the last line of defense against such attacks.
+    \item White and Black List are installed in the browser as a preventive measure. They help to avoid malicious pages or known malware while the user is browsing, they also are updated in a hourly-basis.
+    \item Browsers like Google Chrome and Internet Explorer offer Sandboxing. This defense mechanism limits the actions of the attacker, which may affect the integrity of the system.
+  \end{itemize}
+
+\subsection*{Forense Evidence}
+  Where it is possible to find evidence? Depending on what is desired by the attacker, actions may differ. However the internal log of the browser could help in the audit of the system. This works until an attacker finds a vulnerability in the Sandbox or other component of the browser, in which case he can completely erase its tracks. Also, malware detection present in the user host or disallowing the change of the configuration of the browser without then the user permission.
+
+\subsection*{Related Patterns}
+  \begin{itemize}
+    \item The Browser Infrastructure pattern made in a previous work.
+    \item The above pattern, has a class called Browser Client that acts as a Reference Monitor \cite{fernandez2001pattern}.
+  \end{itemize}
+
+
+\section{Conclusions and future work}
+%A Web browser appears to be a medium complexity software for users and developers without security experience, but unfortunately this piece of software allows a variaty of attack vectors, to the user using it as well the system with which interacts. Therefore it is important to understand its structure and how it interacts with internal or/and external Stakeholders.
+
+%It is expected that in the future most \textit{Web Browser} will take the form of a Modular Architecture. Therefore, it is important that developers know the internal processes of \textit {browser} when developing a system that will interact with it. The Reference Architecture prepresented here, it is aimed at providing the basic knowledge of the components and interactions between \textit{Web Browser} and external Provider for resources; as well as the threats that exist within it.
+
+%A part of our Reference Architecture has been built through the abstraction of found documentation, through the Browser Infrastructure pattern. We created our first architectural pattern for the infrastructure of \textit{Web Browser}; to help others to understand holistically the components, interactions and relationships of this system. Furthermore it has been possible to characterize the Stakeholders and one of the most important use case. From what we have known, this is the second Reference Architecture for the \textit{Browser} built.
+
+%The proposed work allows a better understanding of this system called Web Browser by using our partially Reference Architecture, this is also helpful to understand existing threats. Furthermore, as it is not subject to specific implementations, it is possible to generalize certain results in other browsers.
+
+
+We have presented a web browser threats as a form of misuse patterns which describes in a systematic way how one misuses is performed. The aim is to understand and visualize  the misuses of the system, in this case the browser, to teach developers which use the web browser as a client to the systems they are developing. Through the list of threats done in our previous work, it is possible to detect or infer misuse activities that may appear in one or more misuse cases, which could lead to a violation of the system.
+
+With this misuse pattern we intent to initiated a catalog. This would help to condensate the obtained knowledge using patterns so they can be used as guidelines to communicate relevant concepts, as well to evaluate the existent relationship between the browser and a developed system, to see what kind of interactions they have.
+
+Future work will be related to the creation of a Security Reference Architecture for the \textit{Web Browser} using the same methodology presented here. Other patterns related to Browser Infrastructure pattern will be obtained in order to complete the AR already begun, such as the Web Content Renderer pattern and Browser Kernel. An example of the type of work to be carried out can be seen in \cite{Fernandez2015} where this study carries out activities to build secure software and evaluate the safety levels of a system already built.
+
+We plan to build more Misuse patterns, for the Browser Infrastructure pattern, to continue the study of the possible threats in the \textit{Browser}, as a way to educate Developers and Stakeholders. While at the same time these patterns will allow the construction of the Security Reference Architecture. In the same line, in addition to finding potential threats existing in the system, we need to find countermeasures or security defenses to prevent or foresee such threats through security patterns on the reference architecture built. This is possible to perform under the same exercise already conducted in this work, looking for threats at each action for each use case of the Browser.
+
+\bibliography{refTodas}  
+\bibliographystyle{IEEEtran}
+
+
+\end{document}

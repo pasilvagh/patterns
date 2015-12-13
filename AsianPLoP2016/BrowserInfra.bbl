@@ -27,9 +27,9 @@ E.~Gamma, R.~Helm, R.~Johnson, and J.~Vlissides, \emph{Design patterns:
   0.4em\relax Pearson Education, 1994.
 
 \bibitem{fernandez2006methodology}
-E.~Fernandez, M.~Larrondo-Petrie, T.~Sorgente, and M.~VanHilst, ``A methodology
-  to develop secure systems using patterns,'' \emph{Chapter}, vol.~5, pp.
-  107--126, 2006.
+E.~B. Fernandez, M.~Larrondo-Petrie, T.~Sorgente, and M.~VanHilst, ``A
+  methodology to develop secure systems using patterns,'' \emph{Chapter},
+  vol.~5, pp. 107--126, 2006.
 
 \bibitem{Fernandez2011}
 \BIBentryALTinterwordspacing
@@ -113,7 +113,7 @@ M.~Crowley, \emph{{Pro Internet Explorer 8 \& 9 Development: Developing
 \BIBentrySTDinterwordspacing
 
 \bibitem{fernandez2013security}
-E.~Fernandez-Buglioni, \emph{Security patterns in practice: designing secure
+E.~B. Fernandez, \emph{Security patterns in practice: designing secure
   architectures using software patterns}.\hskip 1em plus 0.5em minus
   0.4em\relax John Wiley \& Sons, 2013.
 

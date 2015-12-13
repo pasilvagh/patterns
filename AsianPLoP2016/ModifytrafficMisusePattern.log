@@ -2,8 +2,8 @@ This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (prelo
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**BrowserInfra.tex
-(./BrowserInfra.tex
+**ModifytrafficMisusePattern.tex
+(./ModifytrafficMisusePattern.tex
 LaTeX2e <2014/05/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (./sig-alternate-05-2015.cls
@@ -437,8 +437,9 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-)) (./BrowserInfra.aux)
-\openout1 = `BrowserInfra.aux'.
+))
+(./ModifytrafficMisusePattern.aux)
+\openout1 = `ModifytrafficMisusePattern.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
 LaTeX Font Info:    ... okay on input line 51.
@@ -452,7 +453,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
 LaTeX Font Info:    ... okay on input line 51.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
 LaTeX Font Info:    ... okay on input line 51.
- (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count111
 \scratchdimen=\dimen123
@@ -532,87 +534,89 @@ LaTeX Font Info:    Try loading font information for T1+ptm on input line 116.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 116.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <7> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 116.
+
 Excluding 'CCSXML' comment.
-Underfull \vbox (badness 1117) has occurred while \output is active []
+Overfull \hbox (2.67267pt too wide) in paragraph at lines 173--173
+[]\secfnt MISUSE PAT-TERN: MOD-I-FI-CA-TION OF
+ []
 
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-<figures/patron_v6.jpg, id=15, 550.30594pt x 375.65344pt>
-File: figures/patron_v6.jpg Graphic file (type jpg)
-
-<use figures/patron_v6.jpg>
-Package pdftex.def Info: figures/patron_v6.jpg used on input line 227.
-(pdftex.def)             Requested size: 467.76225pt x 319.30692pt.
- [2]
-Overfull \hbox (6.3888pt too wide) in paragraph at lines 253--254
-\T1/aer/m/n/9 ceived. De-pend-ing on how it is im-ple-mented the Browser
+Overfull \hbox (3.30655pt too wide) in paragraph at lines 191--192
+\T1/aer/m/n/9 through ex-ten-sions, plu-g-ins and other, de-pends on man-
  []
 
-<figures/realizarRequest_v3.jpg, id=20, 856.70062pt x 683.55376pt>
-File: figures/realizarRequest_v3.jpg Graphic file (type jpg)
+[2] <figures/patronMisuse_v6.jpg, id=20, 529.22719pt x 380.17032pt>
+File: figures/patronMisuse_v6.jpg Graphic file (type jpg)
 
-<use figures/realizarRequest_v3.jpg>
-Package pdftex.def Info: figures/realizarRequest_v3.jpg used on input line 268.
+<use figures/patronMisuse_v6.jpg>
+Package pdftex.def Info: figures/patronMisuse_v6.jpg used on input line 216.
+(pdftex.def)             Requested size: 449.84523pt x 323.14629pt.
 
-(pdftex.def)             Requested size: 522.58662pt x 416.9672pt.
+<figures/patronMisuseSeq_v3.jpg, id=21, 936.49875pt x 490.08093pt>
+File: figures/patronMisuseSeq_v3.jpg Graphic file (type jpg)
 
-Overfull \hbox (18.58662pt too wide) in paragraph at lines 268--269
- [][] 
+<use figures/patronMisuseSeq_v3.jpg>
+Package pdftex.def Info: figures/patronMisuseSeq_v3.jpg used on input line 226.
+
+(pdftex.def)             Requested size: 486.98215pt x 254.84355pt.
+ [3]
+
+LaTeX Warning: Text page \thepage  contains only floats.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Warning: Text page \thepage  contains only floats.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4 <./figures/patronMisuse_v6.jpg> <./figures/patronMisuseSeq_v3.jpg>]
+(./ModifytrafficMisusePattern.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+Overfull \hbox (40.31458pt too wide) in paragraph at lines 138--141
+\T1/aer/m/n/9 stranger-[]danger-[]introducing-[]smartscreen-[]application-[]rep
+utation . 
  []
 
-[3 <./figures/patron_v6.jpg>] [4 <./figures/realizarRequest_v3.jpg>]
-Overfull \hbox (4.26437pt too wide) in paragraph at lines 295--296
-\T1/aer/m/n/9 With the given pat-tern it is now pos-si-ble to nav-i-gate smooth
-ly
- []
+) [6
 
-
-Overfull \hbox (4.38904pt too wide) in paragraph at lines 314--315
-[]\T1/aer/m/n/9 A part of our Ref-er-ence Ar-chi-tec-ture has been built throug
-h
- []
-
-
-Overfull \hbox (2.75035pt too wide) in paragraph at lines 314--315
-\T1/aer/m/n/9 the ab-strac-tion of found doc-u-men-ta-tion, through the Browser
-
- []
-
-(./BrowserInfra.bbl
-** WARNING: IEEEtran.bst: No hyphenation pattern has been
-** loaded for the language `English'. Using the pattern for
-** the default language instead.
-[5]
-LaTeX Font Info:    Try loading font information for T1+aett on input line 122.
-
- (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
-File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-)) [6
-
-]
-(./BrowserInfra.aux) ) 
+] (./ModifytrafficMisusePattern.aux) ) 
 Here is how much of TeX's memory you used:
- 3438 strings out of 493105
- 43420 string characters out of 6137072
- 118890 words of memory out of 5000000
+ 3436 strings out of 493105
+ 43525 string characters out of 6137072
+ 119906 words of memory out of 5000000
  6780 multiletter control sequences out of 15000+600000
- 56596 words of font info for 80 fonts, out of 8000000 for 9000
+ 56108 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,35p,1547b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.en
-c}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helveti
-c/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on BrowserInfra.pdf (6 pages, 368311 bytes).
+ 41i,11n,35p,1445b,471s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/
+dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
+es/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ModifytrafficMisusePattern.pdf (6 pages, 364342 bytes).
 PDF statistics:
  70 PDF objects out of 1000 (max. 8388607)
  48 compressed objects within 1 object stream
