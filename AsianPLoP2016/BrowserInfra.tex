@@ -115,7 +115,7 @@ Eduardo B. Fernandez\\
 
 \maketitle
 \begin{abstract}
-Currently, most software development creates systems that are connected to the Internet, which allows to add functionality within a system and facilities to their \textit{Stakeholders}. This leads to depend on a \textit{web client}, such as the \textit{Web Browser}, which allows access to services, data or operations that the system delivers. However, the Internet influences the attack surface of the system, and unfortunately many stakeholders and developers are not aware of the risks to which they are exposed. The lack of security education of software developers, the scarce and scattered documentation for browsers (and standardization), could become a big problem in large architectural developments which depend on browsers to perform their services. A Reference Architecture of the \textit{Web Browser}, using Architectural Patterns, could be a basis for understanding its security mechanisms and architecture, which interact with a bigger web system. This would give a unification of ideas and terminology, giving a holistic view of independent implementation details for both the browser and the system it communicates with. We developed a Browser Infrastructure pattern which describes the infrastructure to allow the communication between a Web Client and a Server in the Internet. With this work we propose an architectural pattern as the first piece of our Reference Architecture for Web Browsers and security concerns.
+Currently, most software development is focused in creating systems connected to the Internet, which allows to add functionality within a system and facilities to their \textit{Stakeholders}. This leads to depend on a \textit{web client}, such as \textit{Web Browser}, which allows access to services, data or operations that the system delivers. However, the Internet influences the attack surface of the system, and unfortunately many stakeholders and developers are not aware of the risks to which they are exposed. The lack of security education among software developers and the scarce and scattered documentation for browsers (and standardization) could become a big problem in large architectural developments that depend on browsers to perform their services. A Reference Architecture of the \textit{Web Browser}, using Architectural Patterns, could be a starting point for understanding its security mechanisms and architecture, which interacts with a bigger web system. This would  unify ideas and terminology, giving a holistic view of independent implementation details for both the browser and the system it communicates with. We developed a Browser Infrastructure pattern that describes the infrastructure to allow the communication between a Web Client and a Server in the Internet. With this work we propose an architectural pattern as the first piece of our Reference Architecture for Web Browsers and security concerns.
 \end{abstract}
 
 
@@ -265,7 +265,7 @@ In this work, a Browser Infrastructure Pattern is presented as a first step in t
     \subsubsection*{Postconditions} The \textit{Browser} receives the resource indicated by the URL and it is displayed by the peripheral device output for the Browser User.
       \begin{figure*}[h!t]
           \centering
-          \includegraphics[scale=0.61]{figures/realizarRequest_v3.jpg}
+          \includegraphics[scale=0.7]{figures/MakeRequest.jpg}
           \caption{Sequence Diagram: Make Request.}
           \label{fig:SecReq}
       \end{figure*}

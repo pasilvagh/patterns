@@ -115,7 +115,7 @@ Eduardo B. Fernandez\\
 
 \maketitle
 \begin{abstract}
-Currently most of software development creates systems that are connected to the Internet, which allows to add functionality within a system and facilities to their \textit{Stakeholders}. This leads to depend on a \textit{web client}, such as the \textit{Web Browser}, which allows access to services, data or operations that the system delivers. However, the Internet influences the attack surface of the system, and unfortunately many stakeholders and developers are not aware of the risks to which they are exposed. The lack of security education of software developers, the scarce and scattered documentation for browsers (and standardization), could become a big problem in large architectural developments which depend on browser to perform their services. We are studying some security attacks in the web browser by describing them in the form of misuse patterns. A misuse pattern describes how an information misuse is performed from the point of view of the attacker. It defines the environment where the attack is performed, how the attack is performed, countermeasures to stop it, and how to find forensic information to trace the attack once it happens. We are building a catalog of misuse patterns and we present here one we called: Modification of traffic in the Web Browser. A catalog of misuse patterns will help designers to evaluate their designs with respect to possible threats.
+Currently, most software development is focused in creating systems connected to the Internet, which allows to add functionality within a system and facilities to their \textit{Stakeholders}. This leads to depend on a \textit{web client}, such as \textit{Web Browser}, which allows access to services, data or operations that the system delivers. However, the Internet influences the attack surface of the system, and unfortunately many stakeholders and developers are not aware of the risks to which they are exposed. The lack of security education among software developers and the scarce and scattered documentation for browsers (and standardization) could become a big problem in large architectural developments that depend on browsers to perform their services. We are studying some security attacks in the web browser by describing them in the form of misuse patterns. A misuse pattern describes how an information misuse is performed from the point of view of the attacker. It defines the environment where the attack is performed, how the attack is performed, countermeasures to stop it, and how to find forensic information to trace the attack once it happens. We are building a catalog of misuse patterns and we present here one we called: Modification of traffic in the Web Browser. A catalog of misuse patterns will help designers to evaluate their designs with respect to possible threats.
 \end{abstract}
 
 
@@ -167,20 +167,18 @@ The new type of attacks described above are called ``social engineering attacks"
 
 According to studies \cite{browSecPhish,Labs2013,rowSecSEMBlock}, they affirm the browser is the first line of defense against multiple Web threats. However, this is affected by the lack of education of users who use browsers and the constant evolution of threats \cite{browSecPhish}. This is why many browser manufacturers have created defense mechanisms such as \cite{Drake2011} that act when the user request for a page, using black or white list, reputation systems \cite{Rajab2013} with warning alerts, or others, so the user can at least avoid the page or make him to choose to enter the malicious site (but no making him enter the page without knowing).
 
-In the Top Ten from OWASP \cite{owaspTopTen} (Open Web Application Security Project) - the ten most important security risks in Web applications - it can be distinguished in 2013 the risks directly related to security threats in the browser, such as: Injection (A1), Session management and Broken authentication (A2), XSS (A3), CSRF (A8) and Using components with known vulnerabilities (A9), are the risks that organizations may suffer in their systems when some attacks are made on the browser.
-
 
 \section{Misuse Pattern: Modification of traffic in the Web Browser}
-We present a misuse pattern that describes a threat found in the Browser Infrastructure we have obtained in a previous work. This threat happens when an attacker is able to compromise the response received from the contacted Provider. An attacker could try to replace some parameters from the response recived, delivering to the Browser User (BU) a different content from the original.
+We present a misuse pattern that describes a threat found in the Browser Infrastructure we have obtained in a previous work. This threat happens when an attacker is able to compromise the response received from the contacted Provider. An attacker could try to replace some parameters from the response received, delivering to the Browser User (BU) a different content from the original.
 
 \subsection*{Intent}
-An attacker could modify or give something different than the expected when the web browser user (Browser User) receives the response from the Server or Provider. Performing this action, the browser could interpret the information in a different way than if he had received the original traffic.
+An attacker could modify or give something different than the expected when the web Browser User receives the response from the Server or Provider to the Host. Performing this action, the browser could interpret the information in a different way than if he had received the original traffic.
 
 \subsection*{Context}
 A web browser fetches resources from a Provider to satisfy a Browser User who needs it. A Provider has resources in the form of web pages or other web services. The Provider is generally a Web App or Web server, which can allow input and output of data to other applications, and usually they are built using HTML, Javascript and CCS. Whether a server wants to deliver a service, as well as others want to connect to it, all communication will be over the HTTP protocol. A Provider, depending on the type, can receive many requests from various host for resources. Depending on the type of request, they may or not be allowed. Those that are allowed, the Provider generates a response to the Host, which may come back (or not) to the Browser Client that generated the request.
 
 \subsection*{Problem}
-How could an attacker to fool the Browser User and Host, by modifying traffic between the entities involved in communication? It is possible that an attacker is hidden in the middle of the communication between the Host and the Provider, resulting in the modified content that may affect the Web Content Renderer or the Browser Client. This in turn could bring different results, from stealing private information of the Browser User that the Browser Client uses to customize the navigation, such as the authentication token of a Providers. Depending on the type of attacker, it is possible that it may even affect the host where the browser is, leaving the attacker the possibility of performing malicious acts with the host resources.
+How could an attacker to fool the Browser User and Host, by modifying traffic between the entities involved in communication? It is possible that an attacker is hidden in the middle of the communication between the Host and the Provider, resulting in the modified content  may affect the Web Content Renderer or the Browser Client. This in turn could bring different results, from stealing private information of the Browser User that the Browser Client uses to customize the navigation, such as the authentication token of a Providers. Depending on the type of attacker, it is possible that it may even affect the host where the browser is, leaving the attacker the possibility of performing malicious acts with the host resources.
 
 The attack may take advantage of the following vulnerabilities:
 \begin{itemize}
@@ -209,7 +207,7 @@ After a social engineering attack is successful the attacker can take its time, 
 
 
 \subsection*{Structure}
-The structure of the solution used is the same as in our previous work (Browser Infrastructure Pattern). The Attacker class is any entity that could undertake a risky action against the integrity of the browser, the user, Host and Provider (Figure \ref{fig:BIMisuse}). The attacker is able to intercept both the response sent to the Browser Client from the Provider using the Host as a receiver, or by having the browser make changes to the input before the messages goes to the Provider, using scripts or other resources.  
+The structure of the solution used is the same as in our previous work (Browser Infrastructure Pattern). The Attacker class is any entity that could undertake a risky action against the integrity and confidentiality of the browser, the user, Host and Provider (Figure \ref{fig:BIMisuse}). The attacker is able to intercept both the response sent to the Browser Client from the Provider using the Host as a receiver, or by having the browser make changes to the input before the messages goes to the Provider, using scripts or other resources.  
 
 \begin{figure*}[h!t]
   \centering
@@ -223,7 +221,7 @@ In Figure \ref{fig:SeqMisuse} a series of required steps is shown, for one of th
 
 \begin{figure*}[h!t]
   \centering
-  \includegraphics[scale=0.52]{figures/patronMisuseSeq_v3.jpg}
+  \includegraphics[scale=0.61]{figures/MakeRequestMisuse.jpg}
   \caption{Sequence Diagram for the misuse: Modification of traffic in the Web Browser.}
   \label{fig:SeqMisuse}
 \end{figure*}
@@ -235,7 +233,7 @@ In Figure \ref{fig:SeqMisuse} a series of required steps is shown, for one of th
 
   \subsubsection*{Description}
       \begin{enumerate}
-        \item An attacker uses a social engineering technique or vulnerability in the system, to create an entity between the Browser Client and Provider and their communication channel.
+        \item An attacker uses a social engineering technique or vulnerability in the system, to create an entity between the Browser Client and Provider and their communication channel, normally a Plugin, binary or Extension.
         \item A Browser User wants to request a resource from a URL, so the first steps are similar to \textbf{Make Request}.
         \item At the time the Browser Client makes a system call to send the message to the Provider, a plugin, an extension or a program in the Host will intercept the message before the system call is done, as the Browser Client has been tapped to perform that action.
         \item The attacker then receives all traffic from the Browser Client, which could be modified or listened.
