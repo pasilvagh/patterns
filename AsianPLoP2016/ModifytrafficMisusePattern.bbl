@@ -51,12 +51,6 @@ R.~Abrams, J.~Pathak, and O.~Barrera, ``Browser security comparative analysis:
 J.~Drake, P.~Mehta, C.~Miller, S.~Moyer, R.~Smith, C.~Valasek, and A.~Q.
   Approach, ``{Browser Security Comparison},'' \emph{Accuvant Labs}, 2011.
 
-\bibitem{owaspTopTen}
-\BIBentryALTinterwordspacing
-``{Top 10 2013 - OWASP}.'' [Online]. Available:
-  \url{https://www.owasp.org/index.php/Top\_10\_2013}
-\BIBentrySTDinterwordspacing
-
 \bibitem{W3C-SOP}
 \BIBentryALTinterwordspacing
 W3C, ``{Same Origin Policy},'' W3C, Web page, 2010. [Online]. Available:

@@ -40,10 +40,12 @@ E.~B. Fernandez, N.~Yoshioka, H.~Washizaki, J.~Jurjens, M.~VanHilst, and
   \url{http://www.igi-global.com/chapter/using-security-patterns-develop-secure/48405}
 \BIBentrySTDinterwordspacing
 
-\bibitem{fernandez2014security}
+\bibitem{Fernandez2015}
+\BIBentryALTinterwordspacing
 E.~B. Fernandez, R.~Monge, and K.~Hashizume, ``{Building a security reference
-  architecture for cloud systems},'' in \emph{Proceedings of the WICSA 2014
-  Companion Volume}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2014, p.~3.
+  architecture for cloud systems},'' \emph{Requirements Engineering}, jan 2015.
+  [Online]. Available: \url{http://link.springer.com/10.1007/s00766-014-0218-7}
+\BIBentrySTDinterwordspacing
 
 \bibitem{firefoxIPC}
 \BIBentryALTinterwordspacing
