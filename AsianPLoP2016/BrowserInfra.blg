@@ -19,43 +19,43 @@ Warning--empty booktitle in 2005-grosskurth-browser-refarch
 Done.
 You've used 18 entries,
             4039 wiz_defined-function locations,
-            903 strings with 9923 characters,
-and the built_in function-call counts, 7813 in all, are:
-= -- 541
+            904 strings with 10040 characters,
+and the built_in function-call counts, 7767 in all, are:
+= -- 535
 > -- 146
-< -- 31
+< -- 30
 + -- 77
 - -- 27
-* -- 336
-:= -- 1266
+* -- 332
+:= -- 1257
 add.period$ -- 36
 call.type$ -- 18
 change.case$ -- 18
 chr.to.int$ -- 81
 cite$ -- 22
-duplicate$ -- 629
-empty$ -- 777
+duplicate$ -- 626
+empty$ -- 776
 format.name$ -- 32
-if$ -- 1719
+if$ -- 1709
 int.to.chr$ -- 0
 int.to.str$ -- 18
-missing$ -- 123
+missing$ -- 122
 newline$ -- 99
 num.names$ -- 14
-pop$ -- 405
+pop$ -- 406
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 583
+skip$ -- 578
 stack$ -- 0
 substring$ -- 191
-swap$ -- 371
-text.length$ -- 4
+swap$ -- 366
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 5
 type$ -- 18
 warning$ -- 4
 while$ -- 26
 width$ -- 20
-write$ -- 173
+write$ -- 172
 (There were 4 warnings)

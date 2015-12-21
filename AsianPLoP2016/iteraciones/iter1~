@@ -1,27 +1,27 @@
 
 Browser Infra. pattern
--The intent should only describe the problem solved by the pattern, you describe "how' it solves it. Just say: "Describe the architecture for the processing of a user request for web resources."
+-The intent should only describe the problem solved by the pattern, you describe "how' it solves it. Just say: "Describe the architecture for the processing of a user request for web resources." -- ok
  
---Problem: Availability. Does the pattern have something to improve availability? Redundancy? Backups?  In the consequences you only say that processes are independent but that is another issue, not about availability
+--Problem: Availability. Does the pattern have something to improve availability? Redundancy? Backups?  In the consequences you only say that processes are independent but that is another issue, not about availability --preguntar al profe
  
 --Solution: Put the names of classes in Bold or Italics the first time you use them, it is much easier to read.
  
---Do we need to include HW and OS in the class model? They are not used in the sequence diagram.  Especially in the provider, we are not modeling the provider, we are modeling the browser and the provider structure is irrelevant.
+--Do we need to include HW and OS in the class model? They are not used in the sequence diagram.  Especially in the provider, we are not modeling the provider, we are modeling the browser and the provider structure is irrelevant. -- sacar de la imagen
  
---In ‘Structure’ you need to explain why we need Extension and Plugin. They are not used in the use case either.
+--In ‘Structure’ you need to explain why we need Extension and Plugin. They are not used in the use case either. -- ok
  
---Fig. 1: The words ‘uses’ and ‘interacts’ are too general. Use more specific names, such as ‘requests’ , ‘transmits’, or similar
+--Fig. 1: The words ‘uses’ and ‘interacts’ are too general. Use more specific names, such as ‘requests’ , ‘transmits’, or similar -- cambiar
  
---Fig. 1: Request and response should be reified as I did with Request and Response in the Reified Reference Monitor in my book. Otherwise, you cannot cache or remember a request and you cannot undo it.
+--Fig. 1: Request and response should be reified as I did with Request and Response in the Reified Reference Monitor in my book. Otherwise, you cannot cache or remember a request and you cannot undo it. -- preguntar al profe
 
---Dynamics: Cancel request and Receive Resources are not use cases, cancel is a variation or exception and receive is part of the request use case. 
+--Dynamics: Cancel request and Receive Resources are not use cases, cancel is a variation or exception and receive is part of the request use case. -- de acuerdo, pero pueden ser sub casos de uso...desde el lado del servidor.
  
 --Fig. 2:  A sandbox is an execution domain, defined by a subject, an object, and a set of rights, it is created for confining responses. It is applied only to the response before it is rendered. That means that the user request should not go to the sandboxed renderer as shown. It should go to the Browser Client. There is no association from the user to the sandbox in Fig. 1
  
---Fig. 2: the Browser User is an actor who sends a request but does not receive anything. Doesn’t the Renderer have a user interface?
+--Fig. 2: the Browser User is an actor who sends a request but does not receive anything. Doesn’t the Renderer have a user interface? -- user interface?
  
---Ref. 2 should be: E. B. Fernandez, M.M. Larrondo-Petrie, T. Sorgente, and M. VanHilst, "A methodology to develop secure systems using patterns", Chapter 5 in "Integrating security and software engineering: Advances and future vision", H. Mouratidis and P. Giorgini (Eds.), IDEA Press, 2006, 107-126.
+--Ref. 2 should be: E. B. Fernandez, M.M. Larrondo-Petrie, T. Sorgente, and M. VanHilst, "A methodology to develop secure systems using patterns", Chapter 5 in "Integrating security and software engineering: Advances and future vision", H. Mouratidis and P. Giorgini (Eds.), IDEA Press, 2006, 107-126. -- ok
 
---Ref. 3  It is G. Pernul.
+--Ref. 3  It is G. Pernul. -- ok
 
 

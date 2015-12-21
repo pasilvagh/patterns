@@ -28,13 +28,14 @@ E.~Gamma, R.~Helm, R.~Johnson, and J.~Vlissides, \emph{Design patterns:
 
 \bibitem{fernandez2006methodology}
 E.~B. Fernandez, M.~Larrondo-Petrie, T.~Sorgente, and M.~VanHilst, ``A
-  methodology to develop secure systems using patterns,'' \emph{Chapter},
-  vol.~5, pp. 107--126, 2006.
+  methodology to develop secure systems using patterns,'' \emph{Chapter 5 in
+  "Integrating security and software engineering: Advances and future vision"},
+  pp. 107--126, 2006.
 
 \bibitem{Fernandez2011}
 \BIBentryALTinterwordspacing
 E.~B. Fernandez, N.~Yoshioka, H.~Washizaki, J.~Jurjens, M.~VanHilst, and
-  G.~Pernu, \emph{\BIBforeignlanguage{English}{{Using Security Patterns to
+  G.~Pernul, \emph{\BIBforeignlanguage{English}{{Using Security Patterns to
   Develop Secure Systems}}}, H.~Mouratidis, Ed.\hskip 1em plus 0.5em minus
   0.4em\relax IGI Global, 2011. [Online]. Available:
   \url{http://www.igi-global.com/chapter/using-security-patterns-develop-secure/48405}
