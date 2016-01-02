@@ -18,45 +18,45 @@ Warning--empty journal in Yason
 Warning--empty year in Yason
 
 Done.
-You've used 21 entries,
+You've used 28 entries,
             4039 wiz_defined-function locations,
-            943 strings with 11029 characters,
-and the built_in function-call counts, 11627 in all, are:
-= -- 960
-> -- 264
-< -- 61
-+ -- 132
-- -- 51
-* -- 570
-:= -- 2002
-add.period$ -- 42
-call.type$ -- 21
-change.case$ -- 21
-chr.to.int$ -- 135
-cite$ -- 26
-duplicate$ -- 898
-empty$ -- 930
-format.name$ -- 66
-if$ -- 2549
+            966 strings with 11929 characters,
+and the built_in function-call counts, 13410 in all, are:
+= -- 1052
+> -- 287
+< -- 54
++ -- 146
+- -- 57
+* -- 618
+:= -- 2292
+add.period$ -- 56
+call.type$ -- 28
+change.case$ -- 27
+chr.to.int$ -- 120
+cite$ -- 33
+duplicate$ -- 1083
+empty$ -- 1169
+format.name$ -- 72
+if$ -- 2934
 int.to.chr$ -- 0
-int.to.str$ -- 21
-missing$ -- 159
-newline$ -- 110
-num.names$ -- 21
-pop$ -- 400
+int.to.str$ -- 28
+missing$ -- 203
+newline$ -- 139
+num.names$ -- 23
+pop$ -- 570
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 883
+skip$ -- 1017
 stack$ -- 0
-substring$ -- 325
-swap$ -- 626
-text.length$ -- 16
+substring$ -- 297
+swap$ -- 692
+text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 21
+type$ -- 28
 warning$ -- 5
-while$ -- 47
-width$ -- 23
-write$ -- 234
+while$ -- 45
+width$ -- 30
+write$ -- 283
 (There were 5 warnings)

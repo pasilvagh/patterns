@@ -109,7 +109,7 @@ Raúl Monge\\
 Eduardo B. Fernandez\\
   \affaddr{Department of Computer \(\&\) Electrical Engineering and Computer Science}\\
   \affaddr{Florida Atlantic University}\\
-  \affaddr{Florida, USA}\\
+  \affaddr{Boca Raton, Fl, USA}\\
   \email{fernande@fau.edu}
 }
 
@@ -199,7 +199,7 @@ In this work, a Browser Infrastructure Pattern is presented as a first step in t
 
   \subsection*{Intent}
 
-  The Browser Infrastructure describes the architecture for the processing of a user request for web resources in the Internet, for a \textbf{Browser User} (BU) which is a user who uses a browser within a \textbf{Host}.
+  The Browser Infrastructure describes the architecture for the processing of a user request for web resources in the Internet.
 
   \subsection*{Example}
   Within the Host is possible that the lack of resources needed to fullfill the user needs are limited. The request of external services or resources is the main reason of the Internet existence. If a user needs to make a bank transaction, such as deposit money to another party, the Browser User will type an URL in the browser to access the online banking service of the bank the user belongs to.
@@ -214,18 +214,17 @@ In this work, a Browser Infrastructure Pattern is presented as a first step in t
     \item \textit{Stability}: The browser must be capable of working, even if a web page can not be displayed properly or there is an internal problem in the server.
     \item \textit{Isolation}: Each \textit{request} must not interrupt others.
     \item \textit{Heterogeneity}: It does not matter the type of Provider with which the browser communicates, it should be possible to interact with whatever type, and it should be capable of showing the content of the obtained resource adequately.
-    \item \textit{Availability}: The user of the Host, should be capable of making a request at any time.
   \end{itemize}
 
   \subsection*{Solution}
   Provide a device, the Web Browser, with the functions needed to understand user requests and send them to the Provider. A web browser satisfies a request of a Browser User of the Host.
 
     \subsubsection*{Structure}
-    In Figure \ref{fig:BIPatt} the \textbf{Browser Client (BC)} is an entity that represents the main process of a Web Browser, which is constantly communicating with the host of the browser. A \textbf{Host (H)} houses and interacts with the \textbf{BC}. The \textbf{Host} uses the \textbf{Graphic Processing Unit (GPU)} package to display elements to the \textbf{Browser User (BU)}. A user who makes a request to a Internet resources using a Web Browser, will be called \textbf{Browser User (BU)}. At the same time, a \textbf{Provider (P)} has a \textbf{Web Server (WS)} responsible for receiving external requests. According to the request, a \textbf{Provider} will send the service/resource the \textbf{Browser User} needs. Most Browsers use a central component to do operations that need to affect the Host of the Browser, a \textbf{Browser Client}. Figure \ref{fig:BIPatt} shows the Class diagram for the Browser Infrastructure Pattern. For each new resource a \textbf{BC} requests a created or reused \textbf{Web Content Renderer (WBR)} instance. A \textbf{Plugin (Pl)} or \textbf{Extension (E)} are element that extends the Browser's functionalities, the difference between the two of them is that the latter is used exclusively within the browser while a Plugin can be used without it. A \textbf{Sandbox (S)} is created for a single WBR instance, that performs the access control of each communication between the \textbf{WBR} and the \textbf{BC}, as a broker with fine control over the messages (using IPC/IPDL/COM); the same applies to a \textbf{Pl}, an \textbf{E} and a \textbf{GPU}. Depending on the manufacturer, a \textbf{Pl} could not be Sandboxed. If there is a need for \textbf{GPU}, from \textbf{Extension} and \textbf{Plugins}, they need to communicate directly with the Sandbox which instead will ask for graphical processing.
+    In Figure \ref{fig:BIPatt} the \textbf{Browser Client} is an entity that represents the main process of a Web Browser, which is constantly communicating with the host of the browser. A \textbf{Host} houses and interacts with the \textbf{Browser Client}. The \textbf{Host} uses the \textbf{Graphic Processing Unit (GPU)} package to display elements to the \textbf{Browser User}. A user who makes a request to a Internet resources using a Web Browser, will be called \textbf{Browser User}. At the same time, a \textbf{Provider} has a \textbf{Web Server} responsible for receiving external requests from different \textbf{Hosts}. According to the request, a \textbf{Provider} will send the \textbf{Service} (or resource) the \textbf{Browser User} needs. Most Browsers use a central component to do operations that need to affect the Host of the Browser, a \textbf{Browser Client}. Figure \ref{fig:BIPatt} shows the Class diagram for the Browser Infrastructure Pattern. For each new resource a \textbf{Browser Client} requests a created or reused \textbf{Web Content Renderer} instance. A \textbf{Plugin} or \textbf{Extension} are element that extends the Browser's functionalities, the difference between the two of them is that the latter is used exclusively within the browser while a \textbf{Plugin} can be used without it. A \textbf{Sandbox} is a controlled execution domain created for a single \textbf{Web Content Renderer} instance, that performs the access control of each communication between the \textbf{Web Content Renderer} and the \textbf{Browser Client}, as a broker with fine control over the messages (using IPC/IPDL/COM); the same applies to a \textbf{Plugin}, an \textbf{Extension} and a \textbf{GPU}. Depending on the manufacturer, a \textbf{Plugin} could not be Sandboxed. If there is a need for \textbf{GPU}, from \textbf{Extensions} or \textbf{Plugins}, they need to communicate directly with the Sandbox which instead will ask for graphical processing.
 
     \begin{figure*}[h!t]
       \centering
-      \includegraphics[scale=0.85]{figures/patron_v6.jpg}
+      \includegraphics[scale=0.75]{figures/patron_v7.jpg}
       \caption{High-level Components of the Browser Infrastructure.}
       \label{fig:BIPatt}
     \end{figure*}
@@ -266,7 +265,7 @@ In this work, a Browser Infrastructure Pattern is presented as a first step in t
     \subsubsection*{Postconditions} The \textit{Browser} receives the resource indicated by the URL and it is displayed by the peripheral device output for the Browser User.
       \begin{figure*}[h!t]
           \centering
-          \includegraphics[scale=0.7]{figures/MakeRequest.jpg}
+          \includegraphics[scale=0.83]{figures/MakeRequest_v7.jpg}
           \caption{Sequence Diagram: Make Request.}
           \label{fig:SecReq}
       \end{figure*}
@@ -284,7 +283,6 @@ In this work, a Browser Infrastructure Pattern is presented as a first step in t
     \item Stability: Because the Browser Client, Sandbox, and GPU  Plugin are independent Host processes, the failure of one will not generate problems in other (crash, memory corruption, etc.).
     \item Isolation: Depending on the type of isolation you can separate the different request, so they do not interfere with each other, unless it is desired.
     \item Heterogeneity: Because each Browser Client tries to follow the standards of the W3C \cite{w3c}, every page that follows these guidelines can be viewed, as well as other resources.
-    \item Availability: Each process is independent and has its own thread of execution, these were specifically created to help maintain the User Interface smooth.
   \end{itemize}
   At the same time, this pattern has the following liabilities:
   \begin{itemize}
@@ -314,9 +312,9 @@ A Web browser appears to be a medium complexity software for users and developer
 
 A part of our Reference Architecture has been built through the abstraction of documentation through the Browser Infrastructure pattern. We created our first architectural pattern for the infrastructure of \textit{Web Browser} to help others understand, holistically, the components, interactions and relationships of this system. Furthermore, it has been possible to characterize the Stakeholders and one of the most important use case. From what we have known, this is the second Reference Architecture for the \textit{Browser} built \cite{2005-grosskurth-browser-refarch}. The proposed work allows a better understanding of this system called Web Browser by using our partially Reference Architecture, this is also helpful to understand existing threats. Also, as it is not subject to specific implementations, it is possible to generalize certain results in other browsers.
 
-Future work will be related to the creation of a Security Reference Architecture for the \textit{Web Browser} using the same methodology presented here. Other patterns related to Browser Infrastructure pattern will be obtained in order to complete the Reference Architecture we already begun, such as the Web Content Renderer and Browser Kernel pattern. An example of the type of work to be carried out can be seen in \cite{Fernandez2015}. This study was focused on carry out activities to build secure software and evaluate the safety levels of a system already built.
+Future work to do is finishing the Reference Architecture for \textit{Web Browsers}. Other patterns related to Browser Infrastructure pattern will be obtained in order to complete the Reference Architecture, such as the Web Content Renderer and Browser Kernel pattern. 
 
-We plan to build more Misuse Patterns for the Browser Infrastructure Pattern, to continue the study of the possible threats in the \textit{Browser}, as a way to educate Developers and Stakeholders. At the same time, these patterns will allow the construction of the Security Reference Architecture for the browser. In the same line, in addition to finding potential threats existing in the system, we need to find countermeasures or security defenses to prevent or foresee such threats through security patterns on the reference architecture built.
+We plan to build more Misuse Patterns for the Browser Infrastructure Pattern, to continue the study of the possible threats in the \textit{Browser}, as a way to educate Developers and Stakeholders. At the same time, these patterns will allow the construction of the Security Reference Architecture for the browser. In the same line, in addition to finding potential threats existing in the system, we need to find countermeasures or security defenses to prevent or foresee such threats through security patterns on the reference architecture built. An example of the type of work to be carried out can be seen in \cite{Fernandez2015}.
 
 \bibliography{refTodas}  
 \bibliographystyle{IEEEtran}

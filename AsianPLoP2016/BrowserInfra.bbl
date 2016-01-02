@@ -44,7 +44,7 @@ E.~B. Fernandez, N.~Yoshioka, H.~Washizaki, J.~Jurjens, M.~VanHilst, and
 \bibitem{Fernandez2015}
 \BIBentryALTinterwordspacing
 E.~B. Fernandez, R.~Monge, and K.~Hashizume, ``{Building a security reference
-  architecture for cloud systems},'' \emph{Requirements Engineering}, jan 2015.
+  architecture for cloud systems},'' \emph{Requirements Engineering}, Jan 2015.
   [Online]. Available: \url{http://link.springer.com/10.1007/s00766-014-0218-7}
 \BIBentrySTDinterwordspacing
 
@@ -56,7 +56,8 @@ B.~McCloskey, ``{Multiprocess Firefox}.'' [Online]. Available:
 
 \bibitem{GCIPC}
 \BIBentryALTinterwordspacing
-G.~Chromium, ``{Inter-process Communication (IPC)}.'' [Online]. Available:
+{Google Chromium}, ``{Inter-process Communication (IPC)}.'' [Online].
+  Available:
   \url{https://www.chromium.org/developers/design-documents/inter-process-communication}
 \BIBentrySTDinterwordspacing
 
@@ -77,7 +78,7 @@ M.~V. Yason, ``{Diving into IE 10’s Enhanced Protected Mode Sandbox}.''
 
 \bibitem{w3c}
 \BIBentryALTinterwordspacing
-W.~W. W.~C. W3C, ``About.'' [Online]. Available:
+{World Wide Web Consortium - W3C}, ``About.'' [Online]. Available:
   \url{http://www.w3.org/Consortium/}
 \BIBentrySTDinterwordspacing
 
@@ -122,7 +123,6 @@ E.~B. Fernandez, \emph{Security patterns in practice: designing secure
 
 \bibitem{2005-grosskurth-browser-refarch}
 A.~Grosskurth and M.~W. Godfrey, ``A reference architecture for web browsers,''
-  2005, pp. 661--664, uRL: {\tt
-  http://grosskurth.ca/papers.html\#browser-refarch}.
+  2005, pp. 661--664.
 
 \end{thebibliography}
