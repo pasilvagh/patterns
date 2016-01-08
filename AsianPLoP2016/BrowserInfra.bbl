@@ -48,6 +48,11 @@ E.~B. Fernandez, R.~Monge, and K.~Hashizume, ``{Building a security reference
   [Online]. Available: \url{http://link.springer.com/10.1007/s00766-014-0218-7}
 \BIBentrySTDinterwordspacing
 
+\bibitem{fernandez2013security}
+E.~B. Fernandez, \emph{Security patterns in practice: designing secure
+  architectures using software patterns}.\hskip 1em plus 0.5em minus
+  0.4em\relax John Wiley \& Sons, 2013.
+
 \bibitem{firefoxIPC}
 \BIBentryALTinterwordspacing
 B.~McCloskey, ``{Multiprocess Firefox}.'' [Online]. Available:
@@ -115,11 +120,6 @@ M.~Crowley, \emph{{Pro Internet Explorer 8 \& 9 Development: Developing
   Available:
   \url{http://blogs.msdn.com/b/ie/archive/2008/03/11/ie8-and-loosely-coupled-ie-lcie.aspx}
 \BIBentrySTDinterwordspacing
-
-\bibitem{fernandez2013security}
-E.~B. Fernandez, \emph{Security patterns in practice: designing secure
-  architectures using software patterns}.\hskip 1em plus 0.5em minus
-  0.4em\relax John Wiley \& Sons, 2013.
 
 \bibitem{2005-grosskurth-browser-refarch}
 A.~Grosskurth and M.~W. Godfrey, ``A reference architecture for web browsers,''
