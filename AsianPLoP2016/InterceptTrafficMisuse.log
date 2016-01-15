@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.4.28)  9 JAN 2016 21:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.4.28)  15 JAN 2016 19:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**ModifytrafficMisusePattern.tex
-(./ModifytrafficMisusePattern.tex
+**InterceptTrafficMisuse.tex
+(./InterceptTrafficMisuse.tex
 LaTeX2e <2014/05/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (./sig-alternate-05-2015.cls
@@ -449,8 +449,8 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ))
-(./ModifytrafficMisusePattern.aux)
-\openout1 = `ModifytrafficMisusePattern.aux'.
+(./InterceptTrafficMisuse.aux)
+\openout1 = `InterceptTrafficMisuse.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
 LaTeX Font Info:    ... okay on input line 52.
@@ -569,13 +569,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ] [2]
-<figures/patronMisuse_v8.jpg, id=19, 433.62pt x 487.8225pt>
+<figures/patronMisuse_v8.jpg, id=19, 432.11438pt x 483.30562pt>
 File: figures/patronMisuse_v8.jpg Graphic file (type jpg)
 
 <use figures/patronMisuse_v8.jpg>
 Package pdftex.def Info: figures/patronMisuse_v8.jpg used on input line 221.
-(pdftex.def)             Requested size: 346.89647pt x 390.25853pt.
- [3] [4 <./figures/patronMisuse_v8.jpg>]
+(pdftex.def)             Requested size: 345.69196pt x 386.64502pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+[4 <./figures/patronMisuse_v8.jpg>]
 <figures/MakeRequestMisuse_v8.jpg, id=26, 889.82437pt x 540.51938pt>
 File: figures/MakeRequestMisuse_v8.jpg Graphic file (type jpg)
 
@@ -601,32 +605,32 @@ Overfull \hbox (3.67924pt too wide) in paragraph at lines 259--260
 [6
 
 
-] [7] (./ModifytrafficMisusePattern.bbl
+] [7] (./InterceptTrafficMisuse.bbl
 Overfull \hbox (40.31458pt too wide) in paragraph at lines 165--168
 \T1/aer/m/n/9 stranger-[]danger-[]introducing-[]smartscreen-[]application-[]rep
 utation . 
  []
 
-) [8] (./ModifytrafficMisusePattern.aux) ) 
+) [8] (./InterceptTrafficMisuse.aux) ) 
 Here is how much of TeX's memory you used:
  3465 strings out of 493105
- 44137 string characters out of 6137072
+ 44093 string characters out of 6137072
  120727 words of memory out of 5000000
  6802 multiletter control sequences out of 15000+600000
  56108 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,35p,2290b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/
-enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
-tmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ModifytrafficMisusePattern.pdf (8 pages, 391612 bytes).
+ 41i,11n,35p,2779b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/
+dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8
+a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on InterceptTrafficMisuse.pdf (8 pages, 393127 bytes).
 PDF statistics:
  74 PDF objects out of 1000 (max. 8388607)
  51 compressed objects within 1 object stream
