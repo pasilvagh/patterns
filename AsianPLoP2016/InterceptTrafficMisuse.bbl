@@ -141,6 +141,10 @@ T.~Dougan and K.~Curran, ``{Man in the Browser Attacks},'' \emph{International
   Journal of Ambient Computing and Intelligence}, vol.~4, no.~1, pp. 29--39,
   2012.
 
+\bibitem{silva2015}
+P.~Silva, R.~Monge, and E.~Fernandez~B., ``{A pattern for Web Browser
+  Infrastructure},'' \emph{Pattern Language of Programs}, 2015.
+
 \bibitem{zeus}
 \BIBentryALTinterwordspacing
 ``Hackers steal 150,000 us from mich. insurance firm.'' [Online]. Available:
@@ -171,10 +175,6 @@ R.~Colvin, ``{SmartScreen},'' 2010. [Online]. Available:
 ``{Sandbox - The Chromium Projects}.'' [Online]. Available:
   \url{http://www.chromium.org/developers/design-documents/sandbox}
 \BIBentrySTDinterwordspacing
-
-\bibitem{silva2015}
-P.~Silva, R.~Monge, and E.~Fernandez~B., ``{A pattern for Web Browser
-  Infrastructure},'' \emph{Pattern Language of Programs}, 2015.
 
 \bibitem{Fernandez2015}
 \BIBentryALTinterwordspacing

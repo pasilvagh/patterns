@@ -164,19 +164,28 @@ Currently, most software development is focused in creating systems connected to
 %hablar sobre ataques de ingeniería social
 The current scenario of attacks in the browser has changed considerably, if compared to those browsers in the 90s. Every day browsers are more robust and difficult to exploit; therefore, the same attack types, such as drive-by downloads or code-based execution that could subvert a system, are less common every time. A new form of attack has emerged and is fairly easy to achieve, because it is based on deceiving the user to perform what the attacker wants. Once the user is tricked, the attacker can achieve total control over the browser or the host, without having to crack the system \cite{Rajab2013,Labs2013} that hosts the browser. The development of critical systems that interact daily with different users on the network should focus on these attacks because they threaten the confidentiality, integrity and availability of the user's data (personal) as well as the Stakeholders involved.
 
-The new type of attacks described above are called ``social engineering attacks", in \cite{socEngineeering} they are defined as: The act of manipulating someone to perform actions that are not part of the best interests of the victim (person, organization, stakeholder, etc). An attack of this kind can take many forms, there is the possibility of a physical or digital encounter with the victim. Based on social engineering, this attack is one that takes advantage of human behavior and trust of the victim. In the context of web browser, the deceived user is the first and last line of defense against such attacks, the abuse of trust of the user may open the doors of the browser's host, causing damage to both the user and the external systems with which it interacts.
+Social engineering is used as an umbrella term for a broad spectrum of computer exploitations that employ a variety of attack vectors and attempts to psychologically manipulate a user. ``Social engineering attacks" in \cite{socEngineeering} are defined as: The act of manipulating someone to perform actions that are not part of the best interests of the victim (person, organization, stakeholder, etc).  An attack of this kind can take many forms, there is the possibility of a physical or digital encounter with the victim. Based on social engineering, this attack is one that takes advantage of human behavior and trust of the victim. In the context of web browser, the deceived user is the first and last line of defense against such attacks, the abuse of trust of the user may open the doors of the browser's host, causing damage to both the user and the external systems with which it interacts. This work attempts to define a Misuse Pattern that could appear when a social engineering attack succeeds; of course, is not the only way to make the misuse but attackers can easily make it because the user of the browser is the ``weakest link".
 
 According to studies \cite{browSecPhish,Labs2013,rowSecSEMBlock}, the browser is the first line of defense against multiple Web threats. However, this is affected by the lack of education of users who use browsers and the constant evolution of threats \cite{browSecPhish}. This is why many browser manufacturers have created defense mechanisms such as those shown in \cite{Drake2011}, that act when the user requests a page, including black or white lists, reputation systems \cite{Rajab2013} with warning alerts, among others, so the user can at least avoid the page or choose to enter the malicious site anyway (but no granting access to the page without knowing of the threat).
 
 In this work, a Misuse Pattern is presented as a first step in to the process of creating a catalog of misuses for the Web Browser. A catalog of misuse patterns will help designers to evaluate their designs for possible attacks. The audience to which our paper is focused are Browser developers, Web Application developers and even normal users. Being the first two the most important, since they are the responsible for the implementation and correct use of secure mechanisms while a user is browsing in the Internet. Secure communication is an important matter, but in this work the focus will be on the Browser and how to control the responses it receives.
 
+\begin{figure*}[h!t]
+  \centering
+  \includegraphics[scale=0.8]{figures/patronMisuse_v8.jpg}
+  \caption{Class Diagram for the Misuse Pattern.}
+  \label{fig:BIMisuse}
+\end{figure*}
+
+\section{Terminology}
+Current popular web browsers use a modular architecture in contrast with monoprocess architecture used in the nineties. Nevertheless, the are core components of the browser are placed in a different manner meanwhile others are replaced with new technology or deleted. In this paper we defined names for core components but probably some of them may differ depending on implementation. We named as a Browser Kernel to the componenet that represents the main process of a Web Browser and receives requests from the user using the web browser. A Controlled Process/es, in contrast, is/are slave components of the Browser Kernel, and they are used to render the content for each request the user of the browser (a Browser User) needs.
 
 \section{Misuse Pattern: Interception of traffic in the Web Browser}
 \subsection*{Intent}
 An attacker could modify or spy the traffic when the Browser User sends a request or receives the response from the Provider to the Browser Kernel; by doing so, the browser could interpret the information in a different way than if it had received the original traffic.
 
 \subsection*{Context}
-A web browser fetches resources (web pages, services, etc.) from a Provider to satisfy the access of a Browser User. The Provider is generally a Web App or Web server, that allows input and output of data to other applications, and usually they are built using HTML, Javascript and CCS. A Provider, depending on its type, can receive many requests for resources from various hosts. Depending on the type of request, they may or may not be accepted. For those accepted, the Provider generates a response to the Host, which may go back (or not) to the Browser Kernel that generated the request.
+A web browser fetches resources (web pages, services, etc.) from a Provider to satisfy the access of a Browser User. The Provider is generally a Web App or Web server, that allows input and output of data to other applications, and usually they are built using HTML, Javascript and CSS. A Provider, depending on its type, can receive many requests for resources from various hosts. Depending on the type of request, they may or may not be accepted. For those accepted, the Provider generates a response to the Host, which may go back (or not) to the Browser Kernel that generated the request.
 
 \subsection*{Problem}
 An attacker tries to take advantage of any input the Browser User requests to affect the system. Users may be tricked by social engineering attacks, or lead into downloading and executing a binary in the browser to affect the Renderer that may have unprotected vulnerabilities. Therefore it is possible to give the attacker a chance to hide in the middle of the communication between the browser's processes, resulting in the interception of content that may affect the Renderer or the browser itself. Depending on the type of attacker, it is possible that it may even affect the host where the browser is.
@@ -201,40 +210,55 @@ The attack could take advantage of the following vulnerabilities:
   \item Many browser manufacturers do not have robust defense mechanisms that allow an effective identification of malicious resources.
 \end{itemize}
 
-The attack can be facilitated by:
+
+\subsection*{Solution}
+An attacker can take advantage of the Browser User by letting a social engineering attack do its job, by surfing every website without distrust. If the Browser User is not careful, while surfing in the Internet, it could lead into downloading and installing malicious binaries in the system without notice. Also, a single phishing e-mail wishing for the user to click in a URL address could lead into installing a binaries, extensions or scripts in the Host. If a social engineering attack is successful the attacker can take its time, because whatever is installed in the Host, the attacker has installed it with the user's permission. Therefore every action done in the Host or Browser Kernel, will be identified by the Host as an action done by the Browser User, a user of the Host. 
+If the attacker can obtain physical access to the Host running the Browser Kernel, he or she can install without the real user's consent an extension, script or binary in the Host, that could lead to a misuse. Also, is not a necessity for the attacker to install malicious payload/binaries in the Browser, she or he could use ``benign-but-buggy" extensions or scripts to surpass the Sandbox's secure mechanism and misuse the Host or Browser Kernel. The attack can be facilitated by:
 \begin{itemize}
   \item There are many tools for social engineering attacks, that tricks the Browser User into accepting the installation of extensions or malicious plugins more easily.
   \item Specially crafted scripts can be used to exploit the interpreter within the Renderer of the web browser (represented here as the Web Content Renderer). Often it is also possible to use the same scripting language elements to pass through certain security barriers provided by the SOP because the language is based on prototypes (ECMAscript). A prototype language is a style of object-oriented programming in which behaviour reuse or inheritance is performed via a process of cloning existing objects that serve as prototypes. Since the prototype is cloned for creating other objects, this could be uses to find new vulnerabilities within the Renderer of browsers.
   \item Encryption methods can do nothing against an attack that intercepts traffic before sending or after receiving a requested service/resource.
   \item There are browsers that still use a monolitic architecture (monoprocess). Meaning that the browser is using the users permission to access directly the host resources.
 \end{itemize}
-\subsection*{Solution}
-An attacker can take advantage of the Browser User by letting a social engineering attack do its job, by surfing every website without distrust. If the Browser User is not careful, while surfing in the Internet, it could lead into downloading and installing malicious binaries in the system without notice. Also, a single phishing e-mail wishing for the user to click in a URL address could lead into installing a binaries, extensions or scripts in the Host. If a social engineering attack is successful the attacker can take its time, because whatever is installed in the Host, the attacker has installed it with the user's permission. Therefore every action done in the Host or Browser Kernel, will be identified by the Host as an action done by the Browser User, a user of the Host. 
-If the attacker can obtain physical access to the Host running the Browser Kernel, he or she can install without the real user's consent an extension, script or binary in the Host, that could lead to a misuse. Also, is not a necessity for the attacker to install malicious payload/binaries in the Browser, she or he could use ``benign-but-buggy" extensions or scripts to surpass the Sandbox's secure mechanism and misuse the Host or Browser Kernel.
-
-
-\subsection*{Structure}
-In Figure \ref{fig:BIMisuse} the \textbf{Browser Kernel} is an entity that represents the main process of a Web Browser, which is constantly communicating with the host of the browser. A user who makes a \textbf{Request} to a Internet resources using a Web Browser, will be called \textbf{Browser User}. At the same time, a \textbf{Provider} is responsible for receiving external requests. According to the request, a \textbf{Provider} will send the \textbf{Service} (or resource) the \textbf{Browser User} needs in a \textbf{Response} message. Most Browsers use a central component to do operations that need to affect the Host of the Browser, a \textbf{Browser Kernel}. Figure \ref{fig:BIMisuse} shows the Class diagram for the Browser Infrastructure Pattern. For each new resource a \textbf{Browser Kernel} requests a created or reused \textbf{Web Content Renderer} instance; this will inherit the \textbf{Controlled Process} properties and its methods. A \textbf{Plugin} and an \textbf{Extension} are elements that extend the functionality of the browser; the extender being for the exclusive use of the browser while the plugin can be used in other systems, such as the Adobe Reader Plugin. A \textbf{Sandbox} is a Controlled Execution Domain \cite{fernandez2013security} created for a single \textbf{Controlled Process} instance. The \textbf{Sandbox} allows the process memory isolation and the access control of each communication between processes, such as an instance of a \textbf{Controlled Process} with the \textbf{Browser Kernel}; this applies to a \textbf{Web Content Renderer}, a \textbf{Plugin} and an \textbf{Extension} as well. To communicate with the \textbf{Browser Kernel}, a \textbf{Proxy} created within a \textbf{Controlled Process} forwards a \textbf{Local Request} to the \textbf{Reference Monitor} inside the \textbf{Browser Kernel}. For every message sent from a \textbf{Controlled Process}, the \textbf{Reference Monitor} will check the \textbf{Domain}'s \textbf{Right}s to permit the access. The access control which the Sandbox delivers to each \textbf{Controlled Process} allows the isolation between different \textbf{Domain}s. Depending on the manufacturer, a \textbf{Plugin} could not be Sandboxed. The \textbf{Attacker} class is a person using some unit that could undertake a risky action against the integrity and confidentiality of the browser, the user of it and Provider (Figure \ref{fig:BIMisuse}). The attacker is able to intercept the messages between the Browser Client and Controlled Process using a malicious Controlled Process, which could be instanced as a Plugin, Extension or a Web Content Renderer. A interception of the \textbf{Response} could also lead to the same misuse.
 
 \begin{figure*}[h!t]
   \centering
-  \includegraphics[scale=0.8]{figures/patronMisuse_v8.jpg}
-  \caption{Class Diagram for the Misuse Pattern.}
-  \label{fig:BIMisuse}
+  \includegraphics[scale=0.8]{figures/misuse/MakeRequestMisuse_installMalicious.jpg}
+  \caption{Sequence Diagram for Creating a Malicious Controlled Process (Plugin, Extension or Web Content Renderer)}
+  \label{fig:SeqInstall}
 \end{figure*}
 
-\subsection*{Dynamics}
-In Figure \ref{fig:SeqMisuse} a series of required steps is shown, for one of the many misuses that can be made for the use case \textbf{Make Request}. The attacker is located between the Browser Kernel and the Controlled Processes, intercepting the original request or response and modifying the traffic to its taste; usually an attack based on this misuse is called Man-in-the-Browser (MITB) \cite{Liu2012, Barth2010, Utakrit2009, Dougan2012}. This could also happen when the Browser User has allowed the installation of plugins, extensions or external programs in the Host and Browser Kernel.
-
-\begin{landscape}
 \begin{figure*}[h!t]
   \centering
-  \hspace*{-7cm}\includegraphics[scale=0.8]{figures/MakeRequestMisuse_v8.jpg}
-  \caption{Sequence Diagram for the misuse: Interception of traffic in the Web Browser.}
+  \includegraphics[scale=0.53]{figures/MakeRequest_v8.jpg}
+  \caption{Sequence Diagram ``Make Request" \cite{silva2015}. The first 9 steps are used by the misuse and then it starts the Partial Sequence Diagram for the misuse (Figure \ref{fig:SeqMisuse})}
+  \label{fig:SeqMakeReq}
+\end{figure*}
+
+\begin{figure*}[h!t]
+  \centering
+  \includegraphics[scale=0.7]{figures/misuse/MakeRequestMisuse_showOnlyMisuse.jpg}
+  \caption{Partial Sequence Diagram for the misuse: Interception of traffic in the Web Browser (The first 9 step remain the same as the Make Request from \cite{silva2015}, Figure \ref{fig:SeqMakeReq}).}
   \label{fig:SeqMisuse}
 \end{figure*}
-\end{landscape}
 
+% \begin{landscape}
+% \begin{figure*}[h!t]
+%   \centering
+%   \hspace*{-7cm}\includegraphics[scale=0.8]{figures/misuse/MakeRequestMisuse-v.3_complete_bigger.jpg}
+%   \caption{The complete Sequence Diagram for the misuse: Interception of traffic in the Web Browser.}
+%   \label{fig:SeqMisuse}
+% \end{figure*}
+% \end{landscape}
+
+
+
+\subsubsection*{Structure}
+In Figure \ref{fig:BIMisuse} the \textbf{Browser Kernel} is an entity that represents the main process of a Web Browser, which is constantly communicating with the host of the browser. A user who makes a \textbf{Request} to a Internet resources using a Web Browser, will be called \textbf{Browser User}. At the same time, a \textbf{Provider} is responsible for receiving external requests. According to the request, a \textbf{Provider} will send the \textbf{Service} (or resource) the \textbf{Browser User} needs in a \textbf{Response} message. Most Browsers use a central component to do operations that need to affect the Host of the Browser, a \textbf{Browser Kernel}. Figure \ref{fig:BIMisuse} shows the Class diagram for the Browser Infrastructure Pattern. For each new resource a \textbf{Browser Kernel} requests a created or reused \textbf{Web Content Renderer} instance; this will inherit the \textbf{Controlled Process} properties and its methods. A \textbf{Plugin} and an \textbf{Extension} are elements that extend the functionality of the browser; the extender being for the exclusive use of the browser while the plugin can be used in other systems, such as the Adobe Reader Plugin. A \textbf{Sandbox} is a Controlled Execution Domain \cite{fernandez2013security} created for a single \textbf{Controlled Process} instance. The \textbf{Sandbox} allows the process memory isolation and the access control of each communication between processes, such as an instance of a \textbf{Controlled Process} with the \textbf{Browser Kernel}; this applies to a \textbf{Web Content Renderer}, a \textbf{Plugin} and an \textbf{Extension} as well. To communicate with the \textbf{Browser Kernel}, a \textbf{Proxy} created within a \textbf{Controlled Process} forwards a \textbf{Local Request} to the \textbf{Reference Monitor} inside the \textbf{Browser Kernel}. For every message sent from a \textbf{Controlled Process}, the \textbf{Reference Monitor} will check the \textbf{Domain}'s \textbf{Right}s to permit the access. The access control which the Sandbox delivers to each \textbf{Controlled Process} allows the isolation between different \textbf{Domain}s. Depending on the manufacturer, a \textbf{Plugin} could not be Sandboxed. The \textbf{Attacker} class is a person using some unit that could undertake a risky action against the integrity and confidentiality of the browser, the user of it and Provider (Figure \ref{fig:BIMisuse}). The attacker is able to intercept the messages between the Browser Client and Controlled Process using a malicious Controlled Process, which could be instanced as a Plugin, Extension or a Web Content Renderer. A interception of the \textbf{Response} could also lead to the same misuse.
+
+
+\subsubsection*{Dynamics}
+In Figure \ref{fig:SeqMisuse} a series of required steps is shown, for one of the many misuses that can be made for the use case \textbf{Make Request}. The attacker is located between the Browser Kernel and the Controlled Processes, intercepting the original request or response and modifying the traffic to its taste; usually an attack based on this misuse is called Man-in-the-Browser (MITB) \cite{Liu2012, Barth2010, Utakrit2009, Dougan2012}. This could also happen when the Browser User has allowed the installation of plugins, extensions or external programs in the Host and Browser Kernel.
   
   \subsubsection*{Summary} The attacker intercepts the traffic between the Browser Kernel and Controlled Processes. This action could lead to different kinds of misuses or new attacks depending on the attacker's intentions.
   \subsubsection*{Actor} Attacker
@@ -242,19 +266,19 @@ In Figure \ref{fig:SeqMisuse} a series of required steps is shown, for one of th
 
   \subsubsection*{Description}
       \begin{enumerate}
-        \item An attacker uses a social engineering technique or vulnerability in the system, and creates an entity between the Browser Kernel and Controlled Process and their communication channel, normally a plugin, binary or extension. Also, an attacker could be using a ``benign-but-buggy" extension or script to the same purpose.
-        \item A Browser User requires a browser to access a URL for some resource in a Provider, this is done by using a Browser Kernel already instanced in the Host. A Controlled Process and its Proxy are created or reused for rendering the resource needed. If the Controlled Process is new, the Domain and Rights of the Controlled Process are set.
-        \item The Browser User requires the Host resources to obtain what is behind the URL. A Request is made from the Browser Kernel which creates a communication channel with the Provider, which in return sends a Response.
-        \item The Browser Kernel receives the Response, and forwards it to the Controlled Process which the original Request came from.
-        \item From here, the original or the ``may be" tapped Response could follow different ways. While rendering the resource, somewhere in the Response obtained the need of calling a plugin, an extension or a program for the rendering process will appear, and an action from the attacker to intercept the messages will occur. Also, a Browser Kernel could have been tapped to perform that action and send all the traffic to other Controlled Process; a malicious or to a ``benign-but-buggy". While sending the traffic, the Controlled Process needs to rely in its Proxy to send the data to the malicious plugin, extension or binary created through the Controlled Process. The traffic sent from the Controlled Process to the malicious one, has to make it through the Reference Monitor first, if the attacker wishes to be successful. The latter is done by sending a Local Request through the Proxy of the Controlled Process of origin, to the Reference Monitor in the Browser Kernel.
-        \item Then, the Browser Kernel sends the traffic to the malicious or to a ``benign-but-buggy" Controlled Process and intercepts the traffic that is going to be used for rendering. Depending on the attacker's goals, the data can be spied or modified. Since the rendering process needs to finish, the intercepted traffic is returned through the Proxy in the malicious Controlled Process, to the Reference Monitor in the Browser Kernel, and then to the Controlled Process of origin to finish the rendering.
+        \item An attacker uses a social engineering technique or vulnerability in the system, and creates an entity between the Browser Kernel and Controlled Process and their communication channel, normally a plugin, binary or extension. Also, an attacker could be using a ``benign-but-buggy" extension or script to the same purpose. Figure \ref{fig:SeqInstall} describes the instation of the Malicious Controlled Process.
+        \item A Browser User requires a browser to access a URL for some resource in a Provider, this is done by using a Browser Kernel already instanced in the Host. A Controlled Process and its Proxy are created or reused for rendering the resource needed. If the Controlled Process is new, the Domain and Rights of the Controlled Process are set. The first 9 step of the Make Request Sequence Diagram from \cite{silva2015} (Figure \ref{fig:SeqMakeReq}) are the same.
+        \item The misuse will start as shown in Figure \ref{fig:SeqMisuse}, when the Browser User requires the Host resources to obtain what is behind the URL. A Request is made from the Browser Kernel which creates a communication channel with the Provider, which in return sends a Response (steps 1 to 3 in Figure \ref{fig:SeqMisuse}).
+        \item The Browser Kernel receives the Response, and forwards it to the Controlled Process which the original Request came from (step 4 in Figure \ref{fig:SeqMisuse}).
+        \item From here, the original or the ``may be" tapped Response could follow different ways. While rendering the resource, somewhere in the Response obtained the need of calling a plugin, an extension or a program for the rendering process will appear, and an action from the attacker to intercept the messages will occur. Also, a Browser Kernel could have been tapped to perform that action and send all the traffic to other Controlled Process; a malicious or to a ``benign-but-buggy". While sending the traffic, the Controlled Process needs to rely in its Proxy to send the data to the malicious plugin, extension or binary created through the Controlled Process. The traffic sent from the Controlled Process to the malicious one, has to make it through the Reference Monitor first, if the attacker wishes to be successful. The latter is done by sending a Local Request through the Proxy of the Controlled Process of origin, to the Reference Monitor in the Browser Kernel (steps 5 to 9 in Figure \ref{fig:SeqMisuse}).
+        \item Then, the Browser Kernel sends the traffic to the malicious or to a ``benign-but-buggy" Controlled Process and intercepts the traffic that is going to be used for rendering. Depending on the attacker's goals, the data can be spied or modified. Since the rendering process needs to finish, the intercepted traffic is returned through the Proxy in the malicious Controlled Process, to the Reference Monitor in the Browser Kernel, and then to the Controlled Process of origin to finish the rendering (steps 10 to 16 in Figure \ref{fig:SeqMisuse}).
         \item It can happen the traffic goes between the malicious Controlled Process and the Browser Kernel several times before it can reach to the Controlled Process, in charge of the rendering process.
-        \item Once the rendering process has finished, the bitmap is sent to the Browser Kernel (through the Proxy) and displayed in the Host. Also, the representation of the resource in the Web Content Renderer (DOM and data) could deviate from the original, thanks to the interception done by the attacker.
+        \item Once the rendering process has finished, the bitmap is sent to the Browser Kernel (through the Proxy) and displayed in the Host. Also, the representation of the resource in the Web Content Renderer (DOM and data) could deviate from the original, thanks to the interception done by the attacker (steps 17 to 22 in Figure \ref{fig:SeqMisuse}).
 
       \end{enumerate}
   \subsubsection*{Postconditions} The victim will be fully compromised and it probably will not be possible to detect the modification of a message, it is also possible that the log of the Host will be affected.
 
-  \subsubsection*{Known Uses} The browser is a software that has different implementations, so the number of attack vectors are significant. Some of these are:
+  \subsection*{Known Uses} The browser is a software that has different implementations, so the number of attack vectors are significant. Some of these are:
       \begin{itemize}
         \item Zeus \cite{zeus} is a Trojan horse malware that runs on Microsoft Windows and can be used to carry out many malicious and criminal tasks, it is often used to steal banking information by man-in-the-browser. First identified in July 2007 when it was used to steal information from the United States Department of Transportation.
         \item SpyEye \cite{spyeye1} is known as Zeus's successor, it is sophisticated botnet creation kit that has been implicated in a number of costly online banking thefts against businesses and consumers. One way people get infected is by visiting a website that has been tampered with by hackers. The site will contain a 1x1 pixel that pulls JavaScript from a different server and begins testing to see if the victim's computer has unpatched software.
@@ -293,7 +317,7 @@ The misuse has the following consequences for the attacker:
 
 \subsection*{Related Patterns}
   \begin{itemize}
-    \item The Browser Infrastructure pattern \cite{silva2015}.
+    \item The Browser Infrastructure pattern \cite{silva2015} (see appendix).
     \item The Reified Reference Monitor \cite{fernandez2013security}, which describes how to enforce authorization rights when a subject requests access to a protected object or service and returns a decision (response). 
     \item The Sandbox is another name for the pattern Controlled Execution Domain \cite{fernandez2013security}.
     \item Blacklist and Whitelist patterns \cite{fernandez2013security}.
@@ -318,6 +342,14 @@ With this misuse pattern we intent to initiate a catalog. This would help to con
 Future work to do is finishing the Reference Architecture for \textit{Web Browsers}. Other patterns related to Browser Infrastructure pattern will be obtained in order to complete the Reference Architecture, such as the Web Content Renderer and Browser Kernel pattern. 
 
 We plan to build more Misuse Patterns for the Browser Infrastructure Pattern, to continue the study of the possible threats in the \textit{Browser}, as a way to educate Developers and Stakeholders. At the same time, these patterns will allow the construction of the Security Reference Architecture for the browser. In the same line, in addition to finding potential threats existing in the system, we need to find countermeasures or security defenses to prevent or foresee such threats through security patterns on the reference architecture built. An example of the type of work to be carried out can be seen in \cite{Fernandez2015}.
+
+\section{Acknowledgements}
+We thank our shepherd, Yu Chin Cheng, for his useful comments that significantly improved the quality of the paper. We also thank Woei-Kae Chen for supervising our paper shepherding.
+
+
+\section{Appendix}
+The Browser Infrastructure pattern is the main core of the Reference Architecture (RA) we are building. It represents the main component for a modular architecture of popular browsers like: Google Chrome/Chromium, Internet Explorer and Firefox. We plan to extend our RA by adding new patterns of subcomponents of the browser, such as the Web Content Renderer and Browser Kernel. A work in parallel is the abstraction of defense mechanism as security patterns to build a Security Reference Architecture for web browsers.
+
 
 \bibliography{refTodas}  
 \bibliographystyle{IEEEtran}
