@@ -116,7 +116,7 @@ Eduardo B. Fernandez\\
 
 \maketitle
 \begin{abstract}
-Currently, most software development is focused in creating systems connected to the Internet, which allows to add functionality within a system and facilities to their \textit{Stakeholders}. This leads to depend on a \textit{web client}, such as \textit{Web Browser}, which allows access to services, data or operations that the system delivers. However, the Internet influences the attack surface of the system, and unfortunately many stakeholders and developers are not aware of the risks to which they are exposed. The lack of security education among software developers and the scarce and scattered documentation for browsers (and standardization) could become a big problem in large architectural developments that depend on browsers to perform their services. A Reference Architecture of the \textit{Web Browser}, using Architectural Patterns, could be a starting point for understanding its security mechanisms and architecture, which interacts with a bigger web system. This would  unify ideas and terminology, giving a holistic view of independent implementation details for both the browser and the system it communicates with. We developed a Browser Infrastructure pattern that describes the infrastructure to allow the communication between a Web Client and a Server in the Internet. With this work we propose an architectural pattern as the first piece of our Reference Architecture for Web Browsers and security concerns.
+Currently, most software development is focused in creating systems connected to the Internet, which allows to add functionality within a system and facilities to their \textit{Stakeholders}. This leads to depend on a \textit{web client}, such as \textit{Web Browser}, which allows access to services, data or operations that the system delivers. However, the Internet influences the attack surface of the system, and unfortunately many stakeholders and developers are not aware of the risks to which they are exposed. The lack of security education among software developers and the scarce and scattered documentation for browsers (and standardization) could become a big problem in large architectural developments that depend on browsers to perform their services. A Reference Architecture (RA) of the \textit{Web Browser}, using Architectural Patterns, could be a starting point for understanding its security mechanisms and architecture, which interacts with a bigger web system. This would  unify ideas and terminology, giving a holistic view of independent implementation details for both the browser and the system it communicates with. We developed a Browser Infrastructure pattern that describes the infrastructure to allow the communication between a Web Client and a Server in the Internet. With this work we propose an architectural pattern as the first piece of our Reference Architecture (RA) for Web Browsers and security concerns.
 \end{abstract}
 
 
@@ -160,16 +160,16 @@ Currently, most software development is focused in creating systems connected to
 
 \keywords{Browser, Web Client, Browser Architecture, Reference Architecture, Pattern}
 
-\section*{Introduction}
+\section{Introduction}
 Patterns are encapsulated solutions to recurrent problems and define a way to express requirements and solutions concisely, as well as providing a communication vocabulary for designers \cite{gamma1994design}. The description of architectures using patterns makes them easier to understand, provides guidelines for design and analysis, and can define a way of making their structure more secure.
-
-Security patterns describe solutions to problems that arise from controlling (stopping or mitigating) a set of specific threats through security mechanisms, defined in a given context. The most common use of security patterns is to help application developers -who are not security experts- to add security in their designs. Patterns of this kind are also used to reinforce a legacy system.
 
 The aim of a Reference Architecture is to provide a guide for developers, who are not security experts, to develop architectures for concrete versions of the system or to extend such system. With the use of architectural patterns we describe the Browser Architecture as a Reference Architecture (RA). An RA is created by capturing the essentials of existing architectures and by taking into account future needs and opportunities, ranging from specific technologies, patterns and business models. It can also be derived from domain models.
 
-A Security Reference Architecture is a Reference Architecture where security services have been added in appropriate places to provide some degree of security for a specific system. The basic approach twe will use to build a Security Reference Architecture is the application of a systematic methodology from \cite{fernandez2006methodology,Fernandez2011,Fernandez2015}, which can be used as a guideline to build secure web browser systems and/or evaluate their security levels. The first step was to build a Reference Anrchitecture in a student work, and now we are trying to improve it using security patterns and misuse patterns. By checking if a threat, expressed as a misuse pattern, can be stopped or mitigated in the security reference architecture, we can evaluate its level of security.
+% Security patterns describe solutions to problems that arise from controlling (stopping or mitigating) a set of specific threats through security mechanisms, defined in a given context. The most common use of security patterns is to help application developers -who are not security experts- to add security in their designs. Patterns of this kind are also used to reinforce a legacy system.
 
-In this work, a Browser Infrastructure Pattern is presented as a first step in to the process of developing a Reference Architecture (RA) and Security Reference Architecture (SRA) for the Web Browser. The audience to which our paper is focused are Browser developers, Web Application developers and even normal users. Being the first two the most important, since they are the responsible for the implementation and correct use of secure mechanisms while a user is browsing in the Internet. Secure communication is an important matter, but in this work the focus will be on the Browser and how to control the responses it receives. Threat analysis and security patterns were done in a previous work, we will improve the architecture in the construction of the SRA. 
+We started to build a Reference Architecture in a student work, and now we are trying to improve it by creating new architectural patterns for our RA, misuse patterns and finding security patterns to build a Security Reference Architecture (SRA). We are currently building a SRA, which is a Reference Architecture where security services have been added in appropriate places to provide some degree of security for a specific system. The basic approach we will use to build a Security Reference Architecture is the application of a systematic methodology from \cite{fernandez2006methodology,Fernandez2011,Fernandez2015}, which can be used as a guideline to build secure web browser systems and/or evaluate their security levels. By checking if a threat, expressed as a misuse pattern, can be stopped or mitigated in the security reference architecture, we can evaluate its level of security.
+
+In this work, a Browser Infrastructure Pattern is presented as a first step in to the process of developing a Reference Architecture (RA) and Security Reference Architecture (SRA) for the Web Browser. The audience to which our paper is focused are Browser developers, Web Application developers and even normal users. Being the first two the most important, since they are the responsible for the implementation and correct use of secure mechanisms while a user is browsing in the Internet. Secure communication is an important matter, but in this work the focus will be on the Browser and how to control the responses it receives. %Threat analysis and security patterns were done in a previous work, we will improve the architecture in the construction of the SRA. 
 
 %\section*{Related Work}
  % \subsection*{Reference Architecture of the Browser}
@@ -196,7 +196,7 @@ In this work, a Browser Infrastructure Pattern is presented as a first step in t
  % The literature that concerns of building Secure Software, it indicates that practitioners in software development should understand, largely, the security problems that could potentially arise in their systems. It is not enough to know how to link the pieces together, nor that each piece itself is safe, if the system components do not act in a coordinated way, it probably will not be safe \cite{fernandez2013security}, since security is a systemic property which needs to be seen holistically and the early phases of the software development process.
 
 
-\section*{Browser Infrastructure Pattern}
+\section{Browser Infrastructure Pattern}
 
   \subsection*{Intent}
 
@@ -225,7 +225,7 @@ In this work, a Browser Infrastructure Pattern is presented as a first step in t
 
     \begin{figure*}[h!t]
       \centering
-      \includegraphics[scale=0.80]{figures/patron_v8.jpg}
+      \includegraphics[scale=0.7]{figures/BI/BrowserInfrastructure-v3.jpg}
       \caption{High-level Components of the Browser Infrastructure.}
       \label{fig:BIPatt}
     \end{figure*}
@@ -261,14 +261,12 @@ In this work, a Browser Infrastructure Pattern is presented as a first step in t
     \item The request is cancelled.
       \end{itemize}
     \subsubsection*{Postconditions} The \textit{Browser} receives the resource indicated by the URL and it is displayed by the peripheral device output for the Browser User.
-    \begin{landscape}
       \begin{figure*}[h!t]
           \centering
-          \hspace*{-7cm}\includegraphics[scale=0.75]{figures/MakeRequest_v8.jpg}
+          \includegraphics[scale=0.53]{figures/BI/MakeRequest-v3_original.jpg}
           \caption{Sequence Diagram: Make Request.}
           \label{fig:SecReq}
       \end{figure*}
-    \end{landscape}
 
   \subsection*{Implementation}
   \begin{itemize}
@@ -311,7 +309,7 @@ With the given pattern it is now possible to navigate smoothly to all resources 
     \item The TLS pattern in \cite{fernandez2013security} complements our pattern, for adding security to communications between Client and Server.
   \end{itemize}
 
-\section*{Conclusions and Future Work}
+\section{Conclusions and Future Work}
 A Web browser appears to be a medium complexity software for users and developers without security experience, but unfortunately this piece of software allows a variaty of attack vectors, to the user using it as well as the system with which interacts. Therefore it is important to understand its structure and how it interacts with internal and/or external Stakeholders.
 
 A part of our Reference Architecture has been built through the abstraction of documentation through the Browser Infrastructure pattern. We created our first architectural pattern for the infrastructure of \textit{Web Browser} to help others understand, holistically, the components, interactions and relationships of this system. Furthermore, it has been possible to characterize the Stakeholders and one of the most important use case. From what we have known, this is the second Reference Architecture for the \textit{Browser} built. The reference model obtained in \cite{2005-grosskurth-browser-refarch} express the type of architecture used in the nineties until 2009 (approximately). However, our proposal represents the current implementation used in browsers, usually called a \textbf{Modular Architecture}. The proposed work allows a better understanding of this system called Web Browser by using our partially Reference Architecture, this is also helpful to understand existing threats. Also, as it is not subject to specific implementations, it is possible to generalize certain results in other browsers. 
@@ -320,8 +318,8 @@ Future work to do is finishing the Reference Architecture for \textit{Web Browse
 
 We plan to build more Misuse Patterns for the Browser Infrastructure Pattern, to continue the study of the possible threats in the \textit{Browser}, as a way to educate Developers and Stakeholders. At the same time, these patterns will allow the construction of the Security Reference Architecture for the browser. In the same line, in addition to finding potential threats existing in the system, we need to find countermeasures or security defenses to prevent or foresee such threats through security patterns on the reference architecture built. An example of the type of work to be carried out can be seen in \cite{Fernandez2015}.
 
-\section*{Acknowledgements}
-We thank our shepherd, Norihiro Yoshida, for his useful comments that significantly improved the quality of the paper. We also thank Woei-Kae Chen for supervising our paper shepherding.
+\section{Acknowledgements}
+We thank our shepherd, Norihiro Yoshida, for his useful comments that significantly improved the quality of the paper. We also thank Woei-Kae Chen for supervising our paper shepherding. This work was partially supported by CONICYT (grant Fondecyt 1140408).
 
 \bibliography{refTodas}  
 \bibliographystyle{IEEEtran}

@@ -114,6 +114,10 @@ A.~Barth, C.~Jackson, C.~Reis, T.~Team \emph{et~al.}, ``The security
   \url{https://www.chromium.org/developers/design-documents/site-isolation}
 \BIBentrySTDinterwordspacing
 
+\bibitem{silva2015}
+P.~Silva, R.~Monge, and E.~Fernandez~B., ``{A pattern for Web Browser
+  Infrastructure},'' \emph{Pattern Language of Programs}, 2015.
+
 \bibitem{fernandez2013security}
 E.~B. Fernandez, \emph{Security patterns in practice: designing secure
   architectures using software patterns}.\hskip 1em plus 0.5em minus
@@ -140,10 +144,6 @@ N.~Utakrit, ``{Review of Browser Extensions, a Man-in-the-Browser Phishing
 T.~Dougan and K.~Curran, ``{Man in the Browser Attacks},'' \emph{International
   Journal of Ambient Computing and Intelligence}, vol.~4, no.~1, pp. 29--39,
   2012.
-
-\bibitem{silva2015}
-P.~Silva, R.~Monge, and E.~Fernandez~B., ``{A pattern for Web Browser
-  Infrastructure},'' \emph{Pattern Language of Programs}, 2015.
 
 \bibitem{zeus}
 \BIBentryALTinterwordspacing

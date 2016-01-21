@@ -172,13 +172,13 @@ In this work, a Misuse Pattern is presented as a first step in to the process of
 
 \begin{figure*}[h!t]
   \centering
-  \includegraphics[scale=0.8]{figures/patronMisuse_v8.jpg}
+  \includegraphics[scale=0.7]{figures/misuse/BrowserInfrastructureMisuse-v3.jpg}
   \caption{Class Diagram for the Misuse Pattern.}
   \label{fig:BIMisuse}
 \end{figure*}
 
 \section{Terminology}
-Current popular web browsers use a modular architecture in contrast with monoprocess architecture used in the nineties. Nevertheless, the are core components of the browser are placed in a different manner meanwhile others are replaced with new technology or deleted. In this paper we defined names for core components but probably some of them may differ depending on implementation. We named as a Browser Kernel to the componenet that represents the main process of a Web Browser and receives requests from the user using the web browser. A Controlled Process/es, in contrast, is/are slave components of the Browser Kernel, and they are used to render the content for each request the user of the browser (a Browser User) needs.
+Current popular web browsers use a modular architecture in contrast with monoprocess architecture used in the nineties. Nevertheless, the are core components of the browser are placed in a different manner meanwhile others are replaced with new technology or deleted. In this paper we defined names for core components but probably some of them may differ depending on implementation. We named as a Browser Kernel to the component that represents the main process of a Web Browser and receives requests from the user using the web browser. A Controlled Process, in contrast, is a slave process of the Browser Kernel and is used to render the content for each request the user of the browser (a Browser User) needs.
 
 \section{Misuse Pattern: Interception of traffic in the Web Browser}
 \subsection*{Intent}
@@ -223,21 +223,21 @@ If the attacker can obtain physical access to the Host running the Browser Kerne
 
 \begin{figure*}[h!t]
   \centering
-  \includegraphics[scale=0.8]{figures/misuse/MakeRequestMisuse_installMalicious.jpg}
+  \includegraphics[scale=0.5]{figures/misuse/MakeRequestMisuse_installMalicious.jpg}
   \caption{Sequence Diagram for Creating a Malicious Controlled Process (Plugin, Extension or Web Content Renderer)}
   \label{fig:SeqInstall}
 \end{figure*}
 
 \begin{figure*}[h!t]
   \centering
-  \includegraphics[scale=0.53]{figures/MakeRequest_v8.jpg}
+  \includegraphics[scale=0.53]{figures/BI/MakeRequest-v3_original.jpg}
   \caption{Sequence Diagram ``Make Request" \cite{silva2015}. The first 9 steps are used by the misuse and then it starts the Partial Sequence Diagram for the misuse (Figure \ref{fig:SeqMisuse})}
   \label{fig:SeqMakeReq}
 \end{figure*}
 
 \begin{figure*}[h!t]
   \centering
-  \includegraphics[scale=0.7]{figures/misuse/MakeRequestMisuse_showOnlyMisuse.jpg}
+  \includegraphics[scale=0.49]{figures/misuse/MakeRequestMisuse_showOnlyMisuse.jpg}
   \caption{Partial Sequence Diagram for the misuse: Interception of traffic in the Web Browser (The first 9 step remain the same as the Make Request from \cite{silva2015}, Figure \ref{fig:SeqMakeReq}).}
   \label{fig:SeqMisuse}
 \end{figure*}
@@ -344,7 +344,7 @@ Future work to do is finishing the Reference Architecture for \textit{Web Browse
 We plan to build more Misuse Patterns for the Browser Infrastructure Pattern, to continue the study of the possible threats in the \textit{Browser}, as a way to educate Developers and Stakeholders. At the same time, these patterns will allow the construction of the Security Reference Architecture for the browser. In the same line, in addition to finding potential threats existing in the system, we need to find countermeasures or security defenses to prevent or foresee such threats through security patterns on the reference architecture built. An example of the type of work to be carried out can be seen in \cite{Fernandez2015}.
 
 \section{Acknowledgements}
-We thank our shepherd, Yu Chin Cheng, for his useful comments that significantly improved the quality of the paper. We also thank Woei-Kae Chen for supervising our paper shepherding.
+We thank our shepherd, Yu Chin Cheng, for his useful comments that significantly improved the quality of the paper. We also thank Woei-Kae Chen for supervising our paper shepherding. This work was partially supported by CONICYT (grant Fondecyt 1140408).
 
 
 \section{Appendix}

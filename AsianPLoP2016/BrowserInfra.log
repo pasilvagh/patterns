@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.4.28)  9 JAN 2016 21:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.4.28)  21 JAN 2016 15:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -546,6 +546,11 @@ LaTeX Font Info:    Try loading font information for T1+ptm on input line 117.
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 Excluding 'CCSXML' comment.
+Overfull \hbox (12.88506pt too wide) in paragraph at lines 199--199
+[]\secfnt BROWSER IN-FRAS-TRUC-TURE PAT-TERN 
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
@@ -556,73 +561,68 @@ Overfull \hbox (3.14473pt too wide) in paragraph at lines 221--222
 \T1/aer/m/n/9 Provide a de-vice, the Web Browser, with the func-tions needed
  []
 
-<figures/patron_v8.jpg, id=14, 438.13687pt x 488.57532pt>
-File: figures/patron_v8.jpg Graphic file (type jpg)
+<figures/BI/BrowserInfrastructure-v3.jpg, id=14, 512.91624pt x 587.19376pt>
+File: figures/BI/BrowserInfrastructure-v3.jpg Graphic file (type jpg)
 
-<use figures/patron_v8.jpg>
-Package pdftex.def Info: figures/patron_v8.jpg used on input line 228.
-(pdftex.def)             Requested size: 350.50996pt x 390.86078pt.
+<use figures/BI/BrowserInfrastructure-v3.jpg>
+Package pdftex.def Info: figures/BI/BrowserInfrastructure-v3.jpg used on input 
+line 228.
+(pdftex.def)             Requested size: 359.03893pt x 411.03282pt.
 
 Overfull \hbox (1.74461pt too wide) in paragraph at lines 243--244
 \T1/aer/m/n/9 Provider. The Browser Ker-nel will be used by a User Browser
  []
 
-[2]
+
 Overfull \hbox (6.3888pt too wide) in paragraph at lines 252--253
 \T1/aer/m/n/9 ceived. De-pend-ing on how it is im-ple-mented the Browser
  []
 
-[3 <./figures/patron_v8.jpg>]
-<figures/MakeRequest_v8.jpg, id=23, 953.06062pt x 476.53032pt>
-File: figures/MakeRequest_v8.jpg Graphic file (type jpg)
+[2] <figures/BI/MakeRequest-v3_original.jpg, id=20, 947.54pt x 584.1825pt>
+File: figures/BI/MakeRequest-v3_original.jpg Graphic file (type jpg)
 
-<use figures/MakeRequest_v8.jpg>
-Package pdftex.def Info: figures/MakeRequest_v8.jpg used on input line 267.
-(pdftex.def)             Requested size: 714.79372pt x 357.39687pt.
-
-Overfull \hbox (11.62444pt too wide) in paragraph at lines 267--268
- []| [] 
- []
-
-[4 <./figures/MakeRequest_v8.jpg>]
-Overfull \hbox (4.26437pt too wide) in paragraph at lines 296--297
+<use figures/BI/MakeRequest-v3_original.jpg>
+Package pdftex.def Info: figures/BI/MakeRequest-v3_original.jpg used on input l
+ine 266.
+(pdftex.def)             Requested size: 502.1938pt x 309.61523pt.
+ [3 <./figures/BI/BrowserInfrastructure-v3.jpg>]
+Overfull \hbox (4.26437pt too wide) in paragraph at lines 294--295
 \T1/aer/m/n/9 With the given pat-tern it is now pos-si-ble to nav-i-gate smooth
 ly
  []
 
-
-Overfull \hbox (4.38904pt too wide) in paragraph at lines 317--318
+[4 <./figures/BI/MakeRequest-v3_original.jpg>]
+Overfull \hbox (4.38904pt too wide) in paragraph at lines 315--316
 []\T1/aer/m/n/9 A part of our Ref-er-ence Ar-chi-tec-ture has been built throug
 h
  []
 
-[5
-
-
-] (./BrowserInfra.bbl
+(./BrowserInfra.bbl
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
-) [6] (./BrowserInfra.aux) ) 
+[5]) [6
+
+] (./BrowserInfra.aux) ) 
 Here is how much of TeX's memory you used:
  3455 strings out of 493105
- 43833 string characters out of 6137072
- 120687 words of memory out of 5000000
+ 43980 string characters out of 6137072
+ 119687 words of memory out of 5000000
  6792 multiletter control sequences out of 15000+600000
  56108 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,11n,35p,2276b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base
-/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
-utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on BrowserInfra.pdf (6 pages, 362424 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.
+enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
+w/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb
+8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on BrowserInfra.pdf (6 pages, 257416 bytes).
 PDF statistics:
  66 PDF objects out of 1000 (max. 8388607)
  45 compressed objects within 1 object stream

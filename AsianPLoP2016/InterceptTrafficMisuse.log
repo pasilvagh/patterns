@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.4.28)  20 JAN 2016 20:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.4.28)  21 JAN 2016 15:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -551,12 +551,15 @@ Overfull \hbox (3.51733pt too wide) in paragraph at lines 169--170
 h
  []
 
-<figures/patronMisuse_v8.jpg, id=1, 432.11438pt x 483.30562pt>
-File: figures/patronMisuse_v8.jpg Graphic file (type jpg)
 
-<use figures/patronMisuse_v8.jpg>
-Package pdftex.def Info: figures/patronMisuse_v8.jpg used on input line 175.
-(pdftex.def)             Requested size: 345.69196pt x 386.64502pt.
+<figures/misuse/BrowserInfrastructureMisuse-v3.jpg, id=1, 538.01pt x 603.25375p
+t>
+File: figures/misuse/BrowserInfrastructureMisuse-v3.jpg Graphic file (type jpg)
+
+ <use figures/misuse/BrowserInfrastructureMisuse-v3.jpg>
+Package pdftex.def Info: figures/misuse/BrowserInfrastructureMisuse-v3.jpg used
+ on input line 175.
+(pdftex.def)             Requested size: 376.60443pt x 422.27475pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -575,55 +578,60 @@ Overfull \hbox (2.49266pt too wide) in paragraph at lines 183--183
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \hbox (6.595pt too wide) in paragraph at lines 185--186
 \T1/aer/m/n/9 User sends a re-quest or re-ceives the re-sponse from the Provide
 r
  []
 
-
-Underfull \vbox (badness 3271) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2 <./figures/patronMisuse_v8.jpg>]
-<figures/misuse/MakeRequestMisuse_installMalicious.jpg, id=19, 619.56468pt x 52
-9.98pt>
+[2 <./figures/misuse/BrowserInfrastructureMisuse-v3.jpg>]
+<figures/misuse/MakeRequestMisuse_installMalicious.jpg, id=19, 1019.81pt x 917.
+4275pt>
 File: figures/misuse/MakeRequestMisuse_installMalicious.jpg Graphic file (type 
 jpg)
  <use figures/misuse/MakeRequestMisuse_installMalicious.jpg>
 Package pdftex.def Info: figures/misuse/MakeRequestMisuse_installMalicious.jpg 
 used on input line 226.
-(pdftex.def)             Requested size: 495.6524pt x 423.98456pt.
+(pdftex.def)             Requested size: 509.90375pt x 458.71263pt.
 
-<figures/MakeRequest_v8.jpg, id=20, 953.06062pt x 476.53032pt>
-File: figures/MakeRequest_v8.jpg Graphic file (type jpg)
-
-<use figures/MakeRequest_v8.jpg>
-Package pdftex.def Info: figures/MakeRequest_v8.jpg used on input line 233.
-(pdftex.def)             Requested size: 505.11974pt x 252.55986pt.
-
-Overfull \hbox (1.11974pt too wide) in paragraph at lines 233--234
+Overfull \hbox (5.90375pt too wide) in paragraph at lines 226--227
  [][] 
  []
 
+<figures/BI/MakeRequest-v3_original.jpg, id=20, 947.54pt x 584.1825pt>
+File: figures/BI/MakeRequest-v3_original.jpg Graphic file (type jpg)
 
-<figures/misuse/MakeRequestMisuse_showOnlyMisuse.jpg, id=21, 698.61pt x 517.182
-19pt>
+<use figures/BI/MakeRequest-v3_original.jpg>
+Package pdftex.def Info: figures/BI/MakeRequest-v3_original.jpg used on input l
+ine 233.
+(pdftex.def)             Requested size: 502.1938pt x 309.61523pt.
+
+<figures/misuse/MakeRequestMisuse_showOnlyMisuse.jpg, id=21, 1049.9225pt x 776.
+9025pt>
 File: figures/misuse/MakeRequestMisuse_showOnlyMisuse.jpg Graphic file (type jp
 g)
  <use figures/misuse/MakeRequestMisuse_showOnlyMisuse.jpg>
 Package pdftex.def Info: figures/misuse/MakeRequestMisuse_showOnlyMisuse.jpg us
 ed on input line 240.
-(pdftex.def)             Requested size: 489.02367pt x 362.02505pt.
- [3]
+(pdftex.def)             Requested size: 514.46652pt x 380.68555pt.
+
+Overfull \hbox (10.46652pt too wide) in paragraph at lines 240--241
+ [][] 
+ []
+
+[3]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4 <./figures/misuse/MakeRequestMisuse_installMalicious.jpg>] [5 <./figures/Ma
-keRequest_v8.jpg>]
+ [4 <./figures/misuse/MakeRequestMisuse_installMalicious.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5 <./figures/BI/MakeRequest-v3_original.jpg>] [6 <./figures/misuse/MakeReques
+tMisuse_showOnlyMisuse.jpg>]
 Overfull \hbox (5.45284pt too wide) in paragraph at lines 275--276
 \T1/aer/m/n/9 Con-trolled Pro-cess and the Browser Ker-nel sev-eral times
  []
@@ -633,15 +641,12 @@ Overfull \hbox (3.67924pt too wide) in paragraph at lines 283--284
 \T1/aer/m/n/9 bank-ing in-for-ma-tion by man-in-the-browser. First iden-
  []
 
-[6 <./figures/misuse/MakeRequestMisuse_showOnlyMisuse.jpg>]
+[7]
 Overfull \hbox (2.08655pt too wide) in paragraph at lines 320--321
-[]\T1/aer/m/n/9 The Browser In-fras-truc-ture pat-tern [22] (see ap-pendix). 
+[]\T1/aer/m/n/9 The Browser In-fras-truc-ture pat-tern [18] (see ap-pendix). 
  []
 
-[7] (./InterceptTrafficMisuse.bbl
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8]
+(./InterceptTrafficMisuse.bbl [8]
 Overfull \hbox (40.31458pt too wide) in paragraph at lines 169--172
 \T1/aer/m/n/9 stranger-[]danger-[]introducing-[]smartscreen-[]application-[]rep
 utation . 
@@ -652,7 +657,7 @@ utation .
 ] (./InterceptTrafficMisuse.aux) ) 
 Here is how much of TeX's memory you used:
  3478 strings out of 493105
- 44638 string characters out of 6137072
+ 44801 string characters out of 6137072
  124743 words of memory out of 5000000
  6812 multiletter control sequences out of 15000+600000
  56108 words of font info for 78 fonts, out of 8000000 for 9000
@@ -668,7 +673,7 @@ mf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on InterceptTrafficMisuse.pdf (9 pages, 629716 bytes).
+Output written on InterceptTrafficMisuse.pdf (9 pages, 473656 bytes).
 PDF statistics:
  79 PDF objects out of 1000 (max. 8388607)
  53 compressed objects within 1 object stream
