@@ -68,7 +68,7 @@
 %\isbn{123-4567-24-567/08/06}
 
 %Conference
-\conferenceinfo{AsianPLoP 2016}{February 24-26, Taiwan.}
+\conferenceinfo{EuroPLoP 2016}{July 6-10, Bavaria, Germany.}
 
 %\acmPrice{\$15.00}
 
@@ -79,7 +79,7 @@
 %\crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
 % --- End of Author Metadata ---
 
-\title{A pattern for Web Browser Infrastructure}
+\title{A pattern for Web Browser Renderer}
 %\subtitle{[Extended Abstract]
 %\titlenote{A full version of this paper is available as
 %\textit{Author's Guide to Preparing ACM SIG Proceedings Using
@@ -116,7 +116,7 @@ Eduardo B. Fernandez\\
 
 \maketitle
 \begin{abstract}
-Currently, most software development is focused in creating systems connected to the Internet, which allows to add functionality within a system and facilities to their \textit{Stakeholders}. This leads to depend on a \textit{web client}, such as \textit{Web Browser}, which allows access to services, data or operations that the system delivers. However, the Internet influences the attack surface of the system, and unfortunately many stakeholders and developers are not aware of the risks to which they are exposed. The lack of security education among software developers and the scarce and scattered documentation for browsers (and standardization) could become a big problem in large architectural developments that depend on browsers to perform their services. A Reference Architecture (RA) of the \textit{Web Browser}, using Architectural Patterns, could be a starting point for understanding its security mechanisms and architecture, which interacts with a bigger web system. This would  unify ideas and terminology, giving a holistic view of independent implementation details for both the browser and the system it communicates with. We developed a Browser Infrastructure pattern that describes the infrastructure to allow the communication between a Web Client and a Server in the Internet. With this work we propose an architectural pattern as the first piece of our Reference Architecture (RA) for Web Browsers and security concerns.
+Currently, most software development is focused in creating systems connected to the Internet, which allows to add functionality within a system and facilities to their \textit{Stakeholders}. This leads to depend on a \textit{web client}, such as \textit{Web Browser}, which allows access to services, data or operations that the system delivers. However, the Internet influences the attack surface of the system, and unfortunately many stakeholders and developers are not aware of the risks to which they are exposed. The lack of security education among software developers and the scarce and scattered documentation for browsers (and standardization) could become a big problem in large architectural developments that depend on browsers to perform their services. A Reference Architecture (RA) of the \textit{Web Browser}, using Architectural Patterns, could be a starting point for understanding its security mechanisms and architecture, which interacts with a bigger web system. This would  unify ideas and terminology, giving a holistic view of independent implementation details for both the browser and the system it communicates with. We developed a Browser Infrastructure pattern that describes the infrastructure to allow the communication between a Web Client and a Server in the Internet. In this paper we will identify the component in charge of the rendering of a web resource within the web browser, named here as Web Content Renderer.
 \end{abstract}
 
 
@@ -165,48 +165,22 @@ Patterns are encapsulated solutions to recurrent problems and define a way to ex
 
 The aim of a Reference Architecture is to provide a guide for developers, who are not security experts, to develop architectures for concrete versions of the system or to extend such system. With the use of architectural patterns we describe the Browser Architecture as a Reference Architecture (RA). An RA is created by capturing the essentials of existing architectures and by taking into account future needs and opportunities, ranging from specific technologies, patterns and business models. It can also be derived from domain models.
 
-% Security patterns describe solutions to problems that arise from controlling (stopping or mitigating) a set of specific threats through security mechanisms, defined in a given context. The most common use of security patterns is to help application developers -who are not security experts- to add security in their designs. Patterns of this kind are also used to reinforce a legacy system.
-
 We started to build a Reference Architecture in a student work, and now we are trying to improve it by creating new architectural patterns for our RA, misuse patterns and finding security patterns to build a Security Reference Architecture (SRA). We are currently building a SRA, which is a Reference Architecture where security services have been added in appropriate places to provide some degree of security for a specific system. The basic approach we will use to build a Security Reference Architecture is the application of a systematic methodology from \cite{fernandez2006methodology,Fernandez2011,Fernandez2015}, which can be used as a guideline to build secure web browser systems and/or evaluate their security levels. By checking if a threat, expressed as a misuse pattern, can be stopped or mitigated in the security reference architecture, we can evaluate its level of security.
 
-In this work, a Browser Infrastructure Pattern is presented as a first step in to the process of developing a Reference Architecture (RA) and Security Reference Architecture (SRA) for the Web Browser. The audience to which our paper is focused are Browser developers, Web Application developers and even normal users. Being the first two the most important, since they are the responsible for the implementation and correct use of secure mechanisms while a user is browsing in the Internet. Secure communication is an important matter, but in this work the focus will be on the Browser and how to control the responses it receives. %Threat analysis and security patterns were done in a previous work, we will improve the architecture in the construction of the SRA. 
-
-%\section*{Related Work}
- % \subsection*{Reference Architecture of the Browser}
- % We tried to find studies by searching relevant keywords in Scopus or doing a forward snowballing from a work \cite{2005-grosskurth-browser-refarch} we knew. Unfortunately to the date there are a few works related to the construction of a Reference Architecture for the Web Browser.
-
- % In the study made by Larrondo-Petrie et. at \cite{535061} a web browser analysis is done with the goal of obtaining a Domain Model, and Object Model and a Feature Tree which described the structure and functionality a browser had. The domain, explained in th paper, is a distintive set of objects which act according to rules and policies that characterize the Domain. The used methodology obtains the domain is called Object Oriented Analyis. To identify
-
- % In addition to identifying these domains they are classified according to their role in the system as: Application Domain, Service Domain, Architecture Domain and Implementation Domain. Object Model serves to provide further details, an overview of the entities in the \textit{Web Browser} and their relationships. The \textit{Feature Tree} provides details on the functional aspects of the application. The proposed model, according to the article, should be useful for software developers who build \textbf{Web-based applications} using the \textit{Browser}. This study is quite far from what we want to do in this work, but it serves to get a background of what is happening in the \textit{Web Browser}, even though the information is very outdated.
-
- % In the work of Grosskurth et al. \cite{2005-grosskurth-browser-refarch,preprint-Grosskurth-browser-archevol}, a reverse engineering tool is used to obtain a reference architecture at a very high-level on two open-source browsers Mozilla and Konqueror. What it was obtained captured the fundamental subsystems to the same domain systems, as well as the relationships between these subsystems. In this architecture the following subcomponents are identified: User Interface, Data Persistence, Browser Engine, Rendering Engine, Networking, Interpreter of Javascript, XML Parser and Backend Display. It is mentioned that these components are tightly integrated (high coupling) with the Rendering Engine, which makes sense in the single-threaded (monoprocess) architecture that have Mozilla and Konqueror; It is a very common design decision in the \textit{Browser} by that time. 
-
- % By identifying these components, it is said that this would serve both the design and for the maintenance of a system, because it enhances the understanding to help analyze the trade-off between different design options; or it can also serve as a \textit{template} for new designs. Once the conceptual architecture is extracted, an assessment was initiated to compare the specific architecture of each open-source browser, extracted from the source code, to see how much the conceptual model was closer to reality; Also, the constant comparison allowed to refine the Reference Architecture. Browsers used to validate were: Epiphany, Safari, Lynx, Mosaic and Firefox. While there is quite high-level information about the architecture presented, it does not develop more than the abstraction layer. Also, it seems to appear that it depends on the implementation used in the reverse engineering tool.  
-
- % The paper \cite{Godfrey2000} made in 2000, describes the experience gained by extending the work described in the TAXFORM project. By using PBS, a tool for reverse engineering, it was extracted the software architecture of the Mozilla browser. This was done in order to understand the structure of its components and create high-level architectural views of the system. 
-
- % The architectural model obtained contains 11 high-level subsystems, from these those which stood out were the HTML Layout, the implementation of tools and the User Interface code. Also, the study mentions that the architecture has deteriorated significantly in a short period of time (the study is from 2000), and it was not planned carefully from the beginning; part of the blame, the author believes, is a consequence from the \textit{browser wars} in the 90s. While the work helps to understand a little the structure behind the browser, this work is very old and the latest version of the browser has changed considerably. Also, unfortunately the focus of this study does not concern about the internals of th system, but rather the implementation of the reverse engineering tool for the software architecture in a selected browser.
-
-  %Lwin2009 - Agent Based Web Browser
- % In \cite{Lwin2009} proposes a \textit{Browser} called Anfel SOFT, where through the use of Artificial Intelligence, creates agents that improve the user experience. The work ensures that the browser will be able to learn the user's browsing behavior, and guide the user while browsing as effective as possible. The paper obtained the subsystems that can be found in a browser in the same way is done in \cite{2005-grosskurth-browser-refarch}. While the architecture obtained reflects some of what is seen in the 3 browsers chosen in this study, it does not give any details about the identified subsystem. Also, the Reference Architecture obtained is the same as \cite{2005-grosskurth-browser-refarch,preprint-Grosskurth-browser-archevol}, despite identifying other possible components, it adds nothing new.
-
- % As we already saw in the above studies, some of them build a reference architecture based on reverse engineering techniques. In each work it has been at a very high-level and the description of subcomponents of the system is minimal. Even though they explain the relations between the subsystems, they do not give a better understanding of how they behave in certain situations. In this work is expected explain in more detail the obtained abstractions, including information of the \textit{Browser} use cases as well as the activities carried out with other users. Unfortunately for this study, there is not much literature about the development of a Reference Architecture for \textit{Browser}, and what we found, the most recent work is \cite{Lwin2009} in 2009.
-
- % \subsection*{Secure Software Development}
- % The literature that concerns of building Secure Software, it indicates that practitioners in software development should understand, largely, the security problems that could potentially arise in their systems. It is not enough to know how to link the pieces together, nor that each piece itself is safe, if the system components do not act in a coordinated way, it probably will not be safe \cite{fernandez2013security}, since security is a systemic property which needs to be seen holistically and the early phases of the software development process.
+In this work, a Web Content Renderer Pattern is presented as a second step in to the process of developing a Reference Architecture (RA) and Security Reference Architecture (SRA) for the Web Browser. We already built a Browser Infrastructure Pattern as our foundation and now we are extending it. The audience to which our paper is focused are Browser developers, Web Application developers and IT students. Being the first two the most important, since they are the responsible for the implementation and correct use of secure mechanisms while a user is browsing in the Internet. Secure communication is an important matter, but in this work the focus will be on the Browser and how to control the responses it receives. 
 
 
-\section{Browser Infrastructure Pattern}
+\section{Web Content Renderer Pattern}
 
   \subsection*{Intent}
 
-  The Browser Infrastructure describes the architecture for the processing of a user request for web resources in the Internet.
+  The Web Content Renderer describes the architecture for the processing of web resources obtained by a browser, into bitmaps for displaying them on a peripheral device to the user.
 
   \subsection*{Example}
-  Within the Host is possible that resources are needed to fullfill the user needs are limited. The request of external services or resources is the main reason of the Internet existence. If a user needs to make a bank transaction, such as deposit money to another party, the browser's user will type an URL in the browser to access the online banking service of the bank the user belongs to.
+  If a user needs to make a bank transaction, such as deposit money to another party, the browser's user will type an URL in the browser to access the online banking service of the bank the user belongs to. But the most important part is the need for displaying the resource obtained to the user.
   
   \subsection*{Context}
-  Users need to access services or information in the Internet, for which they use browsers. A browser starts by accepting a URL from a user and sending it to the corresponding IP address. It also receives the answers that the users want.
+  Users need to access services or information in the Internet, for which they use browsers. A browser starts by accepting a URL from a user and sending it to the corresponding IP address. It also receives the answers that the users want. Then the web browser needs to parse and interpret the resource to obtain a graphic representation of the resource for the user.
 
   \subsection*{Problem}
   Internet users need resources from providers/servers, but they may need them in a specific format, for example to be visualized the screen of computer. In this case, if appropiate tools are not available, the resource could not be helpful and it cannot be used correctly. How can the host and server provide these functions? The solution to this problem must resolve the following forces:
@@ -226,7 +200,7 @@ In this work, a Browser Infrastructure Pattern is presented as a first step in t
     \begin{figure*}[h!t]
     \vspace*{-2cm}
       \centering
-      \includegraphics[scale=0.7]{figures/BI/BrowserInfrastructure-v3.pdf}
+      \includegraphics[scale=0.65]{figures/WebContentRenderer.pdf}
       \vspace*{-2.5cm}
       \caption{High-level Components of the Browser Infrastructure.}
       \label{fig:BIPatt}
@@ -266,7 +240,7 @@ In this work, a Browser Infrastructure Pattern is presented as a first step in t
       \begin{figure*}[h!t]
       \vspace*{-2cm}
           \centering
-          \hspace*{-1cm}\includegraphics[scale=0.7]{figures/BI/MakeRequest-v3_original.pdf}
+          \hspace*{-1cm}\includegraphics[scale=0.72]{figures/LoadResource.pdf}
           \vspace*{-2cm}
           \caption{Sequence Diagram: Make Request.}
           \label{fig:SecReq}

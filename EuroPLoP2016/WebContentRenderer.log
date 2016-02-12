@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.4.28)  24 JAN 2016 10:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.4.28)  12 FEB 2016 15:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**InterceptTrafficMisuse.tex
-(./InterceptTrafficMisuse.tex
+**WebContentRenderer.tex
+(./WebContentRenderer.tex
 LaTeX2e <2014/05/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (./sig-alternate-05-2015.cls
@@ -449,8 +449,8 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ))
-(./InterceptTrafficMisuse.aux)
-\openout1 = `InterceptTrafficMisuse.aux'.
+(./WebContentRenderer.aux)
+\openout1 = `WebContentRenderer.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
 LaTeX Font Info:    ... okay on input line 52.
@@ -545,148 +545,89 @@ LaTeX Font Info:    Try loading font information for T1+ptm on input line 117.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
-Excluding 'CCSXML' comment.
-Overfull \hbox (3.51733pt too wide) in paragraph at lines 169--170
-\T1/aer/m/n/9 browser man-u-fac-tur-ers have cre-ated de-fense mech-a-nisms suc
-h
- []
-
-
-<figures/misuse/BrowserInfrastructureMisuse-v3.pdf, id=1, 614.295pt x 794.97pt>
-File: figures/misuse/BrowserInfrastructureMisuse-v3.pdf Graphic file (type pdf)
-
-<use figures/misuse/BrowserInfrastructureMisuse-v3.pdf>
-Package pdftex.def Info: figures/misuse/BrowserInfrastructureMisuse-v3.pdf used
- on input line 176.
-(pdftex.def)             Requested size: 430.00356pt x 556.4752pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+Excluding 'CCSXML' comment. [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.ma
+p}
 
 
 ]
-Overfull \hbox (5.3691pt too wide) in paragraph at lines 183--184
-\T1/aer/m/n/9 nineties. Nev-er-the-less, the are core com-po-nents of the brows
-er
+Overfull \hbox (3.14473pt too wide) in paragraph at lines 195--196
+\T1/aer/m/n/9 Provide a de-vice, the Web Browser, with the func-tions needed
  []
 
+<figures/WebContentRenderer.pdf, id=14, 794.97pt x 614.295pt>
+File: figures/WebContentRenderer.pdf Graphic file (type pdf)
 
-Overfull \hbox (2.49266pt too wide) in paragraph at lines 185--185
-[]\secfnt MISUSE PAT-TERN: IN-TER-CEP-TION OF
- []
+<use figures/WebContentRenderer.pdf>
+Package pdftex.def Info: figures/WebContentRenderer.pdf used on input line 203.
 
-
-Underfull \vbox (badness 1603) has occurred while \output is active []
-
-
-Overfull \hbox (6.595pt too wide) in paragraph at lines 187--188
-\T1/aer/m/n/9 User sends a re-quest or re-ceives the re-sponse from the Provide
-r
- []
-
-[2 <./figures/misuse/BrowserInfrastructureMisuse-v3.pdf>]
-<figures/misuse/MakeRequestMisuse_installMalicious.pdf, id=24, 794.97pt x 614.2
-95pt>
-File: figures/misuse/MakeRequestMisuse_installMalicious.pdf Graphic file (type 
-pdf)
- <use figures/misuse/MakeRequestMisuse_installMalicious.pdf>
-Package pdftex.def Info: figures/misuse/MakeRequestMisuse_installMalicious.pdf 
-used on input line 228.
-(pdftex.def)             Requested size: 715.4664pt x 552.86038pt.
-
-Overfull \hbox (97.65538pt too wide) in paragraph at lines 228--230
- []| [] 
- []
-
-<figures/BI/MakeRequest-v3_original.pdf, id=25, 794.97pt x 614.295pt>
-File: figures/BI/MakeRequest-v3_original.pdf Graphic file (type pdf)
-
-<use figures/BI/MakeRequest-v3_original.pdf>
-Package pdftex.def Info: figures/BI/MakeRequest-v3_original.pdf used on input l
-ine 237.
 (pdftex.def)             Requested size: 516.72438pt x 399.287pt.
 
-Overfull \hbox (12.72438pt too wide) in paragraph at lines 237--239
+Overfull \hbox (12.72438pt too wide) in paragraph at lines 203--205
  [][] 
  []
 
 
-<figures/misuse/MakeRequestMisuse_showOnlyMisuse.pdf, id=26, 794.97pt x 614.295
-pt>
-File: figures/misuse/MakeRequestMisuse_showOnlyMisuse.pdf Graphic file (type pd
-f)
- <use figures/misuse/MakeRequestMisuse_showOnlyMisuse.pdf>
-Package pdftex.def Info: figures/misuse/MakeRequestMisuse_showOnlyMisuse.pdf us
-ed on input line 246.
-(pdftex.def)             Requested size: 675.72769pt x 522.15321pt.
+Overfull \hbox (1.74461pt too wide) in paragraph at lines 219--220
+\T1/aer/m/n/9 Provider. The Browser Ker-nel will be used by a User Browser
+ []
 
-Overfull \hbox (100.59581pt too wide) in paragraph at lines 246--248
+
+Overfull \hbox (6.3888pt too wide) in paragraph at lines 228--229
+\T1/aer/m/n/9 ceived. De-pend-ing on how it is im-ple-mented the Browser
+ []
+
+[2] <figures/LoadResource.pdf, id=20, 794.97pt x 614.295pt>
+File: figures/LoadResource.pdf Graphic file (type pdf)
+
+<use figures/LoadResource.pdf>
+Package pdftex.def Info: figures/LoadResource.pdf used on input line 243.
+(pdftex.def)             Requested size: 572.37798pt x 442.29205pt.
+
+Overfull \hbox (39.92523pt too wide) in paragraph at lines 243--245
  []| [] 
  []
 
-[3]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4 <./figures/misuse/MakeRequestMisuse_installMalicious.pdf, page is rotated 9
-0 degrees>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5 <./figures/BI/MakeRequest-v3_original.pdf, page is rotated 90 degrees>]
-Overfull \hbox (5.45284pt too wide) in paragraph at lines 282--283
-\T1/aer/m/n/9 Con-trolled Pro-cess and the Browser Ker-nel sev-eral times
+[3 <./figures/WebContentRenderer.pdf, page is rotated 90 degrees>]
+Overfull \hbox (4.26437pt too wide) in paragraph at lines 272--273
+\T1/aer/m/n/9 With the given pat-tern it is now pos-si-ble to nav-i-gate smooth
+ly
  []
 
-[6 <./figures/misuse/MakeRequestMisuse_showOnlyMisuse.pdf, page is rotated 90 d
-egrees>]
-Overfull \hbox (3.67924pt too wide) in paragraph at lines 290--291
-\T1/aer/m/n/9 bank-ing in-for-ma-tion by man-in-the-browser. First iden-
+[4 <./figures/LoadResource.pdf, page is rotated 90 degrees>]
+Overfull \hbox (4.38904pt too wide) in paragraph at lines 293--294
+[]\T1/aer/m/n/9 A part of our Ref-er-ence Ar-chi-tec-ture has been built throug
+h
  []
 
-[7]
-Overfull \hbox (2.08655pt too wide) in paragraph at lines 327--328
-[]\T1/aer/m/n/9 The Browser In-fras-truc-ture pat-tern [18] (see ap-pendix). 
- []
+(./WebContentRenderer.bbl
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+[5]) [6
 
-
-Overfull \hbox (2.07748pt too wide) in paragraph at lines 349--350
-\T1/aer/m/n/9 tec-ture of pop-u-lar browsers like: Google Chrome/Chromium,
- []
-
-(./InterceptTrafficMisuse.bbl [8]
-Overfull \hbox (40.31458pt too wide) in paragraph at lines 170--173
-\T1/aer/m/n/9 stranger-[]danger-[]introducing-[]smartscreen-[]application-[]rep
-utation . 
- []
-
-) [9
-
-] (./InterceptTrafficMisuse.aux) ) 
+] (./WebContentRenderer.aux) ) 
 Here is how much of TeX's memory you used:
- 3477 strings out of 493105
- 44797 string characters out of 6137072
- 125743 words of memory out of 5000000
- 6812 multiletter control sequences out of 15000+600000
+ 3453 strings out of 493105
+ 43912 string characters out of 6137072
+ 119687 words of memory out of 5000000
+ 6792 multiletter control sequences out of 15000+600000
  56108 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,35p,2779b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvip
-s/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
-x9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/font
-s/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
-times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on InterceptTrafficMisuse.pdf (9 pages, 196813 bytes).
+ 41i,11n,35p,2282b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ba
+se/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
+s/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on WebContentRenderer.pdf (6 pages, 163084 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
+ 74 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
