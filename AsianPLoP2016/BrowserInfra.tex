@@ -242,7 +242,7 @@ In this work, a Browser Infrastructure Pattern is presented as a first step in t
       \item Ask for Resources (actor: Host)
     \end{itemize}
     We show in detail Make Request below. (Figure \ref{fig:SecReq}):
-    \subsubsection*{Summary} A Browser User needs an URL resource which can be obtained by using the HTTP protocol, as required by the Provider. The Browser Kernel will be used by a User Browser to perform the display of the URL resource.
+    \subsubsection*{Summary} A Browser User needs an URL resource which can be obtained by using the HTTP protocol, as required by the Provider. The Browser Kernel will be used by a Browser User to perform the display of the URL resource.
     \subsubsection*{Actor} Browser User
     \subsubsection*{Preconditions} The Host must have one or more Browser Kernel for the Host user. In addition to being connected to a network or the Internet. The Provider you want to contact must also be available.
     \subsubsection*{Description}
@@ -283,10 +283,10 @@ In this work, a Browser Infrastructure Pattern is presented as a first step in t
   \subsection*{Consequences}
   The Browser Infrastructure pattern provides the following benefits:
   \begin{itemize}
-    \item Transparency: The user navigation is done almost automatically, only in rare cases the user will have to make a decision on the resource asked.
-    \item Stability: Because the Browser Kernel and Controlled Process are independent Host processes, the failure of one will not generate problems in other (crash, memory corruption, etc.).
-    \item Isolation: Depending on the type of isolation you can separate the different request, so they do not interfere with each other, unless it is desired.
-    \item Heterogeneity: Because each web browser tries to follow the standards of the W3C \cite{w3c}, every page that follows these guidelines can be viewed, as well as other resources.
+    \item \textit{Transparency}: The user navigation is done almost automatically, only in rare cases the user will have to make a decision on the resource asked.
+    \item \textit{Stability}: Because the Browser Kernel and Controlled Process are independent Host processes, the failure of one will not generate problems in other (crash, memory corruption, etc.).
+    \item \textit{Isolation}: Depending on the type of isolation you can separate the different request, so they do not interfere with each other, unless it is desired.
+    \item \textit{Heterogeneity}: Because each web browser tries to follow the standards of the W3C \cite{w3c}, every page that follows these guidelines can be viewed, as well as other resources.
   \end{itemize}
   At the same time, this pattern has the following liabilities:
   \begin{itemize}
