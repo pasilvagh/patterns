@@ -11,51 +11,50 @@ Database file #1: refTodas.bib
 -- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--empty journal in Yason
-Warning--empty year in Yason
 Warning--empty journal in Vrbanec2013
+Warning--empty year in silva2015
 Warning--empty booktitle in 2005-grosskurth-browser-refarch
 
 Done.
 You've used 18 entries,
             4039 wiz_defined-function locations,
-            904 strings with 9999 characters,
-and the built_in function-call counts, 7721 in all, are:
-= -- 528
-> -- 146
+            902 strings with 10127 characters,
+and the built_in function-call counts, 7897 in all, are:
+= -- 545
+> -- 158
 < -- 30
-+ -- 77
-- -- 27
-* -- 329
-:= -- 1247
++ -- 82
+- -- 30
+* -- 339
+:= -- 1279
 add.period$ -- 36
 call.type$ -- 18
 change.case$ -- 17
 chr.to.int$ -- 81
-cite$ -- 22
-duplicate$ -- 623
-empty$ -- 775
-format.name$ -- 32
-if$ -- 1699
+cite$ -- 21
+duplicate$ -- 633
+empty$ -- 785
+format.name$ -- 36
+if$ -- 1739
 int.to.chr$ -- 0
 int.to.str$ -- 18
-missing$ -- 121
+missing$ -- 124
 newline$ -- 99
-num.names$ -- 14
-pop$ -- 406
+num.names$ -- 15
+pop$ -- 411
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 574
+skip$ -- 586
 stack$ -- 0
 substring$ -- 189
-swap$ -- 363
+swap$ -- 374
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 5
 type$ -- 18
-warning$ -- 4
-while$ -- 26
+warning$ -- 3
+while$ -- 27
 width$ -- 20
-write$ -- 171
-(There were 4 warnings)
+write$ -- 173
+(There were 3 warnings)

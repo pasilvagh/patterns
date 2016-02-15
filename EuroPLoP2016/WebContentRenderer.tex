@@ -116,7 +116,7 @@ Eduardo B. Fernandez\\
 
 \maketitle
 \begin{abstract}
-Currently, most software development is focused in creating systems connected to the Internet, which allows to add functionality within a system and facilities to their \textit{Stakeholders}. This leads to depend on a \textit{web client}, such as \textit{Web Browser}, which allows access to services, data or operations that the system delivers. However, the Internet influences the attack surface of the system, and unfortunately many stakeholders and developers are not aware of the risks to which they are exposed. The lack of security education among software developers and the scarce and scattered documentation for browsers (and standardization) could become a big problem in large architectural developments that depend on browsers to perform their services. A Reference Architecture (RA) of the \textit{Web Browser}, using Architectural Patterns, could be a starting point for understanding its security mechanisms and architecture, which interacts with a bigger web system. This would  unify ideas and terminology, giving a holistic view of independent implementation details for both the browser and the system it communicates with. We developed a Browser Infrastructure pattern that describes the infrastructure to allow the communication between a Web Client and a Server in the Internet. In this paper we will identify the component in charge of the rendering of a web resource within the web browser, named here as Web Content Renderer.
+Currently, most software development is focused in creating systems connected to the Internet, which allows to add functionality within a system and facilities to their \textit{Stakeholders}. This leads to depend on a \textit{web client}, such as \textit{Web Browser}, which allows access to services, data or operations that the system delivers. However, the Internet influences the attack surface of the system, and unfortunately many stakeholders and developers are not aware of the risks to which they are exposed. The lack of security education among software developers and the scarce and scattered documentation for browsers (and standardization) could become a big problem in large architectural developments that depend on browsers to perform their services. A Reference Architecture (RA) of the \textit{Web Browser}, using Architectural Patterns, could be a starting point for understanding its security mechanisms and architecture, which interacts with a bigger web system. This would  unify ideas and terminology, giving a holistic view of independent implementation details for both the browser and the system it communicates with. We have developed a Browser Infrastructure pattern that describes the infrastructure to allow the communication between a Web Client and a Server in the Internet, and now we are extended it. In this paper we will identify the component in charge of the rendering of a web resource within the web browser, named here as Web Content Renderer.
 \end{abstract}
 
 
@@ -158,7 +158,7 @@ Currently, most software development is focused in creating systems connected to
 
 
 
-\keywords{Browser, Web Client, Browser Architecture, Reference Architecture, Pattern}
+\keywords{Browser, Web Client, Browser Renderer, Reference Architecture, Pattern}
 
 \section{Introduction}
 Patterns are encapsulated solutions to recurrent problems and define a way to express requirements and solutions concisely, as well as providing a communication vocabulary for designers \cite{gamma1994design}. The description of architectures using patterns makes them easier to understand, provides guidelines for design and analysis, and can define a way of making their structure more secure.
@@ -167,7 +167,7 @@ The aim of a Reference Architecture is to provide a guide for developers, who ar
 
 We started to build a Reference Architecture in a student work, and now we are trying to improve it by creating new architectural patterns for our RA, misuse patterns and finding security patterns to build a Security Reference Architecture (SRA). We are currently building a SRA, which is a Reference Architecture where security services have been added in appropriate places to provide some degree of security for a specific system. The basic approach we will use to build a Security Reference Architecture is the application of a systematic methodology from \cite{fernandez2006methodology,Fernandez2011,Fernandez2015}, which can be used as a guideline to build secure web browser systems and/or evaluate their security levels. By checking if a threat, expressed as a misuse pattern, can be stopped or mitigated in the security reference architecture, we can evaluate its level of security.
 
-In this work, a Web Content Renderer Pattern is presented as a second step in to the process of developing a Reference Architecture (RA) and Security Reference Architecture (SRA) for the Web Browser. We already built a Browser Infrastructure Pattern as our foundation and now we are extending it. The audience to which our paper is focused are Browser developers, Web Application developers and IT students. Being the first two the most important, since they are the responsible for the implementation and correct use of secure mechanisms while a user is browsing in the Internet. Secure communication is an important matter, but in this work the focus will be on the Browser and how to control the responses it receives. 
+In this work, a Web Content Renderer Pattern is presented as a part of the process of developing a Reference Architecture (RA) and Security Reference Architecture (SRA) for the Web Browser. We already built a Browser Infrastructure Pattern as our foundation and now we are extending it. The audience to which our paper is focused are Browser developers, Web Application developers and IT students. Being the first two the most important, since they are the responsible for the implementation and correct use of secure mechanisms while a user is browsing in the Internet. 
 
 
 \section{Web Content Renderer Pattern}
@@ -183,19 +183,20 @@ In this work, a Web Content Renderer Pattern is presented as a second step in to
   Users need to access services or information in the Internet, for which they use browsers. A browser starts by accepting a URL from a user and sending it to the corresponding IP address. It also receives the answers that the users want. Then the web browser needs to parse and interpret the resource to obtain a graphic representation of the resource for the user.
 
   \subsection*{Problem}
-  Internet users need resources from providers/servers, but they may need them in a specific format, for example to be visualized the screen of computer. In this case, if appropiate tools are not available, the resource could not be helpful and it cannot be used correctly. How can the host and server provide these functions? The solution to this problem must resolve the following forces:
+  Internet users need resources from providers/servers and they may be in a specific format, the challenge is to find a way to make them visible on the computer. In this case, if appropiate tools are not available, the resource could not be helpful and it cannot be seen correctly. How can the host provide these functions? The solution to this problem must resolve the following forces:
   \begin{itemize}
-    \item \textit{Transparency}: the user should not be concern about how his request is performed. 
-    \item \textit{Stability}: The browser must be capable of working, even if a web page can not be displayed properly or there is an internal problem in the server.
-    \item \textit{Isolation}: Each \textit{request} must not interrupt others.
+    \item \textit{Transparency}: the user should not be concern about how a request is manipulated to get it on the screen.
+    \item \textit{Stability}: The browser must be capable of displaying the resource even if some syntax issues appears, like invalid HTML.
+    \item \textit{Isolation}: Resources can interact with each other while the policies allows them; policies enforce isolation between resources of different domains or \textbf{origins}.
     \item \textit{Heterogeneity}: It does not matter the type of provider with which the browser communicates, it should be possible to interact with whatever type, and it should be capable of showing the content of the obtained resource adequately.
+    \item \textit{Timely}: The obtained resource should be displayed within a reasonable time frame; otherwise a user of the browser could have a bad experience.
   \end{itemize}
 
   \subsection*{Solution}
-  Provide a device, the Web Browser, with the functions needed to understand user requests and send them to the provider. A web browser satisfies a request of a Browser User of the Host.
+  Provide a device, the Web Browser, with the functions needed to understand user requests and send them to the provider. The Browser should be capable of understanding the resource obtained and display it appropriately. 
 
     \subsubsection*{Structure}
-    In Figure \ref{fig:BIPatt} the \textbf{Browser Kernel} is an entity that represents the main process of a Web Browser, which is constantly communicating with the host of the browser. A user who makes a \textbf{Request} to a Internet resources using a Web Browser, will be called \textbf{Browser User}. At the same time, a \textbf{Provider} is responsible for receiving external requests. According to the request, a \textbf{Provider} will send the \textbf{Service} (or resource) the \textbf{Browser User} needs in a \textbf{Response} message. Most Browsers use a central component to do operations that need to affect the Host of the Browser, a \textbf{Browser Kernel}. Figure \ref{fig:BIPatt} shows the Class diagram for the Browser Infrastructure Pattern. For each new resource a \textbf{Browser Kernel} requests a created or reused \textbf{Web Content Renderer} instance; this will inherit the \textbf{Controlled Process} properties and its methods. A \textbf{Plugin} and an \textbf{Extension} are elements that extend the functionality of the browser; the extender being for the exclusive use of the browser while the plugin can be used in other systems, such as the Adobe Reader Plugin. A \textbf{Sandbox} is a Controlled Execution Domain \cite{fernandez2013security} created for a single \textbf{Controlled Process} instance. The \textbf{Sandbox} allows the process memory isolation and the access control of each communication between processes, such as an instance of a \textbf{Controlled Process} with the \textbf{Browser Kernel}; this applies to a \textbf{Web Content Renderer}, a \textbf{Plugin} and an \textbf{Extension} as well. To communicate with the \textbf{Browser Kernel}, a \textbf{Proxy} created within a \textbf{Controlled Process} forwards a \textbf{Local Request} to the \textbf{Reference Monitor} inside the \textbf{Browser Kernel}. For every message sent from a \textbf{Controlled Process}, the \textbf{Reference Monitor} will check the \textbf{Domain}'s \textbf{Right}s to permit the access. The access control which the Sandbox delivers to each \textbf{Controlled Process} allows the isolation between different \textbf{Domain}s. Depending on the manufacturer, a \textbf{Plugin} could not be Sandboxed. 
+    In figure \ref{fig:WCR} shows a \textbf{Frame Constructor} in charge of building a \textbf{Rendered View} of the resource requested by the user and communicating with the \textbf{Browser Kernel} The \textbf{HTML/XML Parser} is in charge of parsing a web resource and obtain an object representation of it, called a \textbf{DOM Tree}. A \textbf{CSS Parser} does the same job as the \textbf{HTML/XML Parser}, but creates \textbf{CSS Style Rules} to change visual aspects of the resource to display. The \textbf{DOM Tree} is a dynamic structure that can change anytime while the resource is needed, by using scripting language that is interpreted and executed by the \textbf{Javascript Engine}; \textbf{CSS Style Rules} can also change in the same way. A \textbf{Rendered View} is the visual representation of a resource obtained from the \textbf{Browser Kernel}, where a \textbf{Render Tree} is the first step to obtain it. The \textbf{Render Tree} is a a new dynamic structure that links the \textbf{DOM Tree} and \textbf{CSS Style Rules} together.
 
     \begin{figure*}[h!t]
     \vspace*{-2cm}
@@ -203,88 +204,82 @@ In this work, a Web Content Renderer Pattern is presented as a second step in to
       \includegraphics[scale=0.65]{figures/WebContentRenderer.pdf}
       \vspace*{-2.5cm}
       \caption{High-level Components of the Browser Infrastructure.}
-      \label{fig:BIPatt}
+      \label{fig:WCR}
     \end{figure*}
 
     \subsubsection*{Dynamics}
     Some use cases are the following:
     \begin{itemize}
-      \item Make Request (actor: Browser User)
-      %\item Cancel Request (actor: Browser User)
-      \item Save Resource (actor: Browser User)
-      %\item Receive Request (actor: Provider)
-      \item Ask for Resources (actor: Host)
+      \item Load Resource (actor: Browser Kernel)
+
+      \item Execute User action (actor: Browser Kernel)
+
     \end{itemize}
-    We show in detail Make Request below. (Figure \ref{fig:SecReq}):
-    \subsubsection*{Summary} A Browser User needs an URL resource which can be obtained by using the HTTP protocol, as required by the Provider. The Browser Kernel will be used by a User Browser to perform the display of the URL resource.
-    \subsubsection*{Actor} Browser User
-    \subsubsection*{Preconditions} The Host must have one or more Browser Kernel for the Host user. In addition to being connected to a network or the Internet. The Provider you want to contact must also be available.
+    We show in detail Load Resource below. (Figure \ref{fig:LoadResource}):
+    \subsubsection*{Summary} A Browser User needs an URL resource which can be obtained by using the HTTP protocol, as required by the Provider. The Browser Kernel will be in charge of sending an obtained resource to the Controlled Process, which is instanced as a Web Content Renderer for displaying the resource appropriately.
+    \subsubsection*{Actor} Browser Kernel
+    \subsubsection*{Preconditions} The Host must have one or more Browser Kernel for the Host user. In addition to being connected to a network or the Internet. The Provider you want to contact must also be available. The Web Content Renderer must consider that a web resource can be in many different formats, so it should be capable of displaying them accordanly.
     \subsubsection*{Description}
-    Note: Messages between Browser Kernel and Controlled Processes can be both synchronous and asynchronous \cite{firefoxIPC,GCIPC}. We do not explain in this work synchronization details, because it is out of our scope. We are interested only in specifying who interacts with whom.
       \begin{enumerate}
-        \item A Browser User requires a browser to access a URL for some resource in a Provider, this is done by using a Browser Kernel already instanced in the Host. A Browser Kernel also has a Refenrence Monitor to receive incoming messages from Controlled Process instances.
-        \item The Browser Kernel creates an instance of a Web Content Renderer (a Controlled Process subclass), and sets the Domain and Rights. A Proxy is created in each Controlled Process instance as a mean to communicate with the Browser Kernel.
-        \item Once the Controlled Process is ready, the Browser Kernel creates a Request which is sent to the Provider.
-        \item The Provider will send a \textit{Response} to the \textit{Request} received. Depending on how it is implemented the Browser Kernel, it may or may not have to wait for the response (synchronous or asynchronous) of the Provider.
-        \item The Response is sent by a communication channel to the Controlled Process of origin, realized it as a Web Content Renderer. If a Response was received to a Request, the Controlled Process is ready to prepare the parsing of the content or use it in a plugin or extension to support the display of the resources obtained by the URL. Otherwise, the Web Content Renderer will create an error page.
-        \item The Web Content Renderer obtains a bitmap to be sent to the Browser Kernel, so the Browser User can see it. Before doing this, the Controlled Process sends through its Proxy a Local Request to the Reference Monitor within the Browser Kernel.
-        \item If the permissions are sufficient (Domain and Rights the Controlled Process has), the Reference Monitor lets the message with the bitmap go to the Browser Kernel.
+        \item First, the Browser Kernel sends a resource to the Controlled Process, which is instanced as a Web Content Renderer. The Frame Controlled receives each request for rendering a new resource.
+        \item The Frame Constructor uses its HTML/XML Parser to and understand the resource. During the parsing process new resources will be needed such as images, plugins, content, etc. where each one of them will do a Load Resource use case. In parallel the tokenization process creates a dynamic structure called as the DOM Tree, which is returned to the Frame Constructor. The same process is done by a CSS Parser to obtain CSS Style Rules.
+        \item If scripts are found on the resource while parsing it, the Javascript Engine has the job of parsing, interpreting and executing them. This action can change the DOM Tree and CSS Rules Styles already built.
+        \item Finally, the Frame Constructor is in position for building a visual representation of the resource to be renderer. The DOM Tree and CSS Styles Rules are linked together into a Render Tree, and then a process called Layout and Painting is called to get the bitmap for the Browser Kernel.
       \end{enumerate}
     \subsubsection*{Alternative flow} 
     \begin{itemize}
-    \item The Provider is not available.
-    \item The resource pointed by the URL does not exists.
-    \item The request is cancelled.
+    \item The HTML/XML Parser fails in getting the DOM Tree from the resource.
+    \item The resource does not exist, so a \textbf{Error page} should be created. 
+    \item The execution of Javascript or the rendering process is cancelled.
       \end{itemize}
-    \subsubsection*{Postconditions} The \textit{Browser} receives the resource indicated by the URL and it is displayed by the peripheral device output for the Browser User.
+    \subsubsection*{Postconditions} The Browser Kernel obtains a bitmap representation of the resource.
       \begin{figure*}[h!t]
       \vspace*{-2cm}
           \centering
           \hspace*{-1cm}\includegraphics[scale=0.72]{figures/LoadResource.pdf}
           \vspace*{-2cm}
-          \caption{Sequence Diagram: Make Request.}
-          \label{fig:SecReq}
+          \caption{Sequence Diagram: Load Resource.}
+          \label{fig:LoadResource}
       \end{figure*}
 
   \subsection*{Implementation}
   \begin{itemize}
-    \item While is true that a \textbf{Browser Kernel} does not need sandboxing and only creates sandboxed processes or \textbf{Controlled Process}, the concept called \textbf{Sandbox} is defined here as in \cite{fernandez2013security}; in which the \textbf{Browser Kernel} acts as the User that is related to the isolated process.
-    \item The Sandbox may be implemented in various ways. Google Chrome \cite{sandboxGC} is based on not reinventing the wheel and use the protection mechanisms provided by the OS (e.g, Windows or Linux) of the Host to protect the user. This prevents any process to access the file system, and having a restrictive API in the web Content Renderer. Google Chrome, Firefox and Internet Explorer affirm that Sandboxes are an important piece to the Browser because realizes the principle of least privilege \cite{Yason,sandboxGC,sandboxFirefox}. Some Operating Systems provide tools for creating Sandbox or in other cases a special library is used as Google Chromium. To create a Sandbox, the minimum configuration includes 2 processes: The privileged process or Broker represented by the Browser Kernel and the processes hosted in Sandboxes or Targets.
+    \item The Javascript Engine on the Web Content Renderer is normally composed by standard classes, a Javascript Parser that interprets scripting code, a JIT or Just-in-Time Compiler, an Interpreter and a Garbage Collector. Other implementations could have other components, but the must importants are those before \cite{GoogleChromeV8,MicrosoftChakra,MozillaSpidermonkey}.
     \item To enforce the Same Origin Policy, Google Chrome, Firefox and Internet Explorer use different schemes; for example Google Chrome leaves pages/resources isolated with the help of the Renderer (Web Content Renderer in this case).
-    \item The TLS protocol complements our pattern while giving security to the browser's communication channels.
+    \item Gecko \cite{gecko2} is the name for the Renderer in the monoprocess Firefox, it is written in c++ and can be used to render the user interface of other applications such as Thunderbird.
+    \item Trident is the old Renderer used on Internet Explorer \cite{Crowley2010}. A new Renderer called EdgeHTML, a fork of Trident, is integrated on Microsft Edge, the new browser of Microsoft \cite{edgehtml}.
+    \item Blink is the implementation of the Renderer done by Google \cite{blink}.
+
   \end{itemize}
 
   \subsection*{Consequences}
-  The Browser Infrastructure pattern provides the following benefits:
+  The Web Content Renderer pattern provides the following benefits:
   \begin{itemize}
-    \item Transparency: The user navigation is done almost automatically, only in rare cases the user will have to make a decision on the resource asked.
-    \item Stability: Because the Browser Kernel and Controlled Process are independent Host processes, the failure of one will not generate problems in other (crash, memory corruption, etc.).
-    \item Isolation: Depending on the type of isolation you can separate the different request, so they do not interfere with each other, unless it is desired.
-    \item Heterogeneity: Because each web browser tries to follow the standards of the W3C \cite{w3c}, every page that follows these guidelines can be viewed, as well as other resources.
+    \item \textit{Transparency}: All the process for rendering a resource is done without the user interference.
+    \item \textit{Stability}: Even if a resource (HTML for example) is invalid, the rendering process will try to get a visual representation. Other type of resource could be handled the same way or by requesting again for the resource.
+    \item \textit{Isolation}: Resources can interact only if the Same Origin Policy allows it. A Reference Monitor for the DOM Tree and Capabilities for the Javascript Engine are used to enforce this policy.
+    \item \textit{Heterogeneity}: Because each web browser tries to follow the standards of the W3C \cite{w3c}, every page that follows these guidelines can be viewed, as well as other resources.
+    \item \textit{Timely}: Every part of the rendering process will be bounded by time restrictions that allow a nice user experience.
   \end{itemize}
   At the same time, this pattern has the following liabilities:
   \begin{itemize}
-    \item Since independent processes are used to browse a resource (depending on the scheme using the browser), it is possible that a lot of the host's resources are used to keep everything open.
+    \item Since independent processes are used to create a Web Content Renderer for rendering a resource (depending on the scheme using the browser), it is possible that a lot of the host's resources are used to keep everything open.
     \item Resources from Providers which do not comply the specifications of the W3C, will be displayed incorrectly by the Web Browser.
   \end{itemize}
 
   \subsection*{Example Resolved}
-With the given pattern it is now possible to navigate smoothly to all resources on the Internet we want. It is possible to provide through the isolation of the components: speed, security and stability. The Browser User will only concern about the navigation, unless it is required for its explicit permission to enter certain Host resources that are privileged (e.g, the file system). Each Host user can use the Browser Kernel they want, because each one is isolated by using separate processes.
+With the given pattern it is now possible to display and navigate smoothly to all resources on the Internet we want. Independent on the type of web resource, it will be possible to display it appropriately to the user it needs. 
   \subsection*{Known Uses}
   \begin{itemize}
     \item Currently, the separation of the components of the \textit{Browser} in various processes, with different levels of access, is called as Modular Architecture \cite{Vrbanec2013}. This enables the separation of concerns in the browser, which gives greater stability, isolation, safety and speed.
-    \item Google Chrome is based on the modular architecture, where each Renderer Process communicates with the Browser Kernel \cite{multiProcGC}. This proposal is used as a reference in the Mozilla project Electrolysis, as you can see in \cite{FirefoxThreatModel,featuresE10S}, specially in the development of the sandbox and architecture.
-    \item Internet Explorer, a proprietary browser, does not give much information about its structure or details of its implementation; \cite{Crowley2010} addresses Loosely-Coupled architecture \cite{IE8-LCIE} and its components, but without giving further details. 
-    \item Firefox, meanwhile has two implementations: monoprocess and multiprocess/modular. Electrolysis is the name of the modular architecture being implemented, but it has not yet been fully completed.
+    \item Google Chrome is based on the modular architecture, where each Renderer Process communicates with the Browser Kernel \cite{multiProcGC}. 
+    \item Internet Explorer, a proprietary browser, does not give much information about its structure or details of its implementation; \cite{Crowley2010} addresses Loosely-Coupled architecture \cite{IE8-LCIE} and its components, like Trident its Rendering Engine, but without giving further details. 
   \end{itemize}
 
   \subsection*{Related Patterns}
   \begin{itemize}
-    \item The Web Content Renderer pattern, which is under development, represents the subsystem that allows the parsing of a resource obtained through a request.
-    \item The Browser Kernel pattern, a pattern we are developing, represents the subsystem that represents the Web browser central component. 
+    \item The Browser Kernel pattern represents the subsystem that represents the Web browser central component \cite{silva2015}. 
     \item The Reified Reference Monitor \cite{fernandez2013security}, which describes how to enforce authorization rights when a subject requests access to a protected object or service and returns a decision (response). 
-    \item The Sandbox is another name for the pattern Controlled Execution Domain \cite{fernandez2013security}.
-    \item The TLS pattern in \cite{fernandez2013security} complements our pattern, for adding security to communications between Client and Server.
   \end{itemize}
 
 \section{Conclusions and Future Work}
@@ -292,12 +287,12 @@ A Web browser appears to be a medium complexity software for users and developer
 
 A part of our Reference Architecture has been built through the abstraction of documentation through the Browser Infrastructure pattern. We created our first architectural pattern for the infrastructure of \textit{Web Browser} to help others understand, holistically, the components, interactions and relationships of this system. Furthermore, it has been possible to characterize the Stakeholders and one of the most important use case. From what we have known, this is the second Reference Architecture for the \textit{Browser} built. The reference model obtained in \cite{2005-grosskurth-browser-refarch} express the type of architecture used in the nineties until 2009 (approximately). However, our proposal represents the current implementation used in browsers, usually called a \textbf{Modular Architecture}. The proposed work allows a better understanding of this system called Web Browser by using our partially Reference Architecture, this is also helpful to understand existing threats. Also, as it is not subject to specific implementations, it is possible to generalize certain results in other browsers. 
 
-Future work to do is finishing the Reference Architecture for \textit{Web Browsers}. Other patterns related to Browser Infrastructure pattern will be obtained in order to complete the Reference Architecture, such as the Web Content Renderer and Browser Kernel pattern. 
+Future work to do is finishing the Reference Architecture for \textit{Web Browsers}. Other patterns related to Browser Infrastructure pattern will be obtained in order to complete the Reference Architecture, such as the Web Content Renderer (this paper) and Browser Kernel pattern. 
 
 We plan to build more Misuse Patterns for the Browser Infrastructure Pattern, to continue the study of the possible threats in the \textit{Browser}, as a way to educate Developers and Stakeholders. At the same time, these patterns will allow the construction of the Security Reference Architecture for the browser. In the same line, in addition to finding potential threats existing in the system, we need to find countermeasures or security defenses to prevent or foresee such threats through security patterns on the reference architecture built. An example of the type of work to be carried out can be seen in \cite{Fernandez2015}.
 
-\section{Acknowledgements}
-We thank our shepherd, Norihiro Yoshida, for his useful comments that significantly improved the quality of the paper. We also thank Woei-Kae Chen for supervising our paper shepherding. This work was partially supported by CONICYT (grant Fondecyt 1140408).
+%\section{Acknowledgements}
+%This work was partially supported by CONICYT (grant Fondecyt 1140408).
 
 \bibliography{refTodas}  
 \bibliographystyle{IEEEtran}
