@@ -14,47 +14,48 @@ Database file #1: refTodas.bib
 Warning--empty journal in Vrbanec2013
 Warning--empty year in silva2015
 Warning--empty booktitle in 2005-grosskurth-browser-refarch
+Warning--empty year in silva2015b
 
 Done.
-You've used 18 entries,
+You've used 16 entries,
             4039 wiz_defined-function locations,
-            902 strings with 10127 characters,
-and the built_in function-call counts, 7897 in all, are:
-= -- 545
-> -- 158
+            889 strings with 9811 characters,
+and the built_in function-call counts, 7306 in all, are:
+= -- 503
+> -- 159
 < -- 30
 + -- 82
 - -- 30
-* -- 339
-:= -- 1279
-add.period$ -- 36
-call.type$ -- 18
-change.case$ -- 17
+* -- 326
+:= -- 1162
+add.period$ -- 32
+call.type$ -- 16
+change.case$ -- 15
 chr.to.int$ -- 81
-cite$ -- 21
-duplicate$ -- 633
-empty$ -- 785
-format.name$ -- 36
-if$ -- 1739
+cite$ -- 20
+duplicate$ -- 583
+empty$ -- 718
+format.name$ -- 37
+if$ -- 1618
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 124
-newline$ -- 99
-num.names$ -- 15
-pop$ -- 411
+int.to.str$ -- 16
+missing$ -- 110
+newline$ -- 87
+num.names$ -- 13
+pop$ -- 361
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 586
+skip$ -- 542
 stack$ -- 0
-substring$ -- 189
-swap$ -- 374
+substring$ -- 187
+swap$ -- 351
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 18
-warning$ -- 3
-while$ -- 27
-width$ -- 20
-write$ -- 173
-(There were 3 warnings)
+type$ -- 16
+warning$ -- 4
+while$ -- 25
+width$ -- 18
+write$ -- 153
+(There were 4 warnings)

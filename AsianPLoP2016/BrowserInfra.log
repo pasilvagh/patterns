@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.4.28)  15 FEB 2016 10:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.4.28)  31 MAR 2016 16:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -546,90 +546,96 @@ LaTeX Font Info:    Try loading font information for T1+ptm on input line 117.
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 Excluding 'CCSXML' comment.
-Overfull \hbox (12.88506pt too wide) in paragraph at lines 199--199
+<figures/relations.jpg, id=1, 596.98032pt x 250.68657pt>
+File: figures/relations.jpg Graphic file (type jpg)
+
+<use figures/relations.jpg>
+Package pdftex.def Info: figures/relations.jpg used on input line 174.
+(pdftex.def)             Requested size: 477.5849pt x 200.54951pt.
+
+Overfull \hbox (12.88506pt too wide) in paragraph at lines 208--208
 []\secfnt BROWSER IN-FRAS-TRUC-TURE PAT-TERN 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 5954) has occurred while \output is active []
 
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Overfull \hbox (3.14473pt too wide) in paragraph at lines 221--222
+Overfull \hbox (3.14473pt too wide) in paragraph at lines 230--231
 \T1/aer/m/n/9 Provide a de-vice, the Web Browser, with the func-tions needed
  []
 
-<figures/BI/BrowserInfrastructure-v3.pdf, id=14, 614.295pt x 794.97pt>
+<figures/BI/BrowserInfrastructure-v3.pdf, id=15, 614.295pt x 794.97pt>
 File: figures/BI/BrowserInfrastructure-v3.pdf Graphic file (type pdf)
 
 <use figures/BI/BrowserInfrastructure-v3.pdf>
 Package pdftex.def Info: figures/BI/BrowserInfrastructure-v3.pdf used on input 
-line 229.
+line 238.
 (pdftex.def)             Requested size: 430.00356pt x 556.4752pt.
 
-Overfull \hbox (6.3888pt too wide) in paragraph at lines 254--255
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2 <./figures/relations.jpg>] [3 <./figures/BI/BrowserInfrastructure-v3.pdf>]
+Overfull \hbox (6.3888pt too wide) in paragraph at lines 263--264
 \T1/aer/m/n/9 ceived. De-pend-ing on how it is im-ple-mented the Browser
  []
 
-[2] <figures/BI/MakeRequest-v3_original.pdf, id=20, 794.97pt x 614.295pt>
+<figures/BI/MakeRequest-v3_original.pdf, id=29, 794.97pt x 614.295pt>
 File: figures/BI/MakeRequest-v3_original.pdf Graphic file (type pdf)
 
 <use figures/BI/MakeRequest-v3_original.pdf>
 Package pdftex.def Info: figures/BI/MakeRequest-v3_original.pdf used on input l
-ine 269.
+ine 278.
 (pdftex.def)             Requested size: 556.4752pt x 430.00356pt.
 
-Overfull \hbox (24.02246pt too wide) in paragraph at lines 269--271
+Overfull \hbox (24.02246pt too wide) in paragraph at lines 278--280
  []| [] 
  []
 
 
-Underfull \vbox (badness 1521) has occurred while \output is active []
-
- [3 <./figures/BI/BrowserInfrastructure-v3.pdf>] [4 <./figures/BI/MakeRequest-v
-3_original.pdf, page is rotated 90 degrees>]
-Overfull \hbox (4.26437pt too wide) in paragraph at lines 298--299
+Overfull \hbox (4.26437pt too wide) in paragraph at lines 307--308
 \T1/aer/m/n/9 With the given pat-tern it is now pos-si-ble to nav-i-gate smooth
 ly
  []
 
-
-Overfull \hbox (4.38904pt too wide) in paragraph at lines 319--320
+[4]
+Overfull \hbox (4.38904pt too wide) in paragraph at lines 328--329
 []\T1/aer/m/n/9 A part of our Ref-er-ence Ar-chi-tec-ture has been built throug
 h
  []
 
+[5 <./figures/BI/MakeRequest-v3_original.pdf, page is rotated 90 degrees>]
 (./BrowserInfra.bbl
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
-[5]) [6
-
-] (./BrowserInfra.aux) ) 
+) [6] (./BrowserInfra.aux) ) 
 Here is how much of TeX's memory you used:
- 3454 strings out of 493105
- 43976 string characters out of 6137072
- 119687 words of memory out of 5000000
- 6792 multiletter control sequences out of 15000+600000
- 56108 words of font info for 78 fonts, out of 8000000 for 9000
+ 3466 strings out of 493105
+ 44145 string characters out of 6137072
+ 119695 words of memory out of 5000000
+ 6798 multiletter control sequences out of 15000+600000
+ 58261 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,35p,2276b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.
-enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
-w/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb
-8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on BrowserInfra.pdf (6 pages, 162998 bytes).
+ 41i,10n,35p,2279b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base
+/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/he
+lvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on BrowserInfra.pdf (6 pages, 234455 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 78 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

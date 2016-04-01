@@ -1,0 +1,65 @@
+Browser Infrastructure Architecture
+
+Audience: developers
+
+Allen (worked in the javascript standarization):
+
+Resume
+-The architecture pattern of a mayor component of the browser, browser architecture.
+-One part of the architecture, not all. Just the part of making the request of a page/resource
+-Process the browser needs to go through to get a page.
+-Title needs revision
+-Subsystems and how they relate each other.
+-Paper will cover security related issues
+
+Format
+-Not really sure if this is a pattern. Is more than a GoF P.
+-Not sure if the audience will get the format or if it would be useful (what my thesis is). If for the web app developer will be relevant to know. If everything is done correctly, the difference should be transparent to the level of the application. If only there are things that an application could do, that would reveal the internal design detail and developer could be aware of, that detail becomes relevant.
+
+Suggestions:
+-There are a lot of variations of the browser, so is kind of hard to pull out this specific pattern from all different variations.
+-Name, implies a lot of stuff. Reading the paper, the pattern talks more about a pattern of resource request processing. Be more precise.
+-The paper seems to describe only the request from the user, from the browser's bar. It seems to be that other subrequests are not adddressed by the paper.
+-Plugin, extension or controlled process, does not give an example of the difference between them. They are important from a security point of view. They need to be elaborated or distintion of what they are. More clarifications is needed, would help. The paper does not tell you well the distintions.
+-The proxy is important for the Browser Architecture, but Allen is not sure if is important for the handling of the request. It kind of loses the focus and goes into details that are not relevants for what is describing.
+-Sequence diagram: the focus is the request. Steps 2 through 7, what kind of request? Seem to relate to only the request of the address bar. A part of the Browser is missing, like caching. Caching is important from a security perspective. The focus could be wider than just generating the bitmap.
+-When talking about synchronous and asyncronous communication in the browser, at the level of the paper Allen is not sure what it should be done. In the most extreme case it could lead to something dangerous. For the architectural level it does not to be called in the paper.
+-For the types of architectures (modular or monoprocess) and the distintions from them, it is not clear were that distintion is relevant. And if it is relevant, that should be highlighted.
+-Controlled Process is not a good name -> Resource Processors.
+
+
+
+YC (shepherd):
+
+Format
+-Between the GoF style and POSA style.
+-Liked the style
+-The first pattern is an introduction to talk about the security issues and attacks (the base, the normal situation of what it looks like).
+
+Suggestions:
+-Since this is an architectural pattern level, they tend to be less specific. Example: layer architectural diagram. The patterns is showing too much detail at the same time that is high level. Suggestion: you can have more than one diagram and create instances of diagrams.
+-Dynamics of the paper, what about other scenarios? it seems to show just one type of request. How do you set permissions? (seems to lack a scenario where to assign permissions, modify, set, etc). There may be some use cases that are lacking in the paper.
+-The plugin have some sort of different architecture than extension, so it needs a better description. What kind of architecture has the plugin?
+-Figure 1, the proxy. Why you need a proxy here? Seems like a "protection" proxy. You have the protection proxy and the real thing. So, what is the real thing? That would be the domain. Say that the proxy is for protection. It would help for understanding.
+-Sequence diagram, steps 8 and 9. They seem to be asyncronous to him but is not clear from the diagram. Maybe some note can be added to it. Some annotations are needed.
+-More clarifications are needed.
+
+
+
+
+Jack (developer):
+
+Format
+-Liked the diagram
+-Understood the process isolation
+
+Suggestions:
+-Dont know what to do with the proxy class or controlled process. The paper need for a more concrete example for their use or what they do.
+-Local process, why it has to go to the Proxy?
+
+
+
+Challenges for authors: 
+-Modern browsers are extremally complex. They are trying to present a concept model of the browser, separated by different papers. 
+-Is challenging what to write in the papers.
+-One thing that would make Allen understand better is a bigger and broader picture of the B Architecture. Then, in other paper, focusing in a slice of the Architecture. And then going down to a more detailed structure. Also, how those patterns are related (example: POSA patterns number 3 or 4, for distributed computer). Help to the reader where the patterns are, the keyroles.

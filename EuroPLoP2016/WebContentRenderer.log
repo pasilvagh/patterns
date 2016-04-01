@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.4.28)  15 FEB 2016 09:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.4.28)  19 MAR 2016 00:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -546,16 +546,14 @@ LaTeX Font Info:    Try loading font information for T1+ptm on input line 117.
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 Excluding 'CCSXML' comment.
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (1.35541pt too wide) in paragraph at lines 177--178
+\T1/aer/m/n/9 pro-cess-ing web re-sources ob-tained by a browser, into bitmaps
+ []
 
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Overfull \hbox (3.14473pt too wide) in paragraph at lines 196--197
-\T1/aer/m/n/9 Provide a de-vice, the Web Browser, with the func-tions needed
- []
-
 <figures/WebContentRenderer.pdf, id=14, 794.97pt x 614.295pt>
 File: figures/WebContentRenderer.pdf Graphic file (type pdf)
 
@@ -580,6 +578,12 @@ Overfull \hbox (39.92523pt too wide) in paragraph at lines 239--241
  []
 
 [3 <./figures/WebContentRenderer.pdf, page is rotated 90 degrees>]
+Overfull \hbox (1.08562pt too wide) in paragraph at lines 274--275
+\T1/aer/m/n/9 var-i-ous pro-cesses, with dif-fer-ent lev-els of ac-cess is call
+ed
+ []
+
+
 Overfull \hbox (4.38904pt too wide) in paragraph at lines 288--289
 []\T1/aer/m/n/9 A part of our Ref-er-ence Ar-chi-tec-ture has been built throug
 h
@@ -591,20 +595,20 @@ h
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
 
-Overfull \hbox (66.11922pt too wide) in paragraph at lines 82--86
+Overfull \hbox (66.11922pt too wide) in paragraph at lines 64--68
 \T1/aer/m/n/9 introducing-[]edgehtml-[]13-[]our-[]^^\rst-[]platform-[]update-[]
 for-[]microsoft-[]edge/$  
  []
 
 ) [5] (./WebContentRenderer.aux) ) 
 Here is how much of TeX's memory you used:
- 3453 strings out of 493105
- 43918 string characters out of 6137072
- 118687 words of memory out of 5000000
- 6792 multiletter control sequences out of 15000+600000
+ 3451 strings out of 493105
+ 43876 string characters out of 6137072
+ 118679 words of memory out of 5000000
+ 6790 multiletter control sequences out of 15000+600000
  56108 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,35p,1524b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,10n,35p,1536b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvip
 s/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
 x9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
@@ -615,7 +619,7 @@ mf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on WebContentRenderer.pdf (5 pages, 161038 bytes).
+Output written on WebContentRenderer.pdf (5 pages, 159808 bytes).
 PDF statistics:
  71 PDF objects out of 1000 (max. 8388607)
  51 compressed objects within 1 object stream

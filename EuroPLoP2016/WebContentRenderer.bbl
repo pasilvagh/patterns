@@ -48,24 +48,6 @@ E.~B. Fernandez, R.~Monge, and K.~Hashizume, ``{Building a security reference
   [Online]. Available: \url{http://link.springer.com/10.1007/s00766-014-0218-7}
 \BIBentrySTDinterwordspacing
 
-\bibitem{GoogleChromeV8}
-\BIBentryALTinterwordspacing
-{Google Chrome}, ``{V8 Javascript Engine}.'' [Online]. Available:
-  \url{https://github.com/v8/v8/wiki{\#}what-is-v8}
-\BIBentrySTDinterwordspacing
-
-\bibitem{MicrosoftChakra}
-\BIBentryALTinterwordspacing
-Microsoft, ``{Chakra Javascript Engine}.'' [Online]. Available:
-  \url{https://github.com/Microsoft/ChakraCore/wiki/Architecture-Overview}
-\BIBentrySTDinterwordspacing
-
-\bibitem{MozillaSpidermonkey}
-\BIBentryALTinterwordspacing
-Mozilla, ``{SpiderMonkey Javascript Engine}.'' [Online]. Available:
-  \url{https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey}
-\BIBentrySTDinterwordspacing
-
 \bibitem{gecko2}
 \BIBentryALTinterwordspacing
 ``{Gecko:Overview - MozillaWiki}.'' [Online]. Available:
@@ -126,5 +108,11 @@ E.~B. Fernandez, \emph{Security patterns in practice: designing secure
 \bibitem{2005-grosskurth-browser-refarch}
 A.~Grosskurth and M.~W. Godfrey, ``A reference architecture for web browsers,''
   2005, pp. 661--664.
+
+\bibitem{silva2015b}
+P.~Silva, R.~Monge, and E.~Fernandez~B., ``{A Misuse Pattern for Web Browsers:
+  Interception of traffic},'' \emph{Proceedings of the 5th Asian Conference on
+  Pattern Languages of Programs (AsianPLoP) 2016, Taipei, Taiwan, February
+  2016}.
 
 \end{thebibliography}
