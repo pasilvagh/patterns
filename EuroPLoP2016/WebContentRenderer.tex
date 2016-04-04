@@ -45,9 +45,10 @@
 %
 % For tracking purposes - this is V2.0 - May 2012
 
-\documentclass{sig-alternate-05-2015}
+\documentclass[prodmode,acmtecs]{acmsmall}
 \usepackage[utf8]{inputenc}
 \usepackage{pdflscape}
+
 
 \begin{document}
 
@@ -68,7 +69,7 @@
 %\isbn{123-4567-24-567/08/06}
 
 %Conference
-\conferenceinfo{EuroPLoP 2016}{July 6-10, Bavaria, Germany.}
+%\conferenceinfo{EuroPLoP 2016}{July 6-10, Bavaria, Germany.}
 
 %\acmPrice{\$15.00}
 
@@ -86,35 +87,32 @@
 %\LaTeX$2_\epsilon$\ and BibTeX} at
 
 
-\numberofauthors{3} %  in this sample file, there are a *total*
+%\numberofauthors{3} %  in this sample file, there are a *total*
 % of EIGHT authors. SIX appear on the 'first-page' (for formatting
 % reasons) and the remaining two appear in the \additionalauthors section.
 %
 
 \author{
-\alignauthor
-Paulina Silva\\
-  \affaddr{Departamento de Informática}\\
-  \affaddr{Universidad Técnica Federico Santa María}\\
-  \affaddr{Valparaíso, Chile}\\
-  \email{pasilva@alumnos.inf.utfsm.cl}
+%\alignauthor
+Paulina Silva
+  \affil{Universidad Técnica Federico Santa María}
+  %\affil{Valparaíso, Chile}\\
+  %\email{pasilva@alumnos.inf.utfsm.cl}
 % 2nd. author
-\alignauthor
-Raúl Monge\\
-  \affaddr{Departamento de Informática}\\
-  \affaddr{Universidad Técnica Federico Santa María}\\
-  \affaddr{Valparaíso, Chile}\\
-  \email{rmonge@inf.utfsm.cl}
+%\alignauthor
+Raúl Monge
+  \affil{Universidad Técnica Federico Santa María}
+  \and
+  %\affil{Valparaíso, Chile}\\
+  %\email{rmonge@inf.utfsm.cl}
 % 3rd. author
-\alignauthor 
-Eduardo B. Fernandez\\
-  \affaddr{Department of Computer and Electrical Engineering and Computer Science}\\
-  \affaddr{Florida Atlantic University}\\
-  \affaddr{Boca Raton, Fl, USA}\\
-  \email{fernande@fau.edu}
+%\alignauthor 
+Eduardo B. Fernandez
+  \affil{Florida Atlantic University}
+  %\affil{Boca Raton, Fl, USA}\\
+  %\email{fernande@fau.edu}
 }
 
-\maketitle
 \begin{abstract}
 Currently, most software development is focused in creating systems connected to the Internet, which allows to add functionality within a system and facilities to their \textit{Stakeholders}. This leads to depend on a \textit{web client}, such as \textit{Web Browser}, which allows access to services, data or operations that the system delivers. However, the Internet influences the attack surface of the system, and unfortunately many stakeholders and developers are not aware of the risks to which they are exposed. The lack of security education among software developers and the scarce and scattered documentation for browsers (and standardization) could become a big problem in large architectural developments that depend on browsers to perform their services. A Reference Architecture (RA) of the \textit{Web Browser}, using Architectural Patterns, could be a starting point for understanding its security mechanisms and architecture, which interact with a bigger web system. This architecture would  unify ideas and terminology, giving a holistic view of implementation independent details for both the browser and the system it communicates with. We have developed a Browser Infrastructure pattern that describes the infrastructure to allow the communication between a Web Client and a Server in the Internet, and now we are extended it. In this paper we will describe the component in charge of the rendering of a web resource within the web browser, named here as Web Content Renderer.
 \end{abstract}
@@ -125,49 +123,59 @@ Currently, most software development is focused in creating systems connected to
 % http://dl.acm.org/ccs.cfm
 % Please copy and paste the code instead of the example below. 
 %
-\begin{CCSXML}
-<ccs2012>
- <concept>
-  <concept_id>10010520.10010553.10010562</concept_id>
-  <concept_desc>Computer systems organization~Embedded systems</concept_desc>
-  <concept_significance>500</concept_significance>
- </concept>
- <concept>
-  <concept_id>10010520.10010575.10010755</concept_id>
-  <concept_desc>Computer systems organization~Redundancy</concept_desc>
-  <concept_significance>300</concept_significance>
- </concept>
- <concept>
-  <concept_id>10010520.10010553.10010554</concept_id>
-  <concept_desc>Computer systems organization~Robotics</concept_desc>
-  <concept_significance>100</concept_significance>
- </concept>
- <concept>
-  <concept_id>10003033.10003083.10003095</concept_id>
-  <concept_desc>Networks~Network reliability</concept_desc>
-  <concept_significance>100</concept_significance>
- </concept>
-</ccs2012>  
-\end{CCSXML}
+%\begin{CCSXML}
+%<ccs2012>
+% <concept>
+%  <concept_id>10010520.10010553.10010562</concept_id>
+%  <concept_desc>Computer systems organization~Embedded systems</concept_desc>
+%  <concept_significance>500</concept_significance>
+% </concept>
+% <concept>
+%  <concept_id>10010520.10010575.10010755</concept_id>
+%   <concept_desc>Computer systems organization~Redundancy</concept_desc>
+%   <concept_significance>300</concept_significance>
+%  </concept>
+%  <concept>
+%   <concept_id>10010520.10010553.10010554</concept_id>
+%   <concept_desc>Computer systems organization~Robotics</concept_desc>
+%   <concept_significance>100</concept_significance>
+%  </concept>
+%  <concept>
+%   <concept_id>10003033.10003083.10003095</concept_id>
+%   <concept_desc>Networks~Network reliability</concept_desc>
+%   <concept_significance>100</concept_significance>
+%  </concept>
+% </ccs2012>  
+% \end{CCSXML}
 
-\ccsdesc[500]{Computer systems organization~Embedded systems}
-\ccsdesc[300]{Computer systems organization~Redundancy}
-\ccsdesc{Computer systems organization~Robotics}
-\ccsdesc[100]{Networks~Network reliability}
+% \ccsdesc[500]{Computer systems organization~Embedded systems}
+% \ccsdesc[300]{Computer systems organization~Redundancy}
+% \ccsdesc{Computer systems organization~Robotics}
+% \ccsdesc[100]{Networks~Network reliability}
 
 
 
 
 \keywords{Browser, Web Client, Browser Renderer, Reference Architecture, Pattern}
 
+\maketitle
 \section{Introduction}
 Patterns are encapsulated solutions to recurrent problems and define a way to express requirements and solutions concisely, as well as providing a communication vocabulary for designers \cite{gamma1994design}. The description of architectures using patterns makes them easier to understand, provides guidelines for design and analysis, and can define a way of making their structure more secure.
 
-The aim of a Reference Architecture is to provide a guide for developers, who are not security experts, to develop architectures for concrete versions of the system or to extend such system. With the use of architectural patterns we describe the Browser Architecture as a Reference Architecture (RA). An RA is created by capturing the essentials of existing architectures and by taking into account future needs and opportunities, ranging from specific technologies, patterns and business models. It can also be derived from domain models.
+The aim of a Reference Architecture is to provide a guide for developers, who are not security experts, to develop architectures for concrete versions of the system or to extend such system. With the use of architectural patterns we describe the Browser Architecture as a Reference Architecture (RA). An RA is created by capturing the essentials of existing architectures and by taking into account future needs and opportunities, ranging from specific technologies, patterns and business models. It can also be derived from domain models. We started to build a Reference Architecture in a student work (Figure \ref{fig:relations}), and now we are trying to improve it by creating new architectural patterns for our RA, misuse patterns to describe threats and finding security patterns to build a Security Reference Architecture (SRA). 
 
-We started to build a Reference Architecture in a student work, and now we are trying to improve it by creating new architectural patterns for our RA, misuse patterns to describe threats and finding security patterns to build a Security Reference Architecture (SRA). We are currently building a SRA, which is a Reference Architecture where security services have been added in appropriate places to provide some degree of security for a specific system. The basic approach we will use to build a Security Reference Architecture is the application of a systematic methodology from \cite{fernandez2006methodology,Fernandez2011,Fernandez2015}, which can be used as a guideline to build secure web browser systems and/or evaluate their security levels. By checking if a threat, expressed as a misuse pattern, can be stopped or mitigated in the security reference architecture, we can evaluate its level of security.
+    \begin{figure*}[h!t]
+      \vspace*{0.8cm}
+      \centering
+      \hspace{0.5cm}\includegraphics[scale=0.6]{figures/relations.jpg}
+      \vspace*{0.8cm}
+      \caption{Pattern Diagram of our work. Finished patterns in green and still developing in blue.}
+      \label{fig:relations}
+    \end{figure*}
 
-In this work, a Web Content Renderer Pattern is presented. We already built a Browser Infrastructure Pattern as our foundation and now we are extending it. The audience to which our paper is focused are Browser developers, Web Application developers, researchers and IT students. Being the first two the most important, since they are the responsible for the implementation and correct use of secure mechanisms while a user is browsing in the Internet. 
+We are currently building a SRA, which is a Reference Architecture where security services have been added in appropriate places to provide some degree of security for a specific system. The basic approach we will use to build a Security Reference Architecture is the application of a systematic methodology from \cite{fernandez2006methodology,Fernandez2011,Fernandez2015}, which can be used as a guideline to build secure web browser systems and/or evaluate their security levels. By checking if a threat, expressed as a misuse pattern, can be stopped or mitigated in the security reference architecture, we can evaluate its level of security.
+
+In this work, a Web Content Renderer Pattern is presented (Figure \ref{fig:relations}). We already built a Browser Infrastructure Pattern as our foundation and now we are extending it. The audience to which our paper is focused are Browser developers, Web Application developers, researchers and IT students. Being the first two the most important, since they are the responsible for the implementation and correct use of secure mechanisms while a user is browsing in the Internet. 
 
 
 \section{Web Content Renderer Pattern}
@@ -180,10 +188,10 @@ In this work, a Web Content Renderer Pattern is presented. We already built a Br
   If a user needs to make a bank transaction, such as deposit money to another party, the browser's user will type an URL in the browser for access the online banking service of the bank the user belongs to. After obtaining the web resources, such as a web page, a script, an image, a binary, etc, they should be displayed on the screen to the user.
   
   \subsection*{Context}
-  Users need to access services or information in the Internet, for which they use browsers. A browser starts by accepting a URL from a user and sending it to the corresponding IP address. It also receives the answers that the users want. Then the web browser needs to parse and interpret the resource to obtain a graphic representation of the resource for the user.
+  To access services or information in the Internet a browsers is used. A browser starts by accepting a URL from a user (explicit request) or interaction with a resource (implicit request) and sending it to the corresponding IP address. It also receives an answers to every petition. Then, web browsers needs to parse and interpret the resource to obtain a graphic representation of the resource for the user.
 
   \subsection*{Problem}
-  Internet users need resources, such as files, data, images, etc., from providers/servers and they may be in a specific format, the challenge is to find a way to make them visible on the user's browser. In this case, if appropiate tools are not available, the resource could not be helpful and it cannot be seen correctly. How can the host provide these functions? The solution to this problem must resolve the following forces:
+  Request for resources, such as files, data, images, etc., from providers/servers may be in a specific format, the challenge is to find a way to make them visible on the user's browser. In this case, if appropiate tools are not available, the resource could not be helpful and it cannot be seen correctly. How can the host provide these functions? The solution to this problem must resolve the following forces:
   \begin{itemize}
     \item \textit{Transparency}: the user should not be concerned about how a request is manipulated to get it on the screen.
     \item \textit{Stability}: The browser must be capable of displaying the resource even if some syntax issues appear, like invalid HTML5.
@@ -193,16 +201,16 @@ In this work, a Web Content Renderer Pattern is presented. We already built a Br
   \end{itemize}
 
   \subsection*{Solution}
-  Provide the Web Browser, with the functions needed to understand user requests and send them to the provider. The Browser should be capable of understanding the resource obtained and display it appropriately. 
+  Provide the Web Browser, with the functions needed to understand requests and send them to the provider. The Browser should be capable of understanding the resource obtained and display it appropriately. 
 
     \subsubsection*{Structure}
-    Figure \ref{fig:WCR} shows a \textbf{Frame Constructor} in charge of building a \textbf{Rendered View} of the resource requested by the user and communicating it to the \textbf{Browser Kernel}. The \textbf{HTML/XML Parser} is in charge of parsing a web resource and obtain an object representation of it, called a \textbf{DOM Tree}. A \textbf{CSS Parser} does the same job as the \textbf{HTML/XML Parser}, but creates \textbf{CSS Style Rules} to change visual aspects of the resource to display. The \textbf{DOM Tree} is a dynamic structure that can change anytime while the resource is needed, by using a scripting language that is interpreted and executed by the \textbf{Javascript Engine}; \textbf{CSS Style Rules} can also change in the same way. A \textbf{Rendered View} is the visual representation of a resource obtained from the \textbf{Browser Kernel}, where a \textbf{Render Tree} is the first step to obtain it. The \textbf{Render Tree} is a a new dynamic structure that links the \textbf{DOM Tree} and \textbf{CSS Style Rules} together.
+    Figure \ref{fig:WCR} shows a \textbf{Frame Constructor} in charge of building a \textbf{Rendered View} of the resource requested and communicating it to the \textbf{Browser Kernel}. The \textbf{HTML/XML Parser} is in charge of parsing a web resource and obtain an object representation of it, called a \textbf{DOM Tree}. A \textbf{CSS Parser} does the same job as the \textbf{HTML/XML Parser}, but creates \textbf{CSS Style Rules} to change visual aspects of the resource to display. The \textbf{DOM Tree} is a dynamic structure that can change anytime while the resource is needed, by using a scripting language that is interpreted and executed by the \textbf{Javascript Engine}; \textbf{CSS Style Rules} can also change in the same way. A \textbf{Rendered View} is the visual representation of a resource obtained from the \textbf{Browser Kernel}, where a \textbf{Render Tree} is the first step to obtain it. The \textbf{Render Tree} is a a new dynamic structure that links the \textbf{DOM Tree} and \textbf{CSS Style Rules} together.
 
     \begin{figure*}[h!t]
-    \vspace*{-2cm}
+      \vspace*{-1cm}
       \centering
-      \includegraphics[scale=0.65]{figures/WebContentRenderer.pdf}
-      \vspace*{-2.5cm}
+      \hspace*{-2cm}\includegraphics[scale=0.63]{figures/WebContentRenderer.pdf}
+      \vspace*{-1cm}
       \caption{High-level Components of the Web Content Renderer.}
       \label{fig:WCR}
     \end{figure*}
@@ -216,9 +224,10 @@ In this work, a Web Content Renderer Pattern is presented. We already built a Br
 
     \end{itemize}
     We show in detail Load Resource below. (Figure \ref{fig:LoadResource}):
-    \subsubsection*{Summary} A Browser User needs a URL resource which can be obtained by using the HTTP protocol, as required by the Provider. The Browser Kernel will be in charge of sending a retrieved resource to the Controlled Process, which is instantiated as a Web Content Renderer for displaying the resource appropriately.
+    \subsubsection*{Summary} A URL resource which can be obtained by using the HTTP protocol, as required by the Provider. The Browser Kernel will be in charge of sending a retrieved resource to the Controlled Process, which is instantiated as a Web Content Renderer for displaying the resource appropriately.
     \subsubsection*{Actor} Browser Kernel
-    \subsubsection*{Preconditions} The Host must have one or more Browser Kernels for the Host user. In addition to being connected to a network or the Internet. The Provider to which the user wants to contact must also be available. The Web Content Renderer must consider that a web resource can be in many different formats, so it should be capable of displaying them accordingly.
+    \subsubsection*{Preconditions} The Host must have one or more Browser Kernels. In addition to being connected to a network or the Internet. The Provider to which the browser will contact must also be available. The Web Content Renderer must consider that a web resource can be in many different formats, so it should be capable of displaying them accordingly.
+
     \subsubsection*{Description}
       \begin{enumerate}
         \item First, the Browser Kernel sends a resource to the Controlled Process, which is instantiated as a Web Content Renderer. The Frame Controlled receives each request for rendering a new resource.
@@ -226,6 +235,7 @@ In this work, a Web Content Renderer Pattern is presented. We already built a Br
         \item If scripts are found on the resource while parsing it, the Javascript Engine has the job of parsing, interpreting and executing them. This action can change the DOM Tree and the CSS Rules Styles already built.
         \item Finally, the Frame Constructor is in position for building a visual representation of the resource to be renderer. The DOM Tree and CSS Styles Rules are linked together into a Render Tree, and then a process called Layout and Painting is called to get the bitmap for the Browser Kernel.
       \end{enumerate}
+
     \subsubsection*{Alternative flows} 
     \begin{itemize}
     \item The HTML/XML Parser fails in getting the DOM Tree from the resource.
@@ -233,24 +243,30 @@ In this work, a Web Content Renderer Pattern is presented. We already built a Br
     \item The execution of Javascript or the rendering process is cancelled.
       \end{itemize}
     \subsubsection*{Postconditions} The Browser Kernel obtains a bitmap representation of the resource.
+      
+
+    \begin{landscape}
       \begin{figure*}[h!t]
       \vspace*{-2cm}
           \centering
-          \hspace*{-1cm}\includegraphics[scale=0.72]{figures/LoadResource.pdf}
+          \hspace*{-1cm}\includegraphics[scale=0.8]{figures/LoadResource.pdf}
           \vspace*{-2cm}
           \caption{Sequence Diagram: Load Resource.}
           \label{fig:LoadResource}
       \end{figure*}
+    \end{landscape}
 
   \subsection*{Implementation}
-  \begin{itemize}
-    %\item The Javascript Engine on the Web Content Renderer is normally composed by standard classes, a Javascript Parser that interprets scripting code, a JIT or Just-in-Time Compiler, an Interpreter and a Garbage Collector. Other implementations could have other components, but the must importants are those before \cite{GoogleChromeV8,MicrosoftChakra,MozillaSpidermonkey}.
-    \item To enforce the Same Origin Policy, Google Chrome, Firefox and Internet Explorer use different schemes; for example Google Chrome isolates pages/resources with the help of the Renderer (Web Content Renderer in this case).
-    \item Gecko \cite{gecko2} is the name for the Renderer in the monoprocess architecture Firefox, it is written in C++ and can be used to render the user interface of other applications such as Thunderbird.
-    \item Trident is the old Renderer used on Internet Explorer \cite{Crowley2010}. Microsoft's new web browser, Microsoft Edge, integrates a new renderer too, called EdgeHTML \cite{edgehtml}.
-    \item Blink is the implementation of the Renderer done by Google \cite{blink}.
+    \begin{itemize}
+      %\item The Javascript Engine on the Web Content Renderer is normally composed by standard classes, a Javascript Parser that interprets scripting code, a JIT or Just-in-Time Compiler, an Interpreter and a Garbage Collector. Other implementations could have other components, but the must importants are those before \cite{GoogleChromeV8,MicrosoftChakra,MozillaSpidermonkey}.
+      \item To enforce the Same Origin Policy, Google Chrome, Firefox and Internet Explorer use different schemes; for example Google Chrome isolates pages/resources with the help of the Renderer (Web Content Renderer in this case).
+      \item Gecko \cite{gecko2} is the name for the Renderer in the monoprocess architecture Firefox, it is written in C++ and can be used to render the user interface of other applications such as Thunderbird.
+      \item Trident is the old Renderer used on Internet Explorer \cite{Crowley2010}. Microsoft's new web browser, Microsoft Edge, integrates a new renderer too, called EdgeHTML \cite{edgehtml}.
+      \item Blink is the implementation of the Renderer done by Google \cite{blink}.
 
-  \end{itemize}
+    \end{itemize}
+
+
 
   \subsection*{Consequences}
   The Web Content Renderer pattern provides the following benefits:
@@ -268,7 +284,7 @@ In this work, a Web Content Renderer Pattern is presented. We already built a Br
   \end{itemize}
 
   \subsection*{Example Resolved}
-With the given pattern it is now possible to display and navigate smoothly to all resources on the Internet we want. Independent on the type of web resource, it will be possible to display it appropriately by the user who needs it. 
+With the given pattern it is now possible to display and navigate smoothly to all resources on the Internet we want. Independent on the type of web resource, it will be possible to display it appropriately in the browser. 
   \subsection*{Known Uses}
   \begin{itemize}
     \item The separation of the components of the \textit{Browser} in various processes, with different levels of access is called a Modular Architecture \cite{Vrbanec2013}. This enables the separation of concerns in the browser, which gives greater stability, isolation, safety and speed. There are other software architectures used by browsers, but currently the use of a modular architecture is rising.
@@ -294,8 +310,15 @@ We plan to build more \cite{silva2015b} misuse patterns for the Browser Infrastr
 %\section{Acknowledgements}
 %This work was partially supported by CONICYT (grant Fondecyt 1140408).
 
+\section{Glossary}
+\begin{itemize}
+  \item \textbf{Frame Constructor:} in charge to put together the results obtained by the parsing process of a HTML and CSS file, as well to execute in the precise time the Javascript code that will manipulate the DOM Tree and CSS Styles rules obtained. 
+  \item \textbf{Rendered View:} a graphical representation of a Renderer Tree, from the DOM Tree and CSS Style rules obtained from a resource.
+\end{itemize}
+
+
 \bibliography{refTodas}  
-\bibliographystyle{IEEEtran}
+\bibliographystyle{ACM-Reference-Format-Journals}
 
 
 \end{document}
