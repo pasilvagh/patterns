@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.4.28)  2 APR 2016 02:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.4.28)  22 APR 2016 20:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -443,14 +443,14 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 162.
 
-<figures/relations.jpg, id=1, 596.98032pt x 250.68657pt>
-File: figures/relations.jpg Graphic file (type jpg)
+<figures/relations-finish.png, id=1, 858.20625pt x 419.31656pt>
+File: figures/relations-finish.png Graphic file (type png)
 
-<use figures/relations.jpg>
-Package pdftex.def Info: figures/relations.jpg used on input line 170.
-(pdftex.def)             Requested size: 358.19095pt x 150.41309pt.
+<use figures/relations-finish.png>
+Package pdftex.def Info: figures/relations-finish.png used on input line 170.
+(pdftex.def)             Requested size: 386.18924pt x 188.6907pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3168) has occurred while \output is active []
 
 
 Overfull \vbox (72.27pt too high) has occurred while \output is active []
@@ -458,26 +458,29 @@ Overfull \vbox (72.27pt too high) has occurred while \output is active []
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 Non-PDF special ignored!
 
-] [2 <./figures/relations.jpg>]
-LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 198.
+]
+Underfull \vbox (badness 1454) has occurred while \output is active []
+
+ [2 <./figures/relations-finish.png>]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 207.
+LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <10> not available
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 207.
 
-<figures/WebContentRenderer.pdf, id=14, 794.97pt x 614.295pt>
+<figures/WebContentRenderer.pdf, id=16, 794.97pt x 614.295pt>
 File: figures/WebContentRenderer.pdf Graphic file (type pdf)
 
 <use figures/WebContentRenderer.pdf>
 Package pdftex.def Info: figures/WebContentRenderer.pdf used on input line 212.
 
-(pdftex.def)             Requested size: 500.83376pt x 387.00789pt.
+(pdftex.def)             Requested size: 461.08293pt x 356.29134pt.
 
-Overfull \hbox (47.92825pt too wide) in paragraph at lines 212--214
+Overfull \hbox (8.17743pt too wide) in paragraph at lines 212--214
  []| [] 
  []
 
-[3] [4 <./figures/WebContentRenderer.pdf, page is rotated 90 degrees>]
-<figures/LoadResource.pdf, id=28, 794.97pt x 614.295pt>
+[3] [4 <./figures/WebContentRenderer.pdf, page is rotated 90 degrees>] [5]
+<figures/LoadResource.pdf, id=33, 794.97pt x 614.295pt>
 File: figures/LoadResource.pdf Graphic file (type pdf)
 
 <use figures/LoadResource.pdf>
@@ -491,87 +494,97 @@ Overfull \hbox (38.82413pt too wide) in paragraph at lines 252--254
 
 LaTeX Warning: Float too large for page by 10.40564pt on input line 256.
 
-[5 <./figures/LoadResource.pdf, page is rotated 90 degrees>] [6
+[6 <./figures/LoadResource.pdf, page is rotated 90 degrees>] [7
 
 
-]
+] [8]
 (./WebContentRenderer.bbl
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 41.
+(Font)              <8> on input line 42.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 41.
+(Font)              <6> on input line 42.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 41.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 41.
+(Font)              <5> on input line 42.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 42.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-) [7]
-Underfull \hbox (badness 10000) in paragraph at lines 64--70
-[]\OT1/pnc/m/n/8 Introducing Edge-HTML 13, our first plat-form up-date for Mi-c
-rosoft Edge | Mi-
+)
+Underfull \hbox (badness 5077) in paragraph at lines 47--53
+[]\OT1/pnc/m/n/8 2009. Se-cu-rity/ProcessIsolation/ThreatModel. (2009). $https 
+: / / wiki . mozilla . org / Security / ProcessIsolation /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--70
-\OT1/pnc/m/n/8 crosoft Edge Dev Blog. (????). $https : / / blogs . windows . co
-m / msedgedev / 2015 / 11 / 16 /
+Underfull \hbox (badness 10000) in paragraph at lines 57--63
+[]\OT1/pnc/m/n/8 2015. Site Iso-la-tion - The Chromium Projects. (2015). $https
+ : / / www . chromium . org / developers /
  []
 
 
-Underfull \hbox (badness 4060) in paragraph at lines 74--79
-[]\OT1/pnc/m/n/8 Multi-process Ar-chi-tec-ture - The Chromium Projects. (????).
- $https : / / www . chromium . org / developers /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--123
+Underfull \hbox (badness 10000) in paragraph at lines 109--117
 []\OT1/pnc/m/n/8 Eduardo B. Fer-nan-dez, Raul Monge, and Keiko Hashizume. 2015.
  Build-ing a se-cu-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--123
+Underfull \hbox (badness 10000) in paragraph at lines 109--117
 \OT1/pnc/m/n/8 rity ref-er-ence ar-chi-tec-ture for cloud sys-tems. \OT1/pnc/m/
 it/8 Re-quire-ments En-gi-neer-ing \OT1/pnc/m/n/8 (Jan 2015).
  []
 
 
-Underfull \hbox (badness 2644) in paragraph at lines 128--136
+Underfull \hbox (badness 2644) in paragraph at lines 122--130
 []\OT1/pnc/m/n/8 Eduardo B. Fer-nan-dez, Nobukazu Yosh-ioka, Hi-ronori Washizak
 i, Jan Ju-r-jens, Michael Van-Hilst,
  []
 
 
-Underfull \hbox (badness 1895) in paragraph at lines 128--136
+Underfull \hbox (badness 1895) in paragraph at lines 122--130
 \OT1/pnc/m/n/8 and Guen-ther Per-nul. 2011. \OT1/pnc/m/it/8 Us-ing Se-cu-rity P
 at-terns to De-velop Se-cure Sys-tems\OT1/pnc/m/n/8 . IGI Global.
  []
 
-) [8] (./WebContentRenderer.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Underfull \hbox (badness 1142) in paragraph at lines 153--159
+[]\OT1/pnc/m/n/8 Google Chromium. 2008. Multi-process Ar-chi-tec-ture - The Chr
+omium Projects. (2008). $https : / / www .
+ []
 
- ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--189
+[]\OT1/pnc/m/n/8 Microsoft. 2015. In-tro-duc-ing Edge-HTML 13, our first plat-f
+orm up-date for Mi-crosoft Edge
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--189
+\OT1/pnc/m/n/8 | Mi-crosoft Edge Dev Blog. (2015). $https : / / blogs . windows
+ . com / msedgedev / 2015 / 11 / 16 /
+ []
+
+[9]) [10] (./WebContentRenderer.aux) ) 
 Here is how much of TeX's memory you used:
- 2734 strings out of 493105
- 36503 string characters out of 6137072
- 109454 words of memory out of 5000000
- 6127 multiletter control sequences out of 15000+600000
+ 2741 strings out of 493105
+ 36655 string characters out of 6137072
+ 112785 words of memory out of 5000000
+ 6134 multiletter control sequences out of 15000+600000
  25923 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,35p,1537b,333s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf
--dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/he
-lvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncb
-8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on WebContentRenderer.pdf (8 pages, 170166 bytes).
+ 38i,8n,35p,2217b,333s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/
+dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+urw/ncntrsbk/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk
+/uncri8a.pfb>
+Output written on WebContentRenderer.pdf (10 pages, 150845 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
+ 83 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

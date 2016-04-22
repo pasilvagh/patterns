@@ -32,50 +32,44 @@
 \ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
 \ifx \showURL      \undefined \def \showURL       #1{#1}          \fi
 
-\bibitem[\protect\citeauthoryear{??}{bli}{}]%
-        {blink}
-{Blink - The Chromium Projects}.
-\newblock   (????).
-\newblock
-\showURL{%
-\url{http://dev.chromium.org/blink}}
-
-
-\bibitem[\protect\citeauthoryear{??}{gec}{}]%
-        {gecko2}
-{Gecko:Overview - MozillaWiki}.
-\newblock   (????).
-\newblock
-\showURL{%
-\url{https://wiki.mozilla.org/Gecko:Overview}}
-
-
-\bibitem[\protect\citeauthoryear{??}{IE8}{}]%
+\bibitem[\protect\citeauthoryear{??}{IE8}{2008}]%
         {IE8-LCIE}
-{IE8 and Loosely-Coupled IE (LCIE) - IEBlog - Site Home}.
-\newblock   (????).
+ 2008.
+\newblock {IE8 and Loosely-Coupled IE (LCIE) - IEBlog - Site Home}.
+\newblock   (2008).
 \newblock
 \showURL{%
 \url{http://blogs.msdn.com/b/ie/archive/2008/03/11/ie8-and-loosely-coupled-ie-lcie.aspx}}
 
 
-\bibitem[\protect\citeauthoryear{??}{edg}{}]%
-        {edgehtml}
-{Introducing EdgeHTML 13, our first platform update for Microsoft Edge |
-  Microsoft Edge Dev Blog}.
-\newblock   (????).
+\bibitem[\protect\citeauthoryear{??}{Fir}{2009}]%
+        {FirefoxThreatModel}
+ 2009.
+\newblock {Security/ProcessIsolation/ThreatModel}.
+\newblock   (2009).
 \newblock
 \showURL{%
-\url{https://blogs.windows.com/msedgedev/2015/11/16/introducing-edgehtml-13-our-first-platform-update-for-microsoft-edge/}}
+\url{https://wiki.mozilla.org/Security/ProcessIsolation/ThreatModel}}
 
 
-\bibitem[\protect\citeauthoryear{??}{mul}{}]%
-        {multiProcGC}
-{Multi-process Architecture - The Chromium Projects}.
-\newblock   (????).
+\bibitem[\protect\citeauthoryear{??}{Goo}{2015}]%
+        {GoogleChromeIsolation}
+ 2015.
+\newblock {Site Isolation - The Chromium Projects}.
+\newblock   (2015).
 \newblock
 \showURL{%
-\url{https://www.chromium.org/developers/design-documents/multi-process-architecture}}
+\url{https://www.chromium.org/developers/design-documents/site-isolation}}
+
+
+\bibitem[\protect\citeauthoryear{Buschman, Meunier, Rohnert, Sommerlad, and
+  Stal}{Buschman et~al\mbox{.}}{1996}]%
+        {buschman1996system}
+{Frank Buschman}, {Regine Meunier}, {Hans Rohnert}, {Peter Sommerlad}, {and}
+  {Michael Stal}. 1996.
+\newblock A system of patterns: pattern-oriented software architecture.
+\newblock   (1996).
+\newblock
 
 
 \bibitem[\protect\citeauthoryear{Crowley}{Crowley}{2010}]%
@@ -144,6 +138,26 @@
 \newblock
 
 
+\bibitem[\protect\citeauthoryear{{Google}}{{Google}}{2014}]%
+        {gpuchrome}
+{{Google}}. 2014.
+\newblock {GPU Accelerated Compositing in Chrome - The Chromium Projects}.
+\newblock   (2014).
+\newblock
+\showURL{%
+\url{https://www.chromium.org/developers/design-documents/gpu-accelerated-compositing-in-chrome}}
+
+
+\bibitem[\protect\citeauthoryear{{Google Chromium}}{{Google Chromium}}{2008}]%
+        {multiProcGC}
+{{Google Chromium}}. 2008.
+\newblock {Multi-process Architecture - The Chromium Projects}.
+\newblock   (2008).
+\newblock
+\showURL{%
+\url{https://www.chromium.org/developers/design-documents/multi-process-architecture}}
+
+
 \bibitem[\protect\citeauthoryear{Grosskurth and Godfrey}{Grosskurth and
   Godfrey}{2005}]%
         {2005-grosskurth-browser-refarch}
@@ -153,24 +167,69 @@
 \newblock
 
 
+\bibitem[\protect\citeauthoryear{Jackson and Barth}{Jackson and Barth}{2008}]%
+        {Jackson2008}
+{Collin Jackson} {and} {Adam Barth}. 2008.
+\newblock \showarticletitle{{Beware of finer-grained origins}}.
+\newblock {\em Web 2.0 Security and Privacy\/} (2008).
+\newblock
+\showURL{%
+\url{http://seclab.stanford.edu/websec/origins/fgo.pdf}}
+
+
+\bibitem[\protect\citeauthoryear{{Microsoft}}{{Microsoft}}{2015}]%
+        {edgehtml}
+{{Microsoft}}. 2015.
+\newblock {Introducing EdgeHTML 13, our first platform update for Microsoft
+  Edge | Microsoft Edge Dev Blog}.
+\newblock   (2015).
+\newblock
+\showURL{%
+\url{https://blogs.windows.com/msedgedev/2015/11/16/introducing-edgehtml-13-our-first-platform-update-for-microsoft-edge/}}
+
+
+\bibitem[\protect\citeauthoryear{{Mozilla}}{{Mozilla}}{2000}]%
+        {gecko2}
+{{Mozilla}}. 2000.
+\newblock {Gecko:Overview - MozillaWiki}.
+\newblock   (2000).
+\newblock
+\showURL{%
+\url{https://wiki.mozilla.org/Gecko:Overview}}
+
+
+\bibitem[\protect\citeauthoryear{Reis and Gribble}{Reis and Gribble}{2009}]%
+        {Reis2009}
+{Charles Reis} {and} {Steven~D Gribble}. 2009.
+\newblock \showarticletitle{{Isolating web programs in modern browser
+  architectures}}.
+\newblock {\em Proceedings of the fourth ACM european conference on Computer
+  systems EuroSys 09\/} {25}, 1 (2009), 219.
+\newblock
+\showISBNx{9781605584829}
+\showISSN{03005771}
+\showDOI{%
+\url{http://dx.doi.org/10.1145/1519065.1519090}}
+
+
 \bibitem[\protect\citeauthoryear{Silva, Monge, and Fernandez~B.}{Silva
-  et~al\mbox{.}}{a}]%
+  et~al\mbox{.}}{2016a}]%
         {silva2015b}
-{Paulina Silva}, {Raúl Monge}, {and} {Eduardo Fernandez~B.}
+{Paulina Silva}, {Raúl Monge}, {and} {Eduardo Fernandez~B.} 2016a.
 \newblock \showarticletitle{{A Misuse Pattern for Web Browsers: Interception of
   traffic}}.
 \newblock {\em Proceedings of the 5th Asian Conference on Pattern Languages of
-  Programs (AsianPLoP) 2016, Taipei, Taiwan, February 2016\/} (????).
+  Programs (AsianPLoP) 2016, Taipei, Taiwan\/} (2016).
 \newblock
 
 
 \bibitem[\protect\citeauthoryear{Silva, Monge, and Fernandez~B.}{Silva
-  et~al\mbox{.}}{b}]%
+  et~al\mbox{.}}{2016b}]%
         {silva2015}
-{Paulina Silva}, {Raúl Monge}, {and} {Eduardo Fernandez~B.}
+{Paulina Silva}, {Raúl Monge}, {and} {Eduardo Fernandez~B.} 2016b.
 \newblock \showarticletitle{{A pattern for Web Browser Infrastructure}}.
 \newblock {\em Proceedings of the 5th Asian Conference on Pattern Languages of
-  Programs (AsianPLoP) 2016, Taipei, Taiwan, February 2016\/} (????).
+  Programs (AsianPLoP) 2016, Taipei, Taiwan\/} (2016).
 \newblock
 
 
@@ -182,12 +241,22 @@
 \newblock
 
 
+\bibitem[\protect\citeauthoryear{W3C}{W3C}{2010}]%
+        {W3C-SOP}
+{W3C}. 2010.
+\newblock {\em {Same Origin Policy}}.
+\newblock Web page. W3C.
+\newblock
+\showURL{%
+\url{https://www.w3.org/Security/wiki/Same\_Origin\_Policy}}
+
+
 \bibitem[\protect\citeauthoryear{{World Wide Web Consortium - W3C}}{{World Wide
-  Web Consortium - W3C}}{}]%
+  Web Consortium - W3C}}{1994}]%
         {w3c}
-{{World Wide Web Consortium - W3C}}.
+{{World Wide Web Consortium - W3C}}. 1994.
 \newblock About.
-\newblock   (????).
+\newblock   (1994).
 \newblock
 \showURL{%
 \url{http://www.w3.org/Consortium/}}
