@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.4.28)  22 APR 2016 20:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.4.28)  25 APR 2016 11:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -355,22 +355,48 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 702.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip46
+\fb@frw=\dimen113
+\fb@frh=\dimen114
+\FrameRule=\dimen115
+\FrameSep=\dimen116
+)
 (./WebContentRenderer.aux)
 \openout1 = `WebContentRenderer.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Try loading font information for OT1+pnc on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Try loading font information for OT1+pnc on input line 57.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pnc.fd
 File: ot1pnc.fd 2001/06/04 font definitions for OT1/pnc.
@@ -378,13 +404,13 @@ File: ot1pnc.fd 2001/06/04 font definitions for OT1/pnc.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count92
-\scratchdimen=\dimen113
+\scratchdimen=\dimen117
 \scratchbox=\box34
 \nofMPsegments=\count93
 \nofMParguments=\count94
 \everyMPshowfont=\toks19
 \MPscratchCnt=\count95
-\MPscratchDim=\dimen114
+\MPscratchDim=\dimen118
 \MPnumerator=\count96
 \makeMPintoPDFobject=\count97
 \everyMPtoPDFconversion=\toks20
@@ -432,23 +458,23 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 161.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 164.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 161.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 164.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 162.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 165.
 
 <figures/relations-finish.png, id=1, 858.20625pt x 419.31656pt>
 File: figures/relations-finish.png Graphic file (type png)
 
 <use figures/relations-finish.png>
-Package pdftex.def Info: figures/relations-finish.png used on input line 170.
-(pdftex.def)             Requested size: 386.18924pt x 188.6907pt.
+Package pdftex.def Info: figures/relations-finish.png used on input line 173.
+(pdftex.def)             Requested size: 360.44417pt x 176.11174pt.
 
 Underfull \vbox (badness 3168) has occurred while \output is active []
 
@@ -458,46 +484,42 @@ Overfull \vbox (72.27pt too high) has occurred while \output is active []
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 Non-PDF special ignored!
 
-]
-Underfull \vbox (badness 1454) has occurred while \output is active []
+] [2 <./figures/relations-finish.png>]
+<figures/WebContentRenderer-v2.pdf, id=16, 794.97pt x 614.295pt>
+File: figures/WebContentRenderer-v2.pdf Graphic file (type pdf)
 
- [2 <./figures/relations-finish.png>]
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 207.
-LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 207.
+<use figures/WebContentRenderer-v2.pdf>
+Package pdftex.def Info: figures/WebContentRenderer-v2.pdf used on input line 2
+08.
+(pdftex.def)             Requested size: 445.18016pt x 344.00284pt.
 
-<figures/WebContentRenderer.pdf, id=16, 794.97pt x 614.295pt>
-File: figures/WebContentRenderer.pdf Graphic file (type pdf)
-
-<use figures/WebContentRenderer.pdf>
-Package pdftex.def Info: figures/WebContentRenderer.pdf used on input line 212.
-
-(pdftex.def)             Requested size: 461.08293pt x 356.29134pt.
-
-Overfull \hbox (8.17743pt too wide) in paragraph at lines 212--214
+Overfull \hbox (34.9538pt too wide) in paragraph at lines 208--210
  []| [] 
  []
 
-[3] [4 <./figures/WebContentRenderer.pdf, page is rotated 90 degrees>] [5]
-<figures/LoadResource.pdf, id=33, 794.97pt x 614.295pt>
-File: figures/LoadResource.pdf Graphic file (type pdf)
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 222.
+LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <10> not available
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 222.
+[3 <./figures/WebContentRenderer-v2.pdf, page is rotated 90 degrees>] [4]
+<figures/LoadResource-v2.pdf, id=30, 794.97pt x 614.295pt>
+File: figures/LoadResource-v2.pdf Graphic file (type pdf)
 
-<use figures/LoadResource.pdf>
-Package pdftex.def Info: figures/LoadResource.pdf used on input line 252.
+<use figures/LoadResource-v2.pdf>
+Package pdftex.def Info: figures/LoadResource-v2.pdf used on input line 259.
 (pdftex.def)             Requested size: 635.97687pt x 491.43666pt.
 
-Overfull \hbox (38.82413pt too wide) in paragraph at lines 252--254
+Overfull \hbox (38.82413pt too wide) in paragraph at lines 259--261
  []| [] 
  []
 
 
-LaTeX Warning: Float too large for page by 10.40564pt on input line 256.
+LaTeX Warning: Float too large for page by 4.71518pt on input line 263.
 
-[6 <./figures/LoadResource.pdf, page is rotated 90 degrees>] [7
+[5 <./figures/LoadResource-v2.pdf, page is rotated 90 degrees>] [6
 
 
-] [8]
+] [7]
 (./WebContentRenderer.bbl
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 42.
@@ -563,28 +585,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--189
  . com / msedgedev / 2015 / 11 / 16 /
  []
 
-[9]) [10] (./WebContentRenderer.aux) ) 
+[8]) [9] (./WebContentRenderer.aux) ) 
 Here is how much of TeX's memory you used:
- 2741 strings out of 493105
- 36655 string characters out of 6137072
- 112785 words of memory out of 5000000
- 6134 multiletter control sequences out of 15000+600000
+ 3224 strings out of 493105
+ 42292 string characters out of 6137072
+ 123597 words of memory out of 5000000
+ 6606 multiletter control sequences out of 15000+600000
  25923 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,35p,2217b,333s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/
-dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-urw/ncntrsbk/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk
-/uncri8a.pfb>
-Output written on WebContentRenderer.pdf (10 pages, 150845 bytes).
+ 38i,8n,35p,2213b,335s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/d
+vips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
+rw/ncntrsbk/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/
+uncri8a.pfb>
+Output written on WebContentRenderer.pdf (9 pages, 148553 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+ 80 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
