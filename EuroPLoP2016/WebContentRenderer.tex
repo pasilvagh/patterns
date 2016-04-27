@@ -117,7 +117,7 @@ Eduardo B. Fernandez
 }
 
 \begin{abstract}
-Currently, most software development is focused in creating systems connected to the Internet, which allows to add functionality within a system and facilities to their \textit{Stakeholders}. This leads to depend on a \textit{web client}, such as \textit{Web Browser}, which allows access to services, data or operations that the system delivers. Within the browser's main components, a rendering engine is in charge of obtaining a convenient data structure as an output for the browser process; who at the same time will send this output to the operating system. If the output is a web page, it will be shown to the user as a graphical representation; if not, the information obtained by the resource will be saved in a format to the user's convenience. However, the Internet influences the attack surface of the system, and unfortunately many stakeholders and developers are not aware of the risks to which they are exposed. The lack of security education among software developers and the scarce and scattered documentation for browsers (and standardization) could become a big problem in large architectural developments that depend on browsers to perform their services. A Reference Architecture (RA) of the \textit{Web Browser}, using Architectural Patterns, could be a starting point for understanding its security mechanisms and architecture, which interact with a bigger web system. This architecture would unify ideas and terminology, giving a holistic view of implementation independent details for both the browser and the system it communicates with. To our best knowledge, we have not found documentation that could unify the mentioned ideas. We have developed a Browser Infrastructure pattern that describes the infrastructure to allow the communication between a Web Client and a Server in the Internet, and now we have extended it. In this paper we describe the component in charge of the rendering of a web resource within the web browser, named here as Web Content Renderer. Since Google Chrome's appearance, the structure of a Browser has evolved while thinking how to make the browser faster, simple and more secure. 
+Currently, most software development is focused in creating systems connected to the Internet, which allows to add functionality within a system and facilities to their \textit{Stakeholders}. This leads to depend on a \textit{web client}, such as \textit{web browser}, which allows access to the Internet services, data or operations that the system delivers. Within the browser's main components, a rendering engine is in charge of obtaining a convenient data structure as an output for the browser process; who at the same time will send this output to the operating system. If the output is a web page, it will be shown to the user as a graphical representation; if not, the information obtained by the resource will be saved in a format to the user's convenience. However, the Internet influences the attack surface of the system, and unfortunately many stakeholders and developers are not aware of the risks to which they are exposed. The lack of security education among software developers and the scarce and scattered documentation for browsers (and standardization) could become a big problem in large architectural developments that depend on browsers to perform their services. A Reference Architecture (RA) of the \textit{web browser}, using Architectural Patterns, could be a starting point for understanding its security mechanisms and architecture, which interact with a bigger web system. This architecture would unify ideas and terminology, giving a holistic view of implementation independent details for both the browser and the system it communicates with. To our best knowledge, we have not found documentation that could unify the mentioned ideas. We developed a Web Browser Communication pattern that describes the infrastructure to allow the communication between a Web Client, a web browser, and a Server in the Internet. In this paper we describe the component in charge of the rendering of a web resource within the web browser, named here as Web Content Renderer. Since the appearance of Google Chrome, the structure of a browser has evolved with the objective of making it browser faster, simpler and more secure. 
 \end{abstract}
 
 
@@ -165,72 +165,72 @@ Currently, most software development is focused in creating systems connected to
 \section{Introduction}
 Patterns are encapsulated solutions to recurrent problems and define a way to express requirements and solutions concisely, as well as providing a communication vocabulary for designers \cite{gamma1994design,buschman1996system}. The description of architectures using patterns makes them easier to understand, provides guidelines for design and analysis, and can define a way of making their structure more secure.
 
-The aim of a Reference Architecture is to provide a guide for developers, who are not security experts, to develop architectures for concrete versions of the system or to extend such system. We describe the browser architecture as a Reference Architecture (RA) conformed of architectural patterns. An RA is created by capturing the essentials of existing architectures and by taking into account future needs and opportunities, ranging from specific technologies, patterns and business models. The pattern diagram \cite{buschman1996system} in Figure \ref{fig:relations} shows relationships between patterns and we can see how different models relate to each other, where round rectangles represent patterns and the arcs indicate dependencies between patterns. 
+The aim of a Reference Architecture is to provide a guide for developers, who are not security experts, to develop architectures for concrete versions of some system or to extend such system. We describe the browser architecture as a Reference Architecture (RA) composed  of architectural patterns. An RA is created by capturing the essentials of existing architectures and by taking into account future needs and opportunities, ranging from specific technologies, patterns and business models. The pattern diagram \cite{buschman1996system} in Figure \ref{fig:relations} shows relationships between patterns and we can see how different models relate to each other, where rounded rectangles represent patterns and the arcs indicate dependencies between patterns; for example, Interception of Traffic describes traffic threats.
 
     \begin{figure*}[h!t]
-      \vspace*{-0.5cm}
+      \vspace*{-0.3cm}
       \centering
-      \hspace{0.5cm}\includegraphics[scale=0.42]{figures/relations-finish.png}
+      \hspace{0.5cm}\includegraphics[scale=0.45]{figures/relations-finish.png}
       \caption{Pattern Diagram of our work. Finished patterns in green and still developing in blue.}
       \label{fig:relations}
     \end{figure*}
 
-We started to build a Reference Architecture in a previous work (Figure \ref{fig:relations}), and now we are trying to extend it by creating new architectural patterns for our RA, misuse patterns to describe threats and finding security patterns to build a Security Reference Architecture (SRA). We are currently building a SRA, which is a Reference Architecture where security services have been added in appropriate places to provide some degree of security for a specific system. The basic approach we will use to build a Security Reference Architecture is the application of a systematic methodology from \cite{fernandez2006methodology,Fernandez2011,Fernandez2015}, which can be used as a guideline to build secure web browser systems and/or evaluate their security levels. By checking if a threat, expressed as a misuse pattern, can be stopped or mitigated in the security reference architecture, we can evaluate its level of security.
+We started to build a Reference Architecture in a previous work (Figure \ref{fig:relations}), and now we are trying to extend it by creating new architectural patterns for our RA, misuse patterns to describe threats and security patterns to build a Security Reference Architecture (SRA). We are currently building a SRA, which is a Reference Architecture where security services have been added in appropriate places to provide some degree of security for a specific system. The basic approach we will use to build a Security Reference Architecture is the application of a systematic methodology from \cite{fernandez2006methodology,Fernandez2011,Fernandez2015}, which can be used as a guideline to build secure web browser systems and/or evaluate their security levels. By checking if a threat, expressed as a misuse pattern, can be stopped or mitigated in the security reference architecture, we can evaluate its level of security.
 
-In this work, a Web Content Renderer Pattern is presented (Figure \ref{fig:relations}). We already built a Browser Infrastructure Pattern as our foundation and now we are extending it \cite{silva2015}. The audience to which our paper is focused are browser developers, web application developers, researchers and for teaching purposes, being the first two the most important, since they are the responsible for the implementation and correct use of secure mechanisms. 
+In this work, a Web Content Renderer Pattern is presented (See Figure \ref{fig:relations} to see how it fits with our other patterns). We have already built a Web Browser Communication pattern as our foundation and now we are extending it \cite{silva2015}. The audience to which our paper is focused are browser developers, web application developers, researchers and for teaching purposes, being the first two the most important, since they are the responsible for the implementation and correct use of secure mechanisms. 
 
 
 \section{Web Content Renderer Pattern}
 
   \subsection*{Intent}
 
-  The Web Content Renderer describes the architecture for processing the web resources obtained by a browser, into a confortable data structure \cite{gpuchrome} or graphical representation, such as a bitmap, which will be displayed to the screen to the user.
+  The Web Content Renderer describes the architecture for processing the web resources obtained by a browser, into a convenient data structure \cite{gpuchrome} or graphical representation, such as a bitmap, which will be displayed on the screen to the user.
 
   \subsection*{Example}
-  Once a resource is obtained by the web browser, it is neccesary to interpret it if the resource is a web pag or save it temporaly or indefinetely in the web browser's host. If it is a web page, the web browser needs to parse it, interpret it and obtain a confortable structure for displaying the resource on the host's screen.
+  Once a resource is obtained by the web browser, it is neccesary to interpret it if the resource is a web page or save it temporally or indefinitely in the web browser's host. If it is a web page, the web browser needs to parse it, interpret it and obtain its confortable structure for displaying the resource on the host's screen.
   
   \subsection*{Context}
-  A browser is used to access services or information in the Internet. A browser starts by accepting a URL from a user (explicit request) or interaction with a resource (implicit request) and sending it to the corresponding IP address. It also receives an answer to this request. Then, web browsers need to parse and interpret the resource to obtain a graphic representation of the resource for the user.
+  A browser is used to access services or information in the Internet. A browser starts by accepting a URL from a user (explicit request) or an implicit request for interaction with a resource and sending them to the corresponding IP address. It also receives an answer to this request. For this purpose, web browsers need to parse and interpret the resource to obtain a graphic representation of the resource for the user.
 
   \subsection*{Problem}
   Requests for resources, such as files, data, images, etc., from providers/servers may be in a specific format, the challenge is to find a way to make them visible on the user's browser. In this case, if appropiate tools are not available, the resource cannot be helpful because it cannot be seen correctly. How can the host provide these functions? The solution to this problem must resolve the following forces:
   \begin{itemize}\leftskip0.8em
     \item \textit{Transparency}: The user should not be concerned about how a request is manipulated to get its result on the screen.
-    \item \textit{Stability}: The browser must be capable of displaying the resource even in the prescence of syntax errors, like invalid HTML5.
-    \item \textit{Isolation}: If a request is done, this is with the Browser User permission and should not cause an undesirable behavior with other obtained resources. Also, if an error exists in one resource this should not affect or modify others in unexpected ways.
-    \item \textit{Heterogeneity}: It does not matter the type of provider with which the browser communicates, it should be possible to interact with whatever type, and it should be possible to show appropriately the content of the obtained resource.
+    \item \textit{Stability}: The browser must be capable of displaying the resource even in the prescence of different formats or syntax errors, like invalid HTML5.
+    \item \textit{Isolation}: If a request is completed, this is with the Browser User permission and should not cause an undesirable behavior with other obtained resources. Also, if an error exists in one resource this should not affect other resources in unexpected ways.
+    \item \textit{Heterogeneity}: It does not matter the type of provider with which the browser communicates, it should be possible to interact with any type, and it should be possible to show appropriately the content of the obtained resource.
     \item \textit{Timeliness}: The obtained resource should be displayed within a reasonable time frame; otherwise, a user of the browser would have a bad experience.
   \end{itemize}
 
+  %\begin{shaded}
+  \subsection*{Solution}
+  Provide the web browser, with the functions needed to understand requests. Our solution is directly related to our Web Browser Communication pattern \cite{silva2015} (Figure \ref{fig:WBCP}), where we show how the browser's components communicate with each other when a resource is requested. Since the Web Content Renderer is a specialization of a Controlled Process, it will communicate with the Browser Kernel of the web browser to do its job, which is rendering a resource.
+
     \begin{figure*}[h!t]
-      \vspace*{-2cm}
+      \vspace*{-1.4cm}
       \centering
-      \hspace*{-0.5cm}\includegraphics[scale=0.65]{figures/BrowserInfrastructure-v3.pdf}
-      \vspace*{-3cm}
+      \includegraphics[scale=0.48]{figures/BrowserInfrastructure-v3.pdf}
+      \vspace*{-2.5cm}
       \caption{Web Browser Communication pattern \cite{silva2015}.}
       \label{fig:WBCP}
     \end{figure*}
 
-  \begin{shaded}
-  \subsection*{Solution}
-  Provide the Web Browser, with the functions needed to understand requests. Our solution is directly related to our Web Browser Communication pattern \cite{silva2015} (Figure \ref{fig:WBCP}), where we talk about how the browser's components communicate between each other when a resource is requested. Since the Web Content Renderer is a specialization of a Controlled Process, it will communicate with the Browser Kernel of the web browser to do its job, which is rendering a resource.
+  %\end{shaded}
 
-  \end{shaded}
-
-    \begin{figure*}[h!t]
-      \vspace*{-1.8cm}
-      \centering
-      \hspace*{-1cm}\includegraphics[scale=0.6]{figures/WebContentRenderer-v2.pdf}
-      \vspace*{-4.5cm}
-      \caption{High-level Components of the Web Content Renderer.}
-      \label{fig:WCR}
-    \end{figure*}
-
-  \begin{shaded}
+  %\begin{shaded}
     \leftskip1em
 
     \subsubsection*{Structure}
-    Figure \ref{fig:WCR} shows a \textbf{Frame Constructor} in charge of building a \textbf{Rendered View} of the requested resource and communicating it to the \textbf{Browser Kernel}. The \textbf{Frame Constructor} participates in the communication, between the \textbf{Browser Kernel} and the \textbf{Web Content Renderer} (Figure \ref{fig:WBCP}) when a renderer resource needs to be shown to the user. The \textbf{HTML/XML Parser} is in charge of parsing a web resource and obtain an object representation of it, called a \textbf{DOM Tree}. A \textbf{CSS Parser} does the same job as the \textbf{HTML/XML Parser}, but creates \textbf{CSS Style Rules} to change visual aspects of the resource to display. The \textbf{DOM Tree} is a dynamic structure that can change anytime while the resource is needed, by using a scripting language that is interpreted and executed by the \textbf{Javascript Engine}; \textbf{CSS Style Rules} can also change in the same way, since a script languages, like javascript, can change styles dynamically. A \textbf{Rendered View} is the grapgical representation or data structure representing a resource obtained from the \textbf{Browser Kernel}, where a \textbf{Render Tree} is the first step to obtain it. The \textbf{Render Tree} is a dynamic structure that links the \textbf{DOM Tree} and \textbf{CSS Style Rules} together.
+    Figure \ref{fig:WCR} shows a \textbf{Frame Constructor} in charge of building a \textbf{Rendered View} of the requested resource and communicating it to the \textbf{Browser Kernel}. The \textbf{Frame Constructor} participates in the communication, between the \textbf{Browser Kernel} and the \textbf{Web Content Renderer} (Figure \ref{fig:WBCP}) when a rendered resource needs to be shown to the user. The \textbf{HTML/XML Parser} is in charge of parsing a web resource and obtain an object representation of it, called a \textbf{DOM Tree}. A \textbf{CSS Parser} does the same job as the \textbf{HTML/XML Parser}, but creates \textbf{CSS Style Rules} to change visual aspects of the resource to display. The \textbf{DOM Tree} is a dynamic structure that can change anytime while the resource is needed, by using a scripting language that is interpreted and executed by the \textbf{Javascript Engine}; since most browsers support Javascript as its scripting language, we have decided of using this name. \textbf{CSS Style Rules} can also change in the same way, since a script languages, like javascript, can change styles dynamically. A \textbf{Rendered View} is the graphical representation or data structure representing a resource obtained from the \textbf{Browser Kernel}, where a \textbf{Render Tree} is the first step to obtain it. The \textbf{Render Tree} is a dynamic structure that links the \textbf{DOM Tree} and \textbf{CSS Style Rules} together.
+
+    \begin{figure*}[h!t]
+      %\vspace*{-2cm}
+      \centering
+      \hspace*{-0.4cm}\includegraphics[scale=0.57]{figures/WebContentRenderer-v2.pdf}
+      \vspace*{-3.8cm}
+      \caption{High-level Components of the Web Content Renderer.}
+      \label{fig:WCR}
+    \end{figure*}
 
     \subsubsection*{Dynamics}
     Some use cases are the following:
@@ -241,16 +241,16 @@ In this work, a Web Content Renderer Pattern is presented (Figure \ref{fig:relat
 
     \end{itemize}
     We show in detail Load Resource below. (Figure \ref{fig:LoadResource}):
-    \subsubsection*{Summary} A URL resource which can be obtained by using the HTTP protocol, as required by the Provider. The Browser Kernel will be in charge of sending a retrieved resource to the Controlled Process, which is instantiated as a Web Content Renderer for displaying the resource appropriately.
+    \subsubsection*{Summary} A URL from which a resource can be obtained by a browser using the HTTP protocol. The Browser Kernel will be in charge of sending a retrieved resource to the Controlled Process, which is instantiated as a Web Content Renderer for displaying the resource appropriately.
     \subsubsection*{Actor} Browser Kernel
-    \subsubsection*{Preconditions} The Host must have one or more Browser Kernels, for different instanced web browsers. In addition to being connected to a network or the Internet. The Provider to which the browser will contact must also be available. The Web Content Renderer must consider that a web resource can be in many different formats, so it should be capable of displaying them accordingly.
+    \subsubsection*{Preconditions} The Host must have one or more Browser Kernels, for different instantiated web browsers, in addition to being connected to a network or the Internet. The Provider to which the browser will contact must also be available. 
 
     \subsubsection*{Description}
       \begin{enumerate}\leftskip2.5em
-        \item First, the Browser Kernel sends a resource to the Controlled Process, which is instantiated as a Web Content Renderer. The Frame Controlled receives each request for rendering a new resource.
-        \item The Frame Constructor uses its HTML/XML Parser to understand the resource. During the parsing process new resources will be needed such as images, plugins, content, etc., where each one of them will do a Load Resource use case. In parallel the tokenization process creates a dynamic structure called as the DOM Tree, which is returned to the Frame Constructor. The same process is done by a CSS Parser to obtain CSS Style Rules.
+        \item First, the Browser Kernel sends a resource to the Controlled Process, which is instantiated as a Web Content Renderer. The Frame Constructor receives each request for rendering a new resource.
+        \item The Frame Constructor uses its HTML/XML Parser to understand the resource. During the parsing process new resources will be needed such as images, plugins, content, etc., where each one of them will perform a Load Resource use case. In parallel the tokenization process creates a dynamic structure called the DOM Tree, which is returned to the Frame Constructor. The same process is done by a CSS Parser to obtain CSS Style Rules.
         \item If scripts are found on the resource while parsing it, the Javascript Engine has the job of parsing, interpreting and executing them. This action can change the DOM Tree and the CSS Rules Styles already built.
-        \item Finally, the Frame Constructor is in position for building a confortable data structure or graphical representation of the resource to be rendered. The DOM Tree and CSS Styles Rules are linked together into a Render Tree, and then a process called Layout and Painting is called to get a bitmap \cite{gpuchrome,gecko2} for the Browser Kernel.
+        \item Finally, the Frame Constructor is in position for building a convenient data structure or graphical representation of the resource to be rendered. The DOM Tree and CSS Styles Rules are linked together into a Render Tree, and then a process called Layout and Painting is called to get a bitmap \cite{gpuchrome,gecko2} for the Browser Kernel.
       \end{enumerate}
 
     \subsubsection*{Alternative flows} 
@@ -261,7 +261,7 @@ In this work, a Web Content Renderer Pattern is presented (Figure \ref{fig:relat
       \end{itemize}
     \subsubsection*{Postconditions} The Browser Kernel obtains a data structure or graphical representation of the obtained resource.
 
-    \end{shaded}
+   % \end{shaded}
 
     \begin{landscape}
       \begin{figure*}[h!t]
@@ -279,9 +279,10 @@ In this work, a Web Content Renderer Pattern is presented (Figure \ref{fig:relat
   \subsection*{Implementation}
     \begin{itemize}\leftskip0.2em
       %\item The Javascript Engine on the Web Content Renderer is normally composed by standard classes, a Javascript Parser that interprets scripting code, a JIT or Just-in-Time Compiler, an Interpreter and a Garbage Collector. Other implementations could have other components, but the must importants are those before \cite{GoogleChromeV8,MicrosoftChakra,MozillaSpidermonkey}.
-      \item The separation of the components of the \textit{Browser} in various processes, with different levels of access is called a Modular Architecture \cite{Vrbanec2013}. This enables the separation of concerns in the browser, which gives greater stability, isolation, safety and speed. There are other software architectures used by browsers, but currently the use of a modular architecture is rising.
-      \item Each Web Content Renderer instance, each one a separate process, is isolated \cite{GoogleChromeIsolation,FirefoxThreatModel} from each other. This happens so the Same Origin Policy (SOP) \cite{W3C-SOP} is enforced in each instance defined by the origin of the resources: by its domain, scheme and port. The mentioned policy  is the minimum security mechanism a browser has while requesting cross-origin resources, and divides the different kind of contents so they cannot interfere with each other. To enforce the Same Origin Policy, Google Chrome, Firefox and Internet Explorer use different schemes \cite{Crowley2010,Reis2009,Jackson2008}.
-      \item Google and Internet Explorer have their rendering engine implemented with a sandbox mechanism. This security feature makes every renderer instance have low privileges in the system, so they cannot interacts in a dangerous way with the system. This defense mechanism enforces a least privilege policy, so the file system can be safe against threats that try to take advantage of web pages vulnerabilities that lead to browser attacks.
+      \item Most browsers use Javascript for its scripting language. Those who do not use it, is possible that the rendering engine is only in charge of parsing the resources without building dynamic structures like the DOM, CSS Styles Rules or the Render Tree.
+      \item The separation of the components of the \textit{Browser} in various processes, with different levels of access, comes from the more general concept called a Modular Architecture \cite{Vrbanec2013}. This enables the separation of concerns in the browser, which may give greater stability, isolation, safety and speed. There are other software architectures used by browsers, but currently the use of a modular architecture is rising.
+      \item Each Web Content Renderer instance, is a separate process isolated \cite{GoogleChromeIsolation,FirefoxThreatModel} from others. In this way, the Same Origin Policy (SOP) \cite{W3C-SOP} is enforced in each instance defined by the origin of the resources: by its domain, scheme and port. The mentioned policy  is the minimum security mechanism a browser has while requesting cross-origin resources, and divides the different kind of contents so they cannot interfere with each other. To enforce the Same Origin Policy, Google Chrome, Firefox and Internet Explorer use different schemes \cite{Crowley2010,Reis2009,Jackson2008}.
+      \item Google and Internet Explorer have their rendering engine implemented with a sandbox mechanism. This security feature makes every renderer instance to have low privileges in the system, so they cannot interacts in a dangerous way with the system. This defense mechanism enforces a least privilege policy, so the file system can be safe against threats that try to take advantage of web pages vulnerabilities that lead to browser attacks.
     \end{itemize}
 
 
@@ -289,49 +290,49 @@ In this work, a Web Content Renderer Pattern is presented (Figure \ref{fig:relat
   \subsection*{Consequences}
   \leftskip-0.1em The Web Content Renderer pattern provides the following benefits:
   \begin{itemize}\leftskip0.2em
-    \item \textit{Transparency}: All the process for rendering a resource is done without user interaction.
-    \item \textit{Stability}: Even if a resource (HTML for example) is invalid, the rendering process will try to get a visual representation. Other type of resource could be handled the same way or by requesting again the resource. Since each renderer has its on memory space, even if an error is found it will not affect the whole browser.
-    \item \textit{Isolation}: Resources are placed in different process (different memory spaces) and can only interact if the Same Origin Policy allows it. A Reference Monitor for the DOM Tree and Capabilities for the Javascript Engine are used to enforce this policy (Same Origin Policy - SOP). If a Web Content Renderer has an error while loading a resource, it will not affect other process that have instanced other Web Content Renderers that are part of the same browser.
+    \item \textit{Transparency}: The process for rendering a resource is done without user interaction.
+    \item \textit{Stability}: Even if a resource (HTML for example) is invalid, the rendering process will try to get a visual representation. Another type of resource could be handled the same way or by requesting again the resource. Since each renderer has its own memory space, even if an error is found it will not affect the whole browser.
+    \item \textit{Isolation}: Resources are placed in different process (different memory spaces) and can only interact if the Same Origin Policy allows it. A Reference Monitor for the DOM Tree and Capabilities for the Javascript Engine are used to enforce this policy (Same Origin Policy - SOP). If a Web Content Renderer makes an error while loading a resource, it will not affect other processes that have instantiated other Web Content Renderers that are part of the same browser.
     \item \textit{Heterogeneity}: Because each web browser tries to follow the standards of the W3C \cite{w3c}, every page that follows these guidelines can be viewed, as well as other resources.
-    \item \textit{Timeliness}: Since a renderer engine will be in charge of rendering a particular page or pages (if bounded by the same origin policy as in Google Chrome), the time it will take to load several resources in differents renderer engines will be less compared if only one renderer is used for the same task.
+    \item \textit{Timeliness}: Since a renderer engine will be in charge of rendering a particular page or pages (if bound by the same origin policy as in Google Chrome), the time it will take to load several resources in differents renderer engines will be less compared if only one renderer is used for the same task.
   \end{itemize}
   This pattern has the following liabilities:
   \begin{itemize}\leftskip0.2em
-    \item Since many independent processes are used to create a Web Content Renderer for rendering a resource (depending on the scheme using the browser), it is possible that a lot of the host's resources are used to keep everything open. A modular architecture requires heavier data structure for multiprocessing and keeping all process working, if is compared with a monoprocess architecture with multithreading.
-    \item Resources from providers which do not comply with the specifications of the W3C, will be displayed incorrectly by the Web Browser.
+    \item Since many independent processes are used to create a Web Content Renderer for rendering a resource (depending on the scheme using the browser), it is possible that a lot of the host's resources are used to keep everything open. A modular architecture requires heavier data structure for multiprocessing and keeping all processes working, compared with a monoprocess architecture with multithreading.
+    \item Resources from providers which do not comply with the specifications of the W3C, will be displayed incorrectly by the web browser.
   \end{itemize}
 
   \subsection*{Example Resolved}
-With the given pattern it is now possible to display and navigate smoothly to all resources on the Internet we want. Independent on the type of web resource, it will be possible to display it appropriately in the browser. 
+With the given pattern it is now possible to display and navigate smoothly to all the resources we want on the Internet. Independent of the type of web resource, it will be possible to display it appropriately in the browser. 
   \subsection*{Known Uses}
   \begin{itemize}\leftskip0.2em
     \item Google Chrome is based on a modular architecture, where each Renderer Process communicates with the Browser Kernel \cite{multiProcGC}. Blink is the implementation of its renderer engine and is based on WebKit.
-    \item Gecko \cite{gecko2} is the name for the Renderer in the monoprocess architecture Firefox, it is written in C++ and can be used to render the user interface of other applications such as Thunderbird.
-    \item Internet Explorer, a proprietary browser, does not give much information about its structure or details of its implementation; \cite{Crowley2010} addresses Loosely-Coupled architecture \cite{IE8-LCIE} and its components, like Trident its Rendering Engine, but without giving further details. Microsoft's new web browser, Microsoft Edge, integrates a new renderer too, called EdgeHTML \cite{edgehtml}.
+    \item Gecko \cite{gecko2} is the name for the Renderer in the monoprocess architecture of Firefox, it is written in C++ and can be used to render the user interface of other applications such as Thunderbird.
+    \item Internet Explorer, a proprietary browser, does not give much information about its structure or details of its implementation; \cite{Crowley2010} addresses Loosely-Coupled architecture \cite{IE8-LCIE} and its components, like Trident its Rendering Engine, but without giving further details. Microsoft's new web browser, Microsoft Edge, integrates a new renderer, called EdgeHTML \cite{edgehtml}.
   \end{itemize}
 
   \subsection*{Related Patterns}
   \begin{itemize}\leftskip0.2em
-    \item The Web Browser Communication pattern presents the components of the web browser and how they communicate each other when a resource is requested \cite{silva2015}. 
+    \item The Web Browser Communication pattern presents the components of the web browser and how they communicate with each other when a resource is requested \cite{silva2015}. 
     \item The Reified Reference Monitor \cite{fernandez2013security}, describes how to enforce authorization rights when a subject requests access to a protected object or service and returns a decision (response). 
   \end{itemize}
 
 \section{Conclusions and Future Work}
-A web browser appears to be a medium complexity software for users and developers without security experience, but unfortunately this piece of software allows a variaty of attack vectors, to the user as well as the system with which interacts. Therefore it is important to understand its structure and how it interacts with internal and external Stakeholders.
+A web browser appears to be a medium complexity software for users and developers without security experience. Unfortunately, this software allows a variety of attack vectors, to the user as well as to the system with which interacts. Therefore, it is important to understand its structure and how it interacts with internal and external Stakeholders.
 
-A part of our Reference Architecture has been built through the abstraction of documentation through the Browser Infrastructure pattern. We created our first architectural pattern for the infrastructure of \textit{Web Browser} to help others understand, holistically, the components, interactions and relationships of this system. Furthermore, it has been possible to characterize the Stakeholders and one of the most important use cases. From what we know, this is the second Reference Architecture for the \textit{Browser}. The reference model obtained in \cite{2005-grosskurth-browser-refarch} express the type of architecture used in the nineties until 2009 (approximately). However, our proposal represents the current implementation used in browsers: a \textbf{Modular Architecture}. The proposed work allows a better understanding of this system called web browser by using our partial Reference Architecture, which is also helpful to understand existing threats. Also, as it is not tied to specific implementations, it is possible to generalize some results to other browsers. 
+A part of our Reference Architecture has been built through the abstraction of documentation, with which we have obtained the first part of it: the Web Browser Communication pattern. We created our first architectural pattern for the infrastructure of a web browser to help others understand holistically the components, interactions and relationships of this system. Furthermore, it has been possible to characterize the Stakeholders and one of the most important use cases. From what we know, this is the second Reference Architecture for the web browsers. The reference model obtained in \cite{2005-grosskurth-browser-refarch} describes the type of architecture used in the nineties until 2009 (approximately). However, our proposal represents the current implementation used in browsers: a \textit{Modular Architecture}. The proposed work allows a better understanding of browsers by using our partial Reference Architecture, which is also helpful to understand existing threats. Also, since a pattern is generic by definition, our solution is not tied to specific implementations and is possible to generalize some results to other browsers. 
 
-Future work is finishing the Reference Architecture for \textit{Web Browsers}. Other patterns related to the Browser Infrastructure pattern will be obtained in order to complete the Reference Architecture, such as the Web Content Renderer (this paper) and Browser Kernel pattern. 
+Future work is finishing the Reference Architecture for web browsers. Another pattern related to the Web Browser Communication pattern will be obtained in order to complete the Reference Architecture, called the Browser Kernel pattern. 
 
-We plan to build more \cite{silva2015b} misuse patterns for the Browser Infrastructure Pattern, to continue the study of the possible threats in the \textit{Browser}, as a way to educate developers and stakeholders. At the same time, these patterns will allow the construction of a Security Reference Architecture for the browser. In the same line, in addition to finding potential threats in the system, we need to find countermeasures or security defenses to prevent or foresee such threats through security patterns on the reference architecture built. An example of the type of work to be carried out can be seen in \cite{Fernandez2015}.
+We plan to build more \cite{silva2015b} misuse patterns for the Web Browser Communication pattern, to continue the study of the possible threats in the \textit{Browser}, as a way to educate developers and stakeholders. At the same time, these patterns will allow the construction of a Security Reference Architecture for the browser. In the same line, in addition to finding potential threats in the system, we need to find countermeasures or security defenses to prevent or foresee such threats through security patterns on the reference architecture. An example of the type of work to be carried out can be seen in \cite{Fernandez2015}.
 
 %\section{Acknowledgements}
 %This work was partially supported by CONICYT (grant Fondecyt 1140408).
 
 \section{Glossary}
 \begin{itemize}\leftskip0.2em
-  \item \textbf{Frame Constructor:} in charge to put together the results obtained by the parsing process of a HTML and CSS file, as well to execute in the precise time the Javascript code that will manipulate the DOM Tree and CSS Styles rules obtained. 
-  \item \textbf{Rendered View:} a graphical representation of a Renderer Tree, from the DOM Tree and CSS Style rules obtained from a resource.
+  \item \textbf{Frame Constructor:} in charge of putting together the results obtained by the parsing process of HTML and CSS files, as well of executing at the right time the Javascript code that will manipulate the DOM Tree and CSS Styles rules obtained. 
+  \item \textbf{Rendered View:} a graphical representation of a Render Tree, from the DOM Tree and CSS Style rules obtained from a resource.
   \item \textbf{Bitmap:} a buffer of pixel values in memory (main memory or the GPU’s video RAM) \cite{gpuchrome}.
 \end{itemize}
 
