@@ -167,17 +167,27 @@ Patterns are encapsulated solutions to recurrent problems and define a way to ex
 
 The aim of a Reference Architecture is to provide a guide for developers, who are not security experts, to develop architectures for concrete versions of some system or to extend such system. We describe the browser architecture as a Reference Architecture (RA) composed  of architectural patterns. An RA is created by capturing the essentials of existing architectures and by taking into account future needs and opportunities, ranging from specific technologies, patterns and business models. The pattern diagram \cite{buschman1996system} in Figure \ref{fig:relations} shows relationships between patterns and we can see how different models relate to each other, where rounded rectangles represent patterns and the arcs indicate dependencies between patterns; for example, Interception of Traffic describes traffic threats.
 
+We started to build a Reference Architecture in a previous work (Figure \ref{fig:relations}), and now we are trying to extend it by creating new architectural patterns for our RA, misuse patterns to describe threats and security patterns to build a Security Reference Architecture (SRA). We are currently building a SRA, which is a Reference Architecture where security services have been added in appropriate places to provide some degree of security for a specific system. The basic approach we will use to build a Security Reference Architecture is the application of a systematic methodology from \cite{fernandez2006methodology,Fernandez2011,Fernandez2015}, which can be used as a guideline to build secure web browser systems and/or evaluate their security levels. By checking if a threat, expressed as a misuse pattern, can be stopped or mitigated in the security reference architecture, we can evaluate its level of security.
+
     \begin{figure*}[h!t]
-      \vspace*{-0.3cm}
+      \vspace*{0.8cm}
       \centering
-      \hspace{0.5cm}\includegraphics[scale=0.45]{figures/relations-finish.png}
+      \hspace{0.5cm}\includegraphics[scale=0.43]{figures/relations-finish.png}
+      \vspace*{0.5cm}
       \caption{Pattern Diagram of our work. Finished patterns in green and still developing in blue.}
       \label{fig:relations}
     \end{figure*}
 
-We started to build a Reference Architecture in a previous work (Figure \ref{fig:relations}), and now we are trying to extend it by creating new architectural patterns for our RA, misuse patterns to describe threats and security patterns to build a Security Reference Architecture (SRA). We are currently building a SRA, which is a Reference Architecture where security services have been added in appropriate places to provide some degree of security for a specific system. The basic approach we will use to build a Security Reference Architecture is the application of a systematic methodology from \cite{fernandez2006methodology,Fernandez2011,Fernandez2015}, which can be used as a guideline to build secure web browser systems and/or evaluate their security levels. By checking if a threat, expressed as a misuse pattern, can be stopped or mitigated in the security reference architecture, we can evaluate its level of security.
+    \begin{figure*}[h!t]
+      \vspace*{-1cm}
+      \centering
+      \includegraphics[scale=0.6]{figures/BrowserInfrastructure-v3.pdf}
+      \vspace*{-2.3cm}
+      \caption{Web Browser Communication pattern \cite{silva2015}.}
+      \label{fig:WBCP}
+    \end{figure*}
 
-In this work, a Web Content Renderer Pattern is presented (See Figure \ref{fig:relations} to see how it fits with our other patterns). We have already built a Web Browser Communication pattern as our foundation and now we are extending it \cite{silva2015}. The audience to which our paper is focused are browser developers, web application developers, researchers and for teaching purposes, being the first two the most important, since they are the responsible for the implementation and correct use of secure mechanisms. 
+In this work, a Web Content Renderer Pattern is presented (See Figure \ref{fig:relations} to see how it fits with our other patterns). We have already documented a Web Browser Communication pattern as our foundation and now we are extending it \cite{silva2015} (Figure \ref{fig:WBCP}). The audience to which our paper is focused are browser developers, web application developers, researchers and for teaching purposes, being the first two the most important, since they are the responsible for the implementation and correct use of secure mechanisms. 
 
 
 \section{Web Content Renderer Pattern}
@@ -204,16 +214,7 @@ In this work, a Web Content Renderer Pattern is presented (See Figure \ref{fig:r
 
   %\begin{shaded}
   \subsection*{Solution}
-  Provide the web browser, with the functions needed to understand requests. Our solution is directly related to our Web Browser Communication pattern \cite{silva2015} (Figure \ref{fig:WBCP}), where we show how the browser's components communicate with each other when a resource is requested. Since the Web Content Renderer is a specialization of a Controlled Process, it will communicate with the Browser Kernel of the web browser to do its job, which is rendering a resource.
-
-    \begin{figure*}[h!t]
-      \vspace*{-1.4cm}
-      \centering
-      \includegraphics[scale=0.48]{figures/BrowserInfrastructure-v3.pdf}
-      \vspace*{-2.5cm}
-      \caption{Web Browser Communication pattern \cite{silva2015}.}
-      \label{fig:WBCP}
-    \end{figure*}
+  Provide the web browser, with the functions needed to understand requests and then obtain a confortable format for the host's Graphics Processor Unit (GPU) to display it to the browser's user. Our solution is directly related to our Web Browser Communication pattern \cite{silva2015} (Figure \ref{fig:WBCP}), where we show how the browser's components communicate with each other when a resource is requested. Since the Web Content Renderer is a specialization of a Controlled Process, it will communicate with the Browser Kernel of the web browser to do its job, which is rendering a resource.
 
   %\end{shaded}
 
@@ -224,10 +225,10 @@ In this work, a Web Content Renderer Pattern is presented (See Figure \ref{fig:r
     Figure \ref{fig:WCR} shows a \textbf{Frame Constructor} in charge of building a \textbf{Rendered View} of the requested resource and communicating it to the \textbf{Browser Kernel}. The \textbf{Frame Constructor} participates in the communication, between the \textbf{Browser Kernel} and the \textbf{Web Content Renderer} (Figure \ref{fig:WBCP}) when a rendered resource needs to be shown to the user. The \textbf{HTML/XML Parser} is in charge of parsing a web resource and obtain an object representation of it, called a \textbf{DOM Tree}. A \textbf{CSS Parser} does the same job as the \textbf{HTML/XML Parser}, but creates \textbf{CSS Style Rules} to change visual aspects of the resource to display. The \textbf{DOM Tree} is a dynamic structure that can change anytime while the resource is needed, by using a scripting language that is interpreted and executed by the \textbf{Javascript Engine}; since most browsers support Javascript as its scripting language, we have decided of using this name. \textbf{CSS Style Rules} can also change in the same way, since a script languages, like javascript, can change styles dynamically. A \textbf{Rendered View} is the graphical representation or data structure representing a resource obtained from the \textbf{Browser Kernel}, where a \textbf{Render Tree} is the first step to obtain it. The \textbf{Render Tree} is a dynamic structure that links the \textbf{DOM Tree} and \textbf{CSS Style Rules} together.
 
     \begin{figure*}[h!t]
-      %\vspace*{-2cm}
+      \vspace*{-1cm}
       \centering
       \hspace*{-0.4cm}\includegraphics[scale=0.57]{figures/WebContentRenderer-v2.pdf}
-      \vspace*{-3.8cm}
+      \vspace*{-4cm}
       \caption{High-level Components of the Web Content Renderer.}
       \label{fig:WCR}
     \end{figure*}
@@ -321,7 +322,7 @@ With the given pattern it is now possible to display and navigate smoothly to al
 \section{Conclusions and Future Work}
 A web browser appears to be a medium complexity software for users and developers without security experience. Unfortunately, this software allows a variety of attack vectors, to the user as well as to the system with which interacts. Therefore, it is important to understand its structure and how it interacts with internal and external Stakeholders.
 
-A part of our Reference Architecture has been built through the abstraction of documentation, with which we have obtained the first part of it: the Web Browser Communication pattern. We created our first architectural pattern for the infrastructure of a web browser to help others understand holistically the components, interactions and relationships of this system. Furthermore, it has been possible to characterize the Stakeholders and one of the most important use cases. From what we know, this is the second Reference Architecture for the web browsers. The reference model obtained in \cite{2005-grosskurth-browser-refarch} describes the type of architecture used in the nineties until 2009 (approximately). However, our proposal represents the current implementation used in browsers: a \textit{Modular Architecture}. The proposed work allows a better understanding of browsers by using our partial Reference Architecture, which is also helpful to understand existing threats. Also, since a pattern is generic by definition, our solution is not tied to specific implementations and is possible to generalize some results to other browsers. 
+A part of our Reference Architecture has been formulated through the abstraction of documentation, with which we have obtained the first part of it: the Web Browser Communication pattern. We created our first architectural pattern for the infrastructure of a web browser to help others understand holistically the components, interactions and relationships of this system. Furthermore, it has been possible to characterize the Stakeholders and one of the most important use cases. From what we know, this is the second Reference Architecture for the web browsers. The reference model obtained in \cite{2005-grosskurth-browser-refarch} describes the type of architecture used in the nineties until 2009 (approximately). However, our proposal represents the current implementation used in browsers: a \textit{Modular Architecture}. The proposed work allows a better understanding of browsers by using our partial Reference Architecture, which is also helpful to understand existing threats. Also, since a pattern is generic by definition, our solution is not tied to specific implementations and is possible to generalize some results to other browsers. 
 
 Future work is finishing the Reference Architecture for web browsers. Another pattern related to the Web Browser Communication pattern will be obtained in order to complete the Reference Architecture, called the Browser Kernel pattern. 
 

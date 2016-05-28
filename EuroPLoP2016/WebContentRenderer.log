@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.4.28)  27 APR 2016 13:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.4.28)  28 MAY 2016 00:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -469,13 +469,6 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 165.
 
-<figures/relations-finish.png, id=1, 858.20625pt x 419.31656pt>
-File: figures/relations-finish.png Graphic file (type png)
-
-<use figures/relations-finish.png>
-Package pdftex.def Info: figures/relations-finish.png used on input line 173.
-(pdftex.def)             Requested size: 386.18924pt x 188.6907pt.
-
 Underfull \vbox (badness 1888) has occurred while \output is active []
 
 
@@ -484,51 +477,63 @@ Overfull \vbox (72.27pt too high) has occurred while \output is active []
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 Non-PDF special ignored!
 
-] [2 <./figures/relations-finish.png>]
-<figures/BrowserInfrastructure-v3.pdf, id=16, 614.295pt x 794.97pt>
+]
+<figures/relations-finish.png, id=10, 858.20625pt x 419.31656pt>
+File: figures/relations-finish.png Graphic file (type png)
+
+<use figures/relations-finish.png>
+Package pdftex.def Info: figures/relations-finish.png used on input line 175.
+(pdftex.def)             Requested size: 369.0215pt x 180.3026pt.
+
+<figures/BrowserInfrastructure-v3.pdf, id=12, 614.295pt x 794.97pt>
 File: figures/BrowserInfrastructure-v3.pdf Graphic file (type pdf)
 
 <use figures/BrowserInfrastructure-v3.pdf>
 Package pdftex.def Info: figures/BrowserInfrastructure-v3.pdf used on input lin
-e 212.
-(pdftex.def)             Requested size: 294.85825pt x 381.58127pt.
- [3 <./figures/BrowserInfrastructure-v3.pdf>]
+e 184.
+(pdftex.def)             Requested size: 368.57983pt x 476.98569pt.
+ [2 <./figures/relations-finish.png>] [3 <./figures/BrowserInfrastructure-v3.pd
+f>]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 224.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 225.
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 224.
- <figures/WebContentRenderer-v2.pdf, id=25, 794.97pt x 614.295pt>
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 225.
+
+<figures/WebContentRenderer-v2.pdf, id=25, 794.97pt x 614.295pt>
 File: figures/WebContentRenderer-v2.pdf Graphic file (type pdf)
 
 <use figures/WebContentRenderer-v2.pdf>
 Package pdftex.def Info: figures/WebContentRenderer-v2.pdf used on input line 2
-29.
+30.
 (pdftex.def)             Requested size: 453.1376pt x 350.15178pt.
 
-Overfull \hbox (45.75668pt too wide) in paragraph at lines 229--231
+Overfull \hbox (45.75668pt too wide) in paragraph at lines 230--232
  []| [] 
  []
 
-[4 <./figures/WebContentRenderer-v2.pdf, page is rotated 90 degrees>] [5]
+[4] [5 <./figures/WebContentRenderer-v2.pdf, page is rotated 90 degrees>]
 <figures/LoadResource-v2.pdf, id=39, 794.97pt x 614.295pt>
 File: figures/LoadResource-v2.pdf Graphic file (type pdf)
 
 <use figures/LoadResource-v2.pdf>
-Package pdftex.def Info: figures/LoadResource-v2.pdf used on input line 270.
+Package pdftex.def Info: figures/LoadResource-v2.pdf used on input line 271.
 (pdftex.def)             Requested size: 635.97687pt x 491.43666pt.
 
-Overfull \hbox (38.82413pt too wide) in paragraph at lines 270--272
+Overfull \hbox (38.82413pt too wide) in paragraph at lines 271--273
  []| [] 
  []
 
 
-LaTeX Warning: Float too large for page by 4.71518pt on input line 274.
+LaTeX Warning: Float too large for page by 4.71518pt on input line 275.
 
 [6 <./figures/LoadResource-v2.pdf, page is rotated 90 degrees>] [7
 
 
-] [8]
-(./WebContentRenderer.bbl
+]
+
+LaTeX Warning: Citation `Vilar2015' on page 8 undefined on input line 319.
+
+[8] (./WebContentRenderer.bbl
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 42.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -575,7 +580,7 @@ Underfull \hbox (badness 1895) in paragraph at lines 122--130
 at-terns to De-velop Se-cure Sys-tems\OT1/pnc/m/n/8 . IGI Global.
  []
 
-
+[9]
 Underfull \hbox (badness 1142) in paragraph at lines 153--159
 []\OT1/pnc/m/n/8 Google Chromium. 2008. Multi-process Ar-chi-tec-ture - The Chr
 omium Projects. (2008). $https : / / www .
@@ -593,25 +598,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--189
  . com / msedgedev / 2015 / 11 / 16 /
  []
 
-[9]) [10] (./WebContentRenderer.aux) ) 
+) [10] (./WebContentRenderer.aux) ) 
 Here is how much of TeX's memory you used:
- 3230 strings out of 493105
- 42493 string characters out of 6137072
- 123595 words of memory out of 5000000
- 6611 multiletter control sequences out of 15000+600000
+ 3231 strings out of 493105
+ 42504 string characters out of 6137072
+ 121595 words of memory out of 5000000
+ 6612 multiletter control sequences out of 15000+600000
  25923 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,8n,35p,2182b,335s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/
-dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-urw/ncntrsbk/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk
-/uncri8a.pfb>
-Output written on WebContentRenderer.pdf (10 pages, 156930 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvi
+ps/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/ncntrsbk/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/un
+cri8a.pfb>
+Output written on WebContentRenderer.pdf (10 pages, 159151 bytes).
 PDF statistics:
  89 PDF objects out of 1000 (max. 8388607)
  63 compressed objects within 1 object stream
