@@ -104,12 +104,12 @@
 
 
 \bibitem[\protect\citeauthoryear{Fernandez, Monge, and Hashizume}{Fernandez
-  et~al\mbox{.}}{2015}]%
-        {Fernandez2015}
-{Eduardo~B. Fernandez}, {Raul Monge}, {and} {Keiko Hashizume}. 2015.
-\newblock \showarticletitle{{Building a security reference architecture for
-  cloud systems}}.
-\newblock {\em Requirements Engineering\/} (Jan 2015).
+  et~al\mbox{.}}{2016}]%
+        {Fernandez2016}
+{Eduardo~B. Fernandez}, {Raul Monge}, {and} {Keiko Hashizume}. 2016.
+\newblock \showarticletitle{Building a Security Reference Architecture for
+  Cloud Systems}.
+\newblock {\em Requir. Eng.\/} {21}, 2 (June 2016), 225--249.
 \newblock
 \showISSN{0947-3602}
 \showDOI{%
@@ -234,6 +234,19 @@
 \newblock
 
 
+\bibitem[\protect\citeauthoryear{Vilar, Oliveira, and Almeida}{Vilar
+  et~al\mbox{.}}{2015}]%
+        {Vilar2015}
+{Rodrigo Vilar}, {Delano Oliveira}, {and} {Hyggo Almeida}. 2015.
+\newblock \showarticletitle{Rendering Patterns for Enterprise Applications}. In
+  {\em Proceedings of the 20th European Conference on Pattern Languages of
+  Programs} {\em (EuroPLoP '15)}. ACM, New York, NY, USA, Article 22, 17 pages.
+\newblock
+\showISBNx{978-1-4503-3847-9}
+\showDOI{%
+\url{http://dx.doi.org/10.1145/2855321.2855344}}
+
+
 \bibitem[\protect\citeauthoryear{Vrbanec}{Vrbanec}{2013}]%
         {Vrbanec2013}
 {Tedo Vrbanec}. 2013.
@@ -256,7 +269,6 @@
   Web Consortium - W3C}}{1994}]%
         {w3c}
 {{World Wide Web Consortium - W3C}}. 1994.
-\newblock About.
 \newblock   (1994).
 \newblock
 \showURL{%

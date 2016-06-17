@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.4.28)  28 MAY 2016 00:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.4.28)  13 JUN 2016 15:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -491,19 +491,34 @@ File: figures/BrowserInfrastructure-v3.pdf Graphic file (type pdf)
 <use figures/BrowserInfrastructure-v3.pdf>
 Package pdftex.def Info: figures/BrowserInfrastructure-v3.pdf used on input lin
 e 184.
-(pdftex.def)             Requested size: 368.57983pt x 476.98569pt.
- [2 <./figures/relations-finish.png>] [3 <./figures/BrowserInfrastructure-v3.pd
-f>]
+(pdftex.def)             Requested size: 337.86328pt x 437.23485pt.
+ [2 <./figures/relations-finish.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <./figures/BrowserInfrastructure-v3.pdf>]
+LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <10> not available
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 217.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 225.
-LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 225.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 225.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 225.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 225.
 
-<figures/WebContentRenderer-v2.pdf, id=25, 794.97pt x 614.295pt>
-File: figures/WebContentRenderer-v2.pdf Graphic file (type pdf)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 225.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 225.
 
-<use figures/WebContentRenderer-v2.pdf>
-Package pdftex.def Info: figures/WebContentRenderer-v2.pdf used on input line 2
+<figures/WebContentRenderer-v4.pdf, id=25, 794.97pt x 614.295pt>
+File: figures/WebContentRenderer-v4.pdf Graphic file (type pdf)
+
+<use figures/WebContentRenderer-v4.pdf>
+Package pdftex.def Info: figures/WebContentRenderer-v4.pdf used on input line 2
 30.
 (pdftex.def)             Requested size: 453.1376pt x 350.15178pt.
 
@@ -511,40 +526,26 @@ Overfull \hbox (45.75668pt too wide) in paragraph at lines 230--232
  []| [] 
  []
 
-[4] [5 <./figures/WebContentRenderer-v2.pdf, page is rotated 90 degrees>]
-<figures/LoadResource-v2.pdf, id=39, 794.97pt x 614.295pt>
-File: figures/LoadResource-v2.pdf Graphic file (type pdf)
+[4] [5 <./figures/WebContentRenderer-v4.pdf, page is rotated 90 degrees>]
+<figures/LoadResource-v3.pdf, id=40, 794.97pt x 614.295pt>
+File: figures/LoadResource-v3.pdf Graphic file (type pdf)
 
-<use figures/LoadResource-v2.pdf>
-Package pdftex.def Info: figures/LoadResource-v2.pdf used on input line 271.
+<use figures/LoadResource-v3.pdf>
+Package pdftex.def Info: figures/LoadResource-v3.pdf used on input line 272.
 (pdftex.def)             Requested size: 635.97687pt x 491.43666pt.
 
-Overfull \hbox (38.82413pt too wide) in paragraph at lines 271--273
+Overfull \hbox (38.82413pt too wide) in paragraph at lines 272--274
  []| [] 
  []
 
 
-LaTeX Warning: Float too large for page by 4.71518pt on input line 275.
+LaTeX Warning: Float too large for page by 4.71518pt on input line 276.
 
-[6 <./figures/LoadResource-v2.pdf, page is rotated 90 degrees>] [7
+[6 <./figures/LoadResource-v3.pdf, page is rotated 90 degrees>] [7
 
 
-]
-
-LaTeX Warning: Citation `Vilar2015' on page 8 undefined on input line 319.
-
-[8] (./WebContentRenderer.bbl
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 42.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 42.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 42.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 42.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
+] [8]
+(./WebContentRenderer.bbl
 Underfull \hbox (badness 5077) in paragraph at lines 47--53
 []\OT1/pnc/m/n/8 2009. Se-cu-rity/ProcessIsolation/ThreatModel. (2009). $https 
 : / / wiki . mozilla . org / Security / ProcessIsolation /
@@ -558,14 +559,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--63
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 109--117
-[]\OT1/pnc/m/n/8 Eduardo B. Fer-nan-dez, Raul Monge, and Keiko Hashizume. 2015.
- Build-ing a se-cu-
+[]\OT1/pnc/m/n/8 Eduardo B. Fer-nan-dez, Raul Monge, and Keiko Hashizume. 2016.
+ Build-ing a Se-cu-rity
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 109--117
-\OT1/pnc/m/n/8 rity ref-er-ence ar-chi-tec-ture for cloud sys-tems. \OT1/pnc/m/
-it/8 Re-quire-ments En-gi-neer-ing \OT1/pnc/m/n/8 (Jan 2015).
+\OT1/pnc/m/n/8 Ref-er-ence Ar-chi-tec-ture for Cloud Sys-tems. \OT1/pnc/m/it/8 
+Re-quir. Eng. \OT1/pnc/m/n/8 21, 2 (June 2016), 225--249.
  []
 
 
@@ -600,26 +601,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--189
 
 ) [10] (./WebContentRenderer.aux) ) 
 Here is how much of TeX's memory you used:
- 3231 strings out of 493105
- 42504 string characters out of 6137072
- 121595 words of memory out of 5000000
- 6612 multiletter control sequences out of 15000+600000
- 25923 words of font info for 51 fonts, out of 8000000 for 9000
+ 3236 strings out of 493105
+ 42554 string characters out of 6137072
+ 121655 words of memory out of 5000000
+ 6615 multiletter control sequences out of 15000+600000
+ 26135 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,35p,2182b,335s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,35p,2181b,296s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvi
 ps/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
-/ncntrsbk/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/un
-cri8a.pfb>
-Output written on WebContentRenderer.pdf (10 pages, 159151 bytes).
+r6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/urw/ncntrsbk/uncb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsb
+k/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pf
+b>
+Output written on WebContentRenderer.pdf (10 pages, 166732 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
+ 93 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
