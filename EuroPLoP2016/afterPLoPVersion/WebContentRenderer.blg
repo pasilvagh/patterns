@@ -1,0 +1,88 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: WebContentRenderer.aux
+The style file: ACM-Reference-Format-Journals.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: refTodas.bib
+Warning--no key, author in GoogleChromeIsolation
+Warning--no author, editor, organization, or key in GoogleChromeIsolation
+Warning--to sort, need author or key in GoogleChromeIsolation
+Warning--no key, author in FirefoxThreatModel
+Warning--no author, editor, organization, or key in FirefoxThreatModel
+Warning--to sort, need author or key in FirefoxThreatModel
+Warning--no key, author in IE8-LCIE
+Warning--no author, editor, organization, or key in IE8-LCIE
+Warning--to sort, need author or key in IE8-LCIE
+Warning--no key, author in FirefoxThreatModel
+Warning--no key, author in FirefoxThreatModel
+Warning--no key, author in GoogleChromeIsolation
+Warning--no key, author in GoogleChromeIsolation
+Warning--no key, author in IE8-LCIE
+Warning--no key, author in IE8-LCIE
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--no key, author in IE8-LCIE
+Warning--no author, editor, organization, or key in IE8-LCIE
+Warning--no key, author in FirefoxThreatModel
+Warning--no author, editor, organization, or key in FirefoxThreatModel
+Warning--no key, author in GoogleChromeIsolation
+Warning--no author, editor, organization, or key in GoogleChromeIsolation
+Warning--empty address in fernandez2013security
+Warning--no number and no volume in fernandez2006methodology
+Warning--require articleno with numpages field in Fernandez2016
+Warning--can't use both author and editor fields in Fernandez2011
+Warning--empty address in Fernandez2011
+Warning--empty address in gamma1994design
+Warning--empty booktitle in 2005-grosskurth-browser-refarch
+Warning--empty publisher in 2005-grosskurth-browser-refarch
+Warning--empty address in 2005-grosskurth-browser-refarch
+Warning--no number and no volume in Jackson2008
+Warning--page numbers missing in both pages and numpages fields in Jackson2008
+Warning--no number and no volume in silva2015b
+Warning--page numbers missing in both pages and numpages fields in silva2015b
+Warning--no number and no volume in silva2015
+Warning--page numbers missing in both pages and numpages fields in silva2015
+Warning--no journal in Vrbanec2013
+Warning--no number and no volume in Vrbanec2013
+You've used 23 entries,
+            5290 wiz_defined-function locations,
+            1363 strings with 18387 characters,
+and the built_in function-call counts, 26734 in all, are:
+= -- 3470
+> -- 698
+< -- 1
++ -- 203
+- -- 910
+* -- 1809
+:= -- 2766
+add.period$ -- 116
+call.type$ -- 23
+change.case$ -- 140
+chr.to.int$ -- 22
+cite$ -- 73
+duplicate$ -- 1503
+empty$ -- 1117
+format.name$ -- 287
+if$ -- 5579
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 45
+newline$ -- 249
+num.names$ -- 159
+pop$ -- 656
+preamble$ -- 1
+purify$ -- 252
+quote$ -- 0
+skip$ -- 418
+stack$ -- 0
+substring$ -- 3845
+swap$ -- 108
+text.length$ -- 1343
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 298
+warning$ -- 38
+while$ -- 151
+width$ -- 0
+write$ -- 452
+(There were 38 warnings)

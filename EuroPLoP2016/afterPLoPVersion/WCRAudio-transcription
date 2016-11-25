@@ -1,0 +1,77 @@
+Web Content Renderer Audio
+
+Summary:
+- Introduces a pattern that is part of a bigger pattern system problem.
+- The web browser and this pattern called Web Content Renderer pattern, and how to process resources to show them and to process them.
+
+What was liked?
+- Liked the idea of writting a web browsers architecture based on patterns
+- Purpose of diagrams and illustrations, they show exactly how this particular pattern fits into the whole scheme of the browser.
+- The forces and consequences of the pattern are aligned
+- Even thought the pattern is very complex into answers into a lots of components, its structures and the dynamics; it was easy to understand. It didn't take too much time to understand what's going on here. 
+- Not an expert in web browsers, neither in web applications. But after rendering, could understand how the web browsers renders. Greatest strenght of the paper.
+
+#5:50
+Suggestions
+- Title: al the content renderer are like this, so is "THE" pattern...is a generic pattern that describes on the first step	how the web content renderer works
+	- Sub content renderer pattern -> reason: not really well understood by the audio...
+	- The pattern does not go into many specific details -> 90% this could represent the renderer.
+- Abstract:
+	- Bit long
+	- Promises to talk about security, which is stated as a concern. The security was not addressed. Take it out or add one section to talk about it.
+	- Because the security is embbeded in the whole reference architecure, not to this pattern, this to be mentioned more precisely.
+	- Security is a constant in this pattern. The pattern is compared to the Gateway pattern (single point of acceess to resources)
+		- Suggest: a computer threat modelling content browser of the web content renderer. Is one place where shows security that single point, is that single point is enough?
+	- why the abstracts only mentions google chrome? all browser have evolved. why is only referenced? -> needs comparisson.
+	- describes the bigger work in the abstract, not the renderer. No need to explain what a web browser is to developers.
+		- Suggestion: describe a little bit the context of the work, but then focus only in the pattern of the renderer. To decide if I want to read it or not.
+
+-Introduction:
+	- Suggestion: put in the beggining what is the paper about. Last parragraph oof the introduction needs to be early.
+	- The introduction confused the attendees, they thought we would talk more about more patterns, but is just one in the end.
+	- Where this patterns originated from? sourcecode? where comes from?? documentation? Which browsers are this patterns?
+	- This patterns are for mobile or desktop browsers? ...needs to be said explicitely
+	- Figure 1, what are the colors from? use a legend! Says web browser content renderer...should be web content renderer! (to maintain same nomination)
+	- Some explanation of the browser reference architecture is missing to understand context.
+	- Suggestion: talk more about the reference architecture, information is missing and relationship with the WCR is not understood on the paper.
+
+	Paulina's comments:
+	- The patterns diagram was not very well understood by the attendees, they did not understood how it works. They were called "ombrella patterns", as an intro patterns.
+	- They thought that a browser could only be a renderer (text-based browser), which is not entirely wrong. But still, the idea of the browser is to have a renderer and a browser kernel at least.
+	- Someone did not understood why the browser renderer was separated from the browser.
+
+-Pattern
+	- Context, Problem and Intent may be similar.
+		-What's is the problem?
+			-Why separate renderer?
+		-Multiple tabs, to separate them (isolate them), to others to still work if others cant.
+			-separation of concerns.
+	- Is not clear the pattern
+#listen again #20min to
+
+
+#min 31:28
+	- "appropiate tools" page 3.
+	- suggestion: write more explicitely about what the problem is. is about tools to display in various formats...
+	- the solution is the renderer and tools, and interactions. They are missing over the solution. Explain what happens when a web browser does not have a renderer.
+	- why separate the renderer from the browser? -> someone says they could use the WCR embedded to build a desktop app.
+	-What are other use cases? just 2 more?
+	-Forces section: Stability? maybe another word.
+	- Figure 4, step 15. Lack a return arrow before step 15.
+	- Implementation part seems like examples. Wording issues...seems more like known uses.
+	- Google -> Google Chrome, dont use companies names.
+	- Talk about related standars in the introduction.
+	- talk about the renderer engine before as the web content renderer, so it will be understtod as the same entity.
+	- label liabilities.
+	- examples resolved is not really helpful.
+	- explain well what is to "navigate more smoothly"
+	- move the glossary to the beginning or mention it at the beginning.
+
+	Paulina's comments
+	-Security related to the pattern made difficult to the attendees to understand the pattern (implementation section)
+	- not really well understood why is faster or secure
+
+Closing remarks:
+	-Nice to have this overview, is good to people who want to work with web browsers.
+	-The paper nicely describes a relatively complex subject, and we (attendee) who read about it I got some understanding. But maybe there is confusion between this pattern and the reference architecture it comes from
+	- Take another look into describe well the problem.

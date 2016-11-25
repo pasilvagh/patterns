@@ -1,0 +1,55 @@
+
+
+Abstract:
+
+- a long abstract
+- Abstract not talking much about web content renderer
+- Last parragraph: How is Chrome related?
+- Not cler which problems you are going to address (You are talking about security, achitecture, documentation, communication between components...)
+- Weak. I expect to see more concrete information of what new features in chrome address this pattern.
+
+Introduction:
+- Where do tese patterns originated? Where they have been witnessed? (Figure 1).
+- Some short intro to patterns.
+- Goal?
+- Not sure wht this pattern is about until next page.
+- Last parragraf should be in the beginning.
+- add legend to colors in Figure 1
+
+Pattern:
+- What is the problem? not very good example.
+
+	Problem:
+		- Each f these sound like a problem to its own patterns.
+		- Seems like context
+		- Stability for Resilence or Tolerance.
+		- Add "Security": Rendering the content should not expose, or in any way, hinder the security of the client.
+		- This could be formulated more clearly
+
+	Solution:
+		- Core of solution?
+		- Too vague to be useful.
+		- What functions?
+		- Which other use cases exists?
+		- In Figure 3, would like to have the web resource aligned in the diagram.
+		- Who told the Frame Constructor (Figure 4) to generate (the) Renderered View at this time? Is the answer of the JsEngine missing? Is it renering during manipulation?
+
+	Implementation:
+		- Does not get clear before, that every request gets its own instance.
+
+	Consequences:
+		- Stability: Whis was not really discussed in the pattern.
+		- Conflict between stability and Timeliness.
+
+	Example Resolved:
+		- Too general to be useful.
+		- Value of the section?
+		- Not clear from description
+
+- How security aspects were tackeled within the pattern?
+
+Conclusions:
+	- You are talking about security and attacks but you do not provide information about why it is getting better when sing your architecture.|
+
+Glossary
+	- Too late
