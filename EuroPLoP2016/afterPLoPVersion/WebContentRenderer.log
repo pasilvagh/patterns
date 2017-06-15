@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.6)  23 NOV 2016 14:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.6)  7 JAN 2017 20:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -456,35 +456,66 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \FrameRule=\dimen115
 \FrameSep=\dimen116
 )
-(./WebContentRenderer.aux)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen117
+\captionmargin@=\dimen118
+\captionwidth=\dimen119
+\caption@tempdima=\dimen120
+\caption@indent=\dimen121
+\caption@parindent=\dimen122
+\caption@hangindent=\dimen123
+\abovecaptionskip=\skip43
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \FigName \@captype
+ \vskip 7.3pt \setbox \@tempboxa \hbox {\figcaptionfont {#1}.\hskip 7.3pt\relax
+ #2\par }\ifdim \wd \@tempboxa >\hsize \figcaptionfont {#1}.\hskip 7.3pt\relax 
+#2\par \else \centerline {\box \@tempboxa }\fi \else \setbox \tbbox =\vbox {\hs
+ize \tempdimen {\tablenumfont #1}\ {\tablecaptionfont #2\par }}\setbox \@tempbo
+xa \hbox {\hsize \tempdimen {\tablenumfont #1}\ {\tablecaptionfont #2\par }\vph
+antom {jgq}}\ifdim \wd \@tempboxa >\tempdimen \centerline {\box \tbbox }\else \
+centerline {\box \@tempboxa }\fi \vskip \belowcaptionskip \fi .
+\c@ContinuedFloat=\count93
+) (./WebContentRenderer.aux)
 \openout1 = `WebContentRenderer.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-\bibhang=\skip43
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+\bibhang=\skip44
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count93
-\scratchdimen=\dimen117
+\scratchcounter=\count94
+\scratchdimen=\dimen124
 \scratchbox=\box33
-\nofMPsegments=\count94
-\nofMParguments=\count95
+\nofMPsegments=\count95
+\nofMParguments=\count96
 \everyMPshowfont=\toks18
-\MPscratchCnt=\count96
-\MPscratchDim=\dimen118
-\MPnumerator=\count97
-\makeMPintoPDFobject=\count98
+\MPscratchCnt=\count97
+\MPscratchDim=\dimen125
+\MPnumerator=\count98
+\makeMPintoPDFobject=\count99
 \everyMPtoPDFconversion=\toks19
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -530,10 +561,63 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: Incompatible package detected (regarding \@caption).
+(caption)             \@caption = \long macro:#1[#2]#3->\par \begingroup \@parb
+oxrestore \normalsize \@makecaption {\csname fnum@#1\endcsname }{\ignorespaces 
+#3}\par \endgroup .
+
+
+Package caption Warning: \caption will not be redefined since it's already
+(caption)                redefined by a document class or package which is
+(caption)                unknown to the caption package.
+See the caption package documentation for explanation.
+
+Package caption Info: End \AtBeginDocument code.
+Excluding 'CCSXML' comment.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 186.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 186.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <7> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 186.
+
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <18> not available
-(Font)              size <17.28> substituted on input line 150.
+(Font)              size <17.28> substituted on input line 188.
 
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 188.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 188.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 188.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 188.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 188.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 188.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+<figures/relations-finish.png, id=1, 858.20625pt x 419.31656pt>
+File: figures/relations-finish.png Graphic file (type png)
+
+<use figures/relations-finish.png>
+Package pdftex.def Info: figures/relations-finish.png used on input line 199.
+(pdftex.def)             Requested size: 386.18924pt x 188.6907pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -545,60 +629,39 @@ Overfull \vbox (73.96626pt too high) has occurred while \output is active []
 Non-PDF special ignored!
 
 ]
-<figures/relations-finish.png, id=15, 858.20625pt x 419.31656pt>
-File: figures/relations-finish.png Graphic file (type png)
-
-<use figures/relations-finish.png>
-Package pdftex.def Info: figures/relations-finish.png used on input line 162.
-(pdftex.def)             Requested size: 369.0215pt x 180.3026pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 164.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 164.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 164.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-<figures/BrowserInfrastructure-v3.pdf, id=17, 614.295pt x 794.97pt>
-File: figures/BrowserInfrastructure-v3.pdf Graphic file (type pdf)
-
-<use figures/BrowserInfrastructure-v3.pdf>
-Package pdftex.def Info: figures/BrowserInfrastructure-v3.pdf used on input lin
-e 171.
-(pdftex.def)             Requested size: 337.86328pt x 437.23485pt.
- [2 <./figures/relations-finish.png>] [3 <./figures/BrowserInfrastructure-v3.pd
-f>]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 212.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 212.
-
-<figures/WebContentRenderer-v4.pdf, id=34, 794.97pt x 614.295pt>
+(Font)              <7> on input line 232.
+ [2 <./figures/relations-finish.png>] [3]
+<figures/WebContentRenderer-v4.pdf, id=31, 794.97pt x 614.295pt>
 File: figures/WebContentRenderer-v4.pdf Graphic file (type pdf)
 
 <use figures/WebContentRenderer-v4.pdf>
 Package pdftex.def Info: figures/WebContentRenderer-v4.pdf used on input line 2
-17.
-(pdftex.def)             Requested size: 453.1376pt x 350.15178pt.
- [4 <./figures/WebContentRenderer-v4.pdf, page is rotated 90 degrees>] [5]
-<figures/LoadResource-v3.pdf, id=47, 794.97pt x 614.295pt>
-File: figures/LoadResource-v3.pdf Graphic file (type pdf)
+69.
+(pdftex.def)             Requested size: 508.77907pt x 393.14745pt.
 
-<use figures/LoadResource-v3.pdf>
-Package pdftex.def Info: figures/LoadResource-v3.pdf used on input line 259.
-(pdftex.def)             Requested size: 635.97687pt x 491.43666pt.
+Overfull \hbox (39.09908pt too wide) in paragraph at lines 269--271
+ [][] 
+ []
 
-Overfull \hbox (46.12413pt too wide) in paragraph at lines 259--261
+[4 <./figures/WebContentRenderer-v4.pdf, page is rotated 90 degrees>] [5]
+<figures/LoadResource-v4.pdf, id=43, 845.1575pt x 597.23125pt>
+File: figures/LoadResource-v4.pdf Graphic file (type pdf)
+
+<use figures/LoadResource-v4.pdf>
+Package pdftex.def Info: figures/LoadResource-v4.pdf used on input line 312.
+(pdftex.def)             Requested size: 659.2202pt x 465.8385pt.
+
+Overfull \hbox (69.36746pt too wide) in paragraph at lines 312--314
  []| [] 
  []
 
 [6
 
- <./figures/LoadResource-v3.pdf, page is rotated 90 degrees>] [7
+ <./figures/LoadResource-v4.pdf, page is rotated 90 degrees>] [7
 
 ] [8]
-(./WebContentRenderer.bbl [9]
+(./WebContentRenderer.bbl
 Underfull \hbox (badness 3000) in paragraph at lines 203--213
 []\OT1/cmr/m/n/8 Charles Reis and Steven D Grib-ble. 2009.  Iso-lat-ing web pro
 -grams in mod-ern browser ar-chi-tec-tures.  \OT1/cmr/m/it/8 Pro-
@@ -610,39 +673,41 @@ Underfull \hbox (badness 7030) in paragraph at lines 203--213
 r sys-tems Eu-roSys 09 \OT1/cmr/m/n/8 25, 1 (2009), 219.
  []
 
-) [10] (./WebContentRenderer.aux)
+[9]) [10] (./WebContentRenderer.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.72pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 3037 strings out of 494891
- 39485 string characters out of 6179039
- 120969 words of memory out of 5000000
- 6258 multiletter control sequences out of 15000+600000
- 10198 words of font info for 39 fonts, out of 8000000 for 9000
+ 4183 strings out of 494891
+ 59906 string characters out of 6179039
+ 141467 words of memory out of 5000000
+ 7387 multiletter control sequences out of 15000+600000
+ 11951 words of font info for 42 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
- 38i,8n,35p,2181b,334s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on WebContentRenderer.pdf (10 pages, 274219 bytes).
+ 53i,8n,92p,1092b,339s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
+es/utmr8a.pfb>
+Output written on WebContentRenderer.pdf (10 pages, 278765 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
+ 119 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
