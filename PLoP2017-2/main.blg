@@ -1,0 +1,84 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: ACM-Reference-Format-Journals.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: refTodas_all.bib
+Warning--no key, author in Angelov2012
+Warning--no author, editor, organization, or key in Angelov2012
+Warning--to sort, need author or key in Angelov2012
+Warning--no key, author in IE8LCIE2
+Warning--no author, editor, organization, or key in IE8LCIE2
+Warning--to sort, need author or key in IE8LCIE2
+Warning--no key, author in Angelov2012
+Warning--no key, author in Angelov2012
+Warning--no key, author in IE8LCIE2
+Warning--no key, author in IE8LCIE2
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--no key, author in IE8LCIE2
+Warning--no author, editor, organization, or key in IE8LCIE2
+Warning--no key, author in Angelov2012
+Warning--no author, editor, organization, or key in Angelov2012
+Warning--neither author and editor supplied for Angelov2012
+Warning--empty address in alcorn2014browser
+Warning--no journal in Fernandez2006
+Warning--unusual to have number, but no volume, for Fernandez2006
+Warning--empty address in fernandez2013security
+Warning--require articleno with numpages field in Fernandez2016
+Warning--no journal in Galster2011a
+Warning--no number and no volume in Galster2011a
+Warning--empty address in gamma1994design
+Warning--unusual to have number, but no volume, for Grier2008
+Warning--no number and no volume in silva2015b
+Warning--page numbers missing in both pages and numpages fields in silva2015b
+Warning--no number and no volume in silva2015
+Warning--page numbers missing in both pages and numpages fields in silva2015
+Warning--no journal in Vrbanec2013
+Warning--no number and no volume in Vrbanec2013
+Warning--no number and no volume in Wu2014
+Warning--no journal in Zalewsk082
+Warning--no number and no volume in Zalewsk082
+Warning--page numbers missing in both pages and numpages fields in Zalewsk082
+You've used 23 entries,
+            5238 wiz_defined-function locations,
+            1385 strings with 18894 characters,
+and the built_in function-call counts, 20428 in all, are:
+= -- 2666
+> -- 772
+< -- 1
++ -- 230
+- -- 256
+* -- 1313
+:= -- 2261
+add.period$ -- 118
+call.type$ -- 23
+change.case$ -- 145
+chr.to.int$ -- 21
+cite$ -- 65
+duplicate$ -- 1649
+empty$ -- 1211
+format.name$ -- 310
+if$ -- 4968
+int.to.chr$ -- 3
+int.to.str$ -- 0
+missing$ -- 65
+newline$ -- 250
+num.names$ -- 166
+pop$ -- 627
+preamble$ -- 1
+purify$ -- 257
+quote$ -- 0
+skip$ -- 485
+stack$ -- 0
+substring$ -- 1474
+swap$ -- 149
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 298
+warning$ -- 34
+while$ -- 151
+width$ -- 0
+write$ -- 458
+(There were 34 warnings)

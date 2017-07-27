@@ -1,0 +1,32 @@
+LaTeX packages useful for formatting PLoP submissions
+-----------------------------------------------------
+
+All of these packages are available from the Comprehensive TeX Archive Network
+(CTAN) <http://www.ctan.org/>. Many LaTeX distributions already include some
+of them, so you do not have to download these separately.
+
+booktabs             - LaTeX package improving the look of tables
+flafter              - LaTeX package to enforce the contents of floating
+                       environments---figures and tables are the default LaTeX
+                       floating environments---not to be printed before the
+                       definition of the floating environment. 
+                       C.f. <https://en.wikibooks.org/wiki/LaTeX/
+                         Floats,_Figures_and_Captions#
+                         Keeping_floats_in_their_place>.
+glossaries           - LaTeX package to create glossaries
+graphicx             - LaTeX package for including graphic files
+hyperref             - LaTeX package that creates hyperlinks to \cite, \ref
+                       etc. and allows for outbound links to arbitrary URLs
+                       via \href and \url. In case of long URLs consider also
+                       using the breakurl LaTeX package.
+isodate              - LaTeX package to pretty print dates according to
+                       ISO 8601. Internationalized with support for several
+                       Locales
+longtable            - LaTeX package for automatically page breaking tables
+numprint             - LaTeX package to format numbers and quantities. Easy
+                       to use---more challenging contexts might call
+                       for siunitx instead.
+siunitx              - More involved alternative to LaTeX package numprint
+subcaption           - LaTeX package to lay out subfigures, -tables etc.
+
+Philipp

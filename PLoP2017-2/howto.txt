@@ -1,0 +1,43 @@
+Manual on adaptations for fomatting PLoP submissions
+----------------------------------------------------
+
+In addition to the contents of "acmlarge-guide.pdf" the following applies:
+
+Add "hillsideplop" to the optional parameters in the "\documentclass" command.
+This sets the correct journal name in the output.
+
+Set "\acmVolume", "\acmYear", and "\acmMonth". These set the volume, conference
+year and month in the journal line in the output.
+
+Add as many "\category" lines as you want and a "\terms" line. Please refer to
+<http://www.acm.org/about/class/1998> for the respective 1998 ACM Computing
+Classification System. Also add "\keywords". This has also been described in
+Section 2.2 (Content Indicators and Keywords) of "acmlarge-guide.pdf".
+
+Add a self-reference in terms of the "\acmformat" command. This has also been
+described in Section 2.2 (Content Indicators and Keywords) of "acmlarge-guide.pdf".
+
+Add the copyright notice and ISBN as told you by the conference chair in terms of the "\copyr" command.
+
+Add the permission statement also given by the conference chair as the
+trailing part of the contents of the "bottomstuff" environment.
+
+Add the history dates in terms of the "\received" command, namely the date of
+initial submission, the date of the conference version and the date of the
+version after having considered Writers' Workshop feedback.
+
+
+Some of these data will not be available until after the conference. In this case substitute words for the required information the clearly indicate the preliminary status, e.g. "TODO".
+
+
+If you are using MikTeX, and the LaTeX compiler prints errors probably
+originating from outdated packages even after you thought you had updated them,
+a potential cause might be the interaction of MikTeX user mode and
+administrative mode - packages updated in administrative mode might be
+shadowed by old packages installed in user mode. See e. g.
+<https://tex.stackexchange.com/questions/67712/difference-between-administrative-and-user-mode-of-miktex> (Retrieved August 6, 2014). The author of these
+lines e.g. once had a failure regarding package "fontenc" loaded by
+"acmlarge.cls", that vanished after having considered the meaning of user and
+administrative modes.
+
+Philipp
